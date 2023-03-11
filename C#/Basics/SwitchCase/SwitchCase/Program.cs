@@ -15,7 +15,7 @@ else if (geometry == "Üçgen")
 }
 
 switch (geometry)
-{
+{ 
     case "Kare":
         Console.WriteLine("birim kenarın karesi");
         break;
