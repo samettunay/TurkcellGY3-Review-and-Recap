@@ -50,5 +50,5 @@ Console.WriteLine("Lütfen boyunuzu giriniz:");
 double boy = Convert.ToDouble(Console.ReadLine());
 
 double bmi = kilo / (boy * boy);
-Console.WriteLine(bmi);
+Console.WriteLine(bmi); 
 
