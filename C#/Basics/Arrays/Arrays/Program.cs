@@ -17,4 +17,4 @@ int yuzlerBasamagindakiDeger = number / 100;
 int onlarBasamagindakiDeger = number % 100 / 10;
 int birlerBasamagindakiDeger = number % 10;
 
-Console.WriteLine($"{birler[yuzlerBasamagindakiDeger]} yüz {onlar[onlarBasamagindakiDeger]} {birler[birlerBasamagindakiDeger]}");
+Console.WriteLine($"{birler[yuzlerBasamagindakiDeger]} yüz {onlar[onlarBasamagindakiDeger]} {birler[birlerBasamagindakiDeger]}"); 
