@@ -1,0 +1,15 @@
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week1\Week1\bin\Debug\net6.0\Week1.exe
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week1\Week1\bin\Debug\net6.0\Week1.deps.json
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week1\Week1\bin\Debug\net6.0\Week1.runtimeconfig.json
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week1\Week1\bin\Debug\net6.0\Week1.dll
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week1\Week1\bin\Debug\net6.0\Week1.pdb
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week1\Week1\obj\Debug\net6.0\Week1.csproj.AssemblyReference.cache
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week1\Week1\obj\Debug\net6.0\Week1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week1\Week1\obj\Debug\net6.0\Week1.AssemblyInfoInputs.cache
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week1\Week1\obj\Debug\net6.0\Week1.AssemblyInfo.cs
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week1\Week1\obj\Debug\net6.0\Week1.csproj.CoreCompileInputs.cache
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week1\Week1\obj\Debug\net6.0\Week1.dll
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week1\Week1\obj\Debug\net6.0\refint\Week1.dll
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week1\Week1\obj\Debug\net6.0\Week1.pdb
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week1\Week1\obj\Debug\net6.0\Week1.genruntimeconfig.cache
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week1\Week1\obj\Debug\net6.0\ref\Week1.dll
