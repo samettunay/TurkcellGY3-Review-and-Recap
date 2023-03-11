@@ -25,5 +25,5 @@ if (isFind)
 }
 else
 {
-    Console.WriteLine("Yoktur");
+    Console.WriteLine("Yoktur"); 
 }
