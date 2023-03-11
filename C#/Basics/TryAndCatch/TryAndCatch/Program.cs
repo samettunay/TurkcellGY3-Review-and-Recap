@@ -17,7 +17,7 @@ catch (DivideByZeroException)
     Console.WriteLine("Tam sayılar 0'a bölünemez!");
 }
 catch (Exception ex)
-{
+{ 
     Console.WriteLine($"Bir hata oluştu: {ex.Message}");
 }
 finally
