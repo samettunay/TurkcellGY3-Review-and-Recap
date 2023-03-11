@@ -22,7 +22,7 @@ while (!isWin)
     }
 }
 
-int[] numbers = { 13, 46, 0, 1, 18, -9 };
+int[] numbers = { 13, 46, 0, 1, 18, -9 }; 
 
 int index = 0;
 while (index < numbers.Length)
