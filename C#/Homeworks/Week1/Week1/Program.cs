@@ -185,3 +185,18 @@ else
 {
     Console.WriteLine($"{number} sayısı asal değildir.");
 }
+
+// Seçilen sayıya kadar toplama örneği
+
+Console.WriteLine("\nSeçtiğiniz sayıya kadar toplam:");
+number = Convert.ToInt32(Console.ReadLine());
+total = 0;
+int counter = 1;
+
+while (counter <= number)
+{
+    total += counter;
+    counter++;
+}
+
+Console.WriteLine("Toplam: " + total);
