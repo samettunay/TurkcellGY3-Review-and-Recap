@@ -59,9 +59,10 @@ for (int i = 0; i < numbers.Length; i++)
 
 
 
-// leetcode.com Two Sum sorusu
 
-Console.WriteLine("\n\n---------------------------------------\n");
+Console.WriteLine("\n\n---------------------------------------\n"); // Örneklerin karışmaması için
+
+// leetcode.com Two Sum sorusu
 
 //Two Sum
 
@@ -89,4 +90,98 @@ for (int i = 0; i < nums.Length; i++)
             Console.WriteLine($"[{i}, {j}]");
         }
     }
+}
+
+Console.WriteLine(); // Örneklerin karışmaması için
+
+// Döngü ile üçgen yapmak
+
+int rows = 5;
+
+for (int i = 0; i < rows; i++)
+{
+    for (int j = 0; j < rows - i; j++)
+    {
+        Console.Write(" ");
+    }
+
+    for (int k = 0; k <= i * 2; k++)
+    {
+        Console.Write("*");
+    }
+
+    Console.WriteLine();
+}
+
+Console.WriteLine(); // Örneklerin karışmaması için
+
+// Döngü ile dik üçgen yapmak
+
+int height = 5;
+
+for (int i = 1; i <= height; i++)
+{
+    for (int j = 1; j <= i; j++)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine();
+}
+
+Console.WriteLine(); // Örneklerin karışmaması için
+
+// Fibonacci sayısını hesaplamak
+
+// Fibonacci Dizisi, her sayının kendisinden bir önceki sayı ile toplanması ile elde edilen sayılar serisidir.
+
+Console.Write("Kaçıncı Fibonacci sayısını hesaplamak istersiniz? ");
+int n = int.Parse(Console.ReadLine());
+
+int a = 0, b = 1, c = 0;
+
+for (int i = 2; i <= n; i++)
+{
+    c = a + b;
+    a = b;
+    b = c;
+}
+
+Console.WriteLine("{0}. Fibonacci sayısı: {1}", n, b);
+
+// Çarpım Tablosu
+
+Console.Write("\nÇarpım tablosunun boyutu: ");
+int size = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= size; i++)
+{
+    for (int j = 1; j <= size; j++)
+    {
+        Console.Write("{0,4}", i * j);
+    }
+    Console.WriteLine();
+}
+
+// Bir sayının asal olup olmadığı
+
+Console.Write("\nSayının asal olup olmadığını kontrol edin: ");
+int number = int.Parse(Console.ReadLine());
+bool prime = true;
+
+for (int i = 2; i <= number / 2; i++)
+{
+    if (number % i == 0)
+    {
+        prime = false;
+        break;
+    }
+}
+
+if (prime)
+{
+    Console.WriteLine($"{number} sayısı asaldır.");
+}
+else
+{
+    Console.WriteLine($"{number} sayısı asal değildir.");
 }
