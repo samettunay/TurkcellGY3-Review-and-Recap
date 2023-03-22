@@ -1,0 +1,15 @@
+C:\Users\samet\source\repos\Turkcell\C#\OOP\NullConcept\NullConcept\NullOperations\bin\Debug\net6.0\NullOperations.exe
+C:\Users\samet\source\repos\Turkcell\C#\OOP\NullConcept\NullConcept\NullOperations\bin\Debug\net6.0\NullOperations.deps.json
+C:\Users\samet\source\repos\Turkcell\C#\OOP\NullConcept\NullConcept\NullOperations\bin\Debug\net6.0\NullOperations.runtimeconfig.json
+C:\Users\samet\source\repos\Turkcell\C#\OOP\NullConcept\NullConcept\NullOperations\bin\Debug\net6.0\NullOperations.dll
+C:\Users\samet\source\repos\Turkcell\C#\OOP\NullConcept\NullConcept\NullOperations\bin\Debug\net6.0\NullOperations.pdb
+C:\Users\samet\source\repos\Turkcell\C#\OOP\NullConcept\NullConcept\NullOperations\obj\Debug\net6.0\NullOperations.csproj.AssemblyReference.cache
+C:\Users\samet\source\repos\Turkcell\C#\OOP\NullConcept\NullConcept\NullOperations\obj\Debug\net6.0\NullOperations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\source\repos\Turkcell\C#\OOP\NullConcept\NullConcept\NullOperations\obj\Debug\net6.0\NullOperations.AssemblyInfoInputs.cache
+C:\Users\samet\source\repos\Turkcell\C#\OOP\NullConcept\NullConcept\NullOperations\obj\Debug\net6.0\NullOperations.AssemblyInfo.cs
+C:\Users\samet\source\repos\Turkcell\C#\OOP\NullConcept\NullConcept\NullOperations\obj\Debug\net6.0\NullOperations.csproj.CoreCompileInputs.cache
+C:\Users\samet\source\repos\Turkcell\C#\OOP\NullConcept\NullConcept\NullOperations\obj\Debug\net6.0\NullOperations.dll
+C:\Users\samet\source\repos\Turkcell\C#\OOP\NullConcept\NullConcept\NullOperations\obj\Debug\net6.0\refint\NullOperations.dll
+C:\Users\samet\source\repos\Turkcell\C#\OOP\NullConcept\NullConcept\NullOperations\obj\Debug\net6.0\NullOperations.pdb
+C:\Users\samet\source\repos\Turkcell\C#\OOP\NullConcept\NullConcept\NullOperations\obj\Debug\net6.0\NullOperations.genruntimeconfig.cache
+C:\Users\samet\source\repos\Turkcell\C#\OOP\NullConcept\NullConcept\NullOperations\obj\Debug\net6.0\ref\NullOperations.dll
