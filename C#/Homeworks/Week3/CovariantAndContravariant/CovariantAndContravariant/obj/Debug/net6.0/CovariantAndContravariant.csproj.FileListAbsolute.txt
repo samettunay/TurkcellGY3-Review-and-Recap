@@ -1,0 +1,15 @@
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week3\CovariantAndContravariant\CovariantAndContravariant\bin\Debug\net6.0\CovariantAndContravariant.exe
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week3\CovariantAndContravariant\CovariantAndContravariant\bin\Debug\net6.0\CovariantAndContravariant.deps.json
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week3\CovariantAndContravariant\CovariantAndContravariant\bin\Debug\net6.0\CovariantAndContravariant.runtimeconfig.json
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week3\CovariantAndContravariant\CovariantAndContravariant\bin\Debug\net6.0\CovariantAndContravariant.dll
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week3\CovariantAndContravariant\CovariantAndContravariant\bin\Debug\net6.0\CovariantAndContravariant.pdb
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week3\CovariantAndContravariant\CovariantAndContravariant\obj\Debug\net6.0\CovariantAndContravariant.csproj.AssemblyReference.cache
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week3\CovariantAndContravariant\CovariantAndContravariant\obj\Debug\net6.0\CovariantAndContravariant.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week3\CovariantAndContravariant\CovariantAndContravariant\obj\Debug\net6.0\CovariantAndContravariant.AssemblyInfoInputs.cache
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week3\CovariantAndContravariant\CovariantAndContravariant\obj\Debug\net6.0\CovariantAndContravariant.AssemblyInfo.cs
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week3\CovariantAndContravariant\CovariantAndContravariant\obj\Debug\net6.0\CovariantAndContravariant.csproj.CoreCompileInputs.cache
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week3\CovariantAndContravariant\CovariantAndContravariant\obj\Debug\net6.0\CovariantAndContravariant.dll
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week3\CovariantAndContravariant\CovariantAndContravariant\obj\Debug\net6.0\refint\CovariantAndContravariant.dll
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week3\CovariantAndContravariant\CovariantAndContravariant\obj\Debug\net6.0\CovariantAndContravariant.pdb
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week3\CovariantAndContravariant\CovariantAndContravariant\obj\Debug\net6.0\CovariantAndContravariant.genruntimeconfig.cache
+C:\Users\samet\source\repos\Turkcell\C#\Homeworks\Week3\CovariantAndContravariant\CovariantAndContravariant\obj\Debug\net6.0\ref\CovariantAndContravariant.dll
