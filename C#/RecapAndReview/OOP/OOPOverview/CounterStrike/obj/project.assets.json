@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\OOP\\OOPOverview\\CounterStrike\\CounterStrike.csproj",
+      "projectUniqueName": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\RecapAndReview\\OOP\\OOPOverview\\CounterStrike\\CounterStrike.csproj",
       "projectName": "CounterStrike",
-      "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\OOP\\OOPOverview\\CounterStrike\\CounterStrike.csproj",
+      "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\RecapAndReview\\OOP\\OOPOverview\\CounterStrike\\CounterStrike.csproj",
       "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\OOP\\OOPOverview\\CounterStrike\\obj\\",
+      "outputPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\RecapAndReview\\OOP\\OOPOverview\\CounterStrike\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",

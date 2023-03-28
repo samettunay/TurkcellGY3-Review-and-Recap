@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\OOP\\OOPOverview\\Constructors\\Constructors.csproj": {}
+    "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\RecapAndReview\\OOP\\OOPOverview\\Constructors\\Constructors.csproj": {}
   },
   "projects": {
-    "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\OOP\\OOPOverview\\Constructors\\Constructors.csproj": {
+    "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\RecapAndReview\\OOP\\OOPOverview\\Constructors\\Constructors.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\OOP\\OOPOverview\\Constructors\\Constructors.csproj",
+        "projectUniqueName": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\RecapAndReview\\OOP\\OOPOverview\\Constructors\\Constructors.csproj",
         "projectName": "Constructors",
-        "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\OOP\\OOPOverview\\Constructors\\Constructors.csproj",
+        "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\RecapAndReview\\OOP\\OOPOverview\\Constructors\\Constructors.csproj",
         "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\OOP\\OOPOverview\\Constructors\\obj\\",
+        "outputPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\RecapAndReview\\OOP\\OOPOverview\\Constructors\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",

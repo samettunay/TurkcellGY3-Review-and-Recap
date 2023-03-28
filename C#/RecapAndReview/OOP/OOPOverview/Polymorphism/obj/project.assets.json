@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\OOP\\OOPOverview\\Polymorphism\\Polymorphism.csproj",
+      "projectUniqueName": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\RecapAndReview\\OOP\\OOPOverview\\Polymorphism\\Polymorphism.csproj",
       "projectName": "Polymorphism",
-      "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\OOP\\OOPOverview\\Polymorphism\\Polymorphism.csproj",
+      "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\RecapAndReview\\OOP\\OOPOverview\\Polymorphism\\Polymorphism.csproj",
       "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\OOP\\OOPOverview\\Polymorphism\\obj\\",
+      "outputPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\RecapAndReview\\OOP\\OOPOverview\\Polymorphism\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",

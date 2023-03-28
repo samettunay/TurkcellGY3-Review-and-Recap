@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X5oBZK0TSpKJlo3JH6nfDkof2PzKelkgGzM5/A6RTE7ZiTo4zzoSPDP2e6yBvJ053vyIBLi7QRditmy380m+4A==",
+  "dgSpecHash": "hTHnVLcFOLq16p5c2rnD9sCt855hIZ9WTZqWjIMtiOYB+2VPHPEymnbkSAW3Cihxhw2oiJM5M94P/SARti6bCw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\OOP\\OOPOverview\\AbstractVSInterface\\AbstractVSInterface.csproj",
+  "projectFilePath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\RecapAndReview\\OOP\\OOPOverview\\AbstractVSInterface\\AbstractVSInterface.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

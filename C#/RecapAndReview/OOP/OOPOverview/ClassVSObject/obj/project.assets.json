@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\OOP\\OOPOverview\\ClassVSObject\\ClassVSObject.csproj",
+      "projectUniqueName": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\RecapAndReview\\OOP\\OOPOverview\\ClassVSObject\\ClassVSObject.csproj",
       "projectName": "ClassVSObject",
-      "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\OOP\\OOPOverview\\ClassVSObject\\ClassVSObject.csproj",
+      "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\RecapAndReview\\OOP\\OOPOverview\\ClassVSObject\\ClassVSObject.csproj",
       "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\OOP\\OOPOverview\\ClassVSObject\\obj\\",
+      "outputPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\RecapAndReview\\OOP\\OOPOverview\\ClassVSObject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",
