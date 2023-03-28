@@ -1,0 +1,15 @@
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\SingleResponsibilityPrinciple\bin\Debug\net6.0\SingleResponsibilityPrinciple.exe
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\SingleResponsibilityPrinciple\bin\Debug\net6.0\SingleResponsibilityPrinciple.deps.json
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\SingleResponsibilityPrinciple\bin\Debug\net6.0\SingleResponsibilityPrinciple.runtimeconfig.json
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\SingleResponsibilityPrinciple\bin\Debug\net6.0\SingleResponsibilityPrinciple.dll
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\SingleResponsibilityPrinciple\bin\Debug\net6.0\SingleResponsibilityPrinciple.pdb
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\SingleResponsibilityPrinciple\obj\Debug\net6.0\SingleResponsibilityPrinciple.csproj.AssemblyReference.cache
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\SingleResponsibilityPrinciple\obj\Debug\net6.0\SingleResponsibilityPrinciple.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\SingleResponsibilityPrinciple\obj\Debug\net6.0\SingleResponsibilityPrinciple.AssemblyInfoInputs.cache
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\SingleResponsibilityPrinciple\obj\Debug\net6.0\SingleResponsibilityPrinciple.AssemblyInfo.cs
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\SingleResponsibilityPrinciple\obj\Debug\net6.0\SingleResponsibilityPrinciple.csproj.CoreCompileInputs.cache
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\SingleResponsibilityPrinciple\obj\Debug\net6.0\SingleResponsibilityPrinciple.dll
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\SingleResponsibilityPrinciple\obj\Debug\net6.0\refint\SingleResponsibilityPrinciple.dll
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\SingleResponsibilityPrinciple\obj\Debug\net6.0\SingleResponsibilityPrinciple.pdb
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\SingleResponsibilityPrinciple\obj\Debug\net6.0\SingleResponsibilityPrinciple.genruntimeconfig.cache
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\SingleResponsibilityPrinciple\obj\Debug\net6.0\ref\SingleResponsibilityPrinciple.dll

@@ -1,0 +1,15 @@
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\OpenClosedPrinciple\bin\Debug\net6.0\OpenClosedPrinciple.exe
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\OpenClosedPrinciple\bin\Debug\net6.0\OpenClosedPrinciple.deps.json
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\OpenClosedPrinciple\bin\Debug\net6.0\OpenClosedPrinciple.runtimeconfig.json
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\OpenClosedPrinciple\bin\Debug\net6.0\OpenClosedPrinciple.dll
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\OpenClosedPrinciple\bin\Debug\net6.0\OpenClosedPrinciple.pdb
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\OpenClosedPrinciple\obj\Debug\net6.0\OpenClosedPrinciple.csproj.AssemblyReference.cache
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\OpenClosedPrinciple\obj\Debug\net6.0\OpenClosedPrinciple.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\OpenClosedPrinciple\obj\Debug\net6.0\OpenClosedPrinciple.AssemblyInfoInputs.cache
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\OpenClosedPrinciple\obj\Debug\net6.0\OpenClosedPrinciple.AssemblyInfo.cs
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\OpenClosedPrinciple\obj\Debug\net6.0\OpenClosedPrinciple.csproj.CoreCompileInputs.cache
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\OpenClosedPrinciple\obj\Debug\net6.0\OpenClosedPrinciple.dll
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\OpenClosedPrinciple\obj\Debug\net6.0\refint\OpenClosedPrinciple.dll
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\OpenClosedPrinciple\obj\Debug\net6.0\OpenClosedPrinciple.pdb
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\OpenClosedPrinciple\obj\Debug\net6.0\OpenClosedPrinciple.genruntimeconfig.cache
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\SOLID\OpenClosedPrinciple\obj\Debug\net6.0\ref\OpenClosedPrinciple.dll
