@@ -1,0 +1,17 @@
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\DelegatesAndEvents\Events\bin\Debug\net6.0-windows\Events.exe
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\DelegatesAndEvents\Events\bin\Debug\net6.0-windows\Events.deps.json
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\DelegatesAndEvents\Events\bin\Debug\net6.0-windows\Events.runtimeconfig.json
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\DelegatesAndEvents\Events\bin\Debug\net6.0-windows\Events.dll
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\DelegatesAndEvents\Events\bin\Debug\net6.0-windows\Events.pdb
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\DelegatesAndEvents\Events\obj\Debug\net6.0-windows\Events.csproj.AssemblyReference.cache
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\DelegatesAndEvents\Events\obj\Debug\net6.0-windows\Events.Form1.resources
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\DelegatesAndEvents\Events\obj\Debug\net6.0-windows\Events.csproj.GenerateResource.cache
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\DelegatesAndEvents\Events\obj\Debug\net6.0-windows\Events.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\DelegatesAndEvents\Events\obj\Debug\net6.0-windows\Events.AssemblyInfoInputs.cache
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\DelegatesAndEvents\Events\obj\Debug\net6.0-windows\Events.AssemblyInfo.cs
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\DelegatesAndEvents\Events\obj\Debug\net6.0-windows\Events.csproj.CoreCompileInputs.cache
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\DelegatesAndEvents\Events\obj\Debug\net6.0-windows\Events.dll
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\DelegatesAndEvents\Events\obj\Debug\net6.0-windows\refint\Events.dll
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\DelegatesAndEvents\Events\obj\Debug\net6.0-windows\Events.pdb
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\DelegatesAndEvents\Events\obj\Debug\net6.0-windows\Events.genruntimeconfig.cache
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\DelegatesAndEvents\Events\obj\Debug\net6.0-windows\ref\Events.dll
