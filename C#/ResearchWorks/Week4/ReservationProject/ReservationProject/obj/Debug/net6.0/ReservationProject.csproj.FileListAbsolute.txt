@@ -1,0 +1,15 @@
+C:\Users\samet\source\repos\Turkcell\C#\ResearchWorks\Week4\ReservationProject\ReservationProject\obj\Debug\net6.0\ReservationProject.csproj.AssemblyReference.cache
+C:\Users\samet\source\repos\Turkcell\C#\ResearchWorks\Week4\ReservationProject\ReservationProject\obj\Debug\net6.0\ReservationProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\source\repos\Turkcell\C#\ResearchWorks\Week4\ReservationProject\ReservationProject\obj\Debug\net6.0\ReservationProject.AssemblyInfoInputs.cache
+C:\Users\samet\source\repos\Turkcell\C#\ResearchWorks\Week4\ReservationProject\ReservationProject\obj\Debug\net6.0\ReservationProject.AssemblyInfo.cs
+C:\Users\samet\source\repos\Turkcell\C#\ResearchWorks\Week4\ReservationProject\ReservationProject\obj\Debug\net6.0\ReservationProject.csproj.CoreCompileInputs.cache
+C:\Users\samet\source\repos\Turkcell\C#\ResearchWorks\Week4\ReservationProject\ReservationProject\bin\Debug\net6.0\ReservationProject.exe
+C:\Users\samet\source\repos\Turkcell\C#\ResearchWorks\Week4\ReservationProject\ReservationProject\bin\Debug\net6.0\ReservationProject.deps.json
+C:\Users\samet\source\repos\Turkcell\C#\ResearchWorks\Week4\ReservationProject\ReservationProject\bin\Debug\net6.0\ReservationProject.runtimeconfig.json
+C:\Users\samet\source\repos\Turkcell\C#\ResearchWorks\Week4\ReservationProject\ReservationProject\bin\Debug\net6.0\ReservationProject.dll
+C:\Users\samet\source\repos\Turkcell\C#\ResearchWorks\Week4\ReservationProject\ReservationProject\bin\Debug\net6.0\ReservationProject.pdb
+C:\Users\samet\source\repos\Turkcell\C#\ResearchWorks\Week4\ReservationProject\ReservationProject\obj\Debug\net6.0\ReservationProject.dll
+C:\Users\samet\source\repos\Turkcell\C#\ResearchWorks\Week4\ReservationProject\ReservationProject\obj\Debug\net6.0\refint\ReservationProject.dll
+C:\Users\samet\source\repos\Turkcell\C#\ResearchWorks\Week4\ReservationProject\ReservationProject\obj\Debug\net6.0\ReservationProject.pdb
+C:\Users\samet\source\repos\Turkcell\C#\ResearchWorks\Week4\ReservationProject\ReservationProject\obj\Debug\net6.0\ReservationProject.genruntimeconfig.cache
+C:\Users\samet\source\repos\Turkcell\C#\ResearchWorks\Week4\ReservationProject\ReservationProject\obj\Debug\net6.0\ref\ReservationProject.dll
