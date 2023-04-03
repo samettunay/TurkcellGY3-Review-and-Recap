@@ -1,5 +1,8 @@
 ﻿using ConsoleUI.Businnes.Abstract;
 using ConsoleUI.Models;
+using ConsoleUI.StaticData;
+using ConsoleUI.Utilities.Helpers;
+using Spectre.Console;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,6 +47,39 @@ namespace ConsoleUI.Businnes.Concrete
             teacherToUpdate.FirstName = teacher.FirstName;
             teacherToUpdate.LastName = teacher.LastName;
             teacherToUpdate.Department = teacher.Department;
+        }
+
+        public void ManageTeachers(string menu)
+        {
+            if (menu.Equals(MenuOptions.GetTeachers))
+            {
+                GetAll().ForEach(t => AnsiConsole.WriteLine($"{t.Id}, {t.FirstName}, {t.LastName}, {t.Department}"));
+            }
+            else if (menu.Equals(MenuOptions.AddTeacher))
+            {
+                string firstName = ConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherName);
+                string lastName = ConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherLastName);
+                string department = ConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherDepartment);
+
+                Teacher teacher = new() { Id = 1, FirstName = firstName, LastName = lastName, Department = department };
+
+                Add(teacher);
+            }
+            else if (menu.Equals(MenuOptions.RemoveTeacher))
+            {
+                int teacherId = int.Parse(ConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherIdToDelete));
+                Teacher teacherToDelete = GetById(teacherId);
+                Delete(teacherToDelete);
+            }
+            else if (menu.Equals(MenuOptions.UpdateTeacher))
+            {
+                int teacherId = int.Parse(ConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherIdToUpdate));
+                string firstName = ConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherName);
+                string lastName = ConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherLastName);
+                string department = ConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherDepartment);
+                Teacher teacherToUpdate = new() { Id = teacherId, FirstName = firstName, LastName = lastName, Department = department };
+                Update(teacherToUpdate);
+            }
         }
     }
 }
