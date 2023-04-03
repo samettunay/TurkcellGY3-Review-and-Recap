@@ -13,3 +13,5 @@ C:\Users\samet\source\repos\Turkcell\C#\GradeMe\HighSchoolProject\ConsoleUI\obj\
 C:\Users\samet\source\repos\Turkcell\C#\GradeMe\HighSchoolProject\ConsoleUI\obj\Debug\net6.0\ConsoleUI.pdb
 C:\Users\samet\source\repos\Turkcell\C#\GradeMe\HighSchoolProject\ConsoleUI\obj\Debug\net6.0\ConsoleUI.genruntimeconfig.cache
 C:\Users\samet\source\repos\Turkcell\C#\GradeMe\HighSchoolProject\ConsoleUI\obj\Debug\net6.0\ref\ConsoleUI.dll
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\HighSchoolProject\ConsoleUI\bin\Debug\net6.0\Spectre.Console.dll
+C:\Users\samet\source\repos\Turkcell\C#\GradeMe\HighSchoolProject\ConsoleUI\obj\Debug\net6.0\ConsoleUI.csproj.CopyComplete

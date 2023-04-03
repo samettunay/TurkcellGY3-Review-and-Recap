@@ -8,20 +8,18 @@ namespace ConsoleUI.StaticData
 {
     public static class AppConstants
     {
-        public static List<string> MenuNavigation = new()
-        {
-            "Sınıf İşlemleri",
-            "Öğretmen İşlemleri",
-            "Öğrenci İşlemleri",
-            "Ödev İşlemleri",
-            "Çıkış",
-        };
+        public static string ClassroomOperations = "Sınıf İşlemleri";
+        public static string TeacherOperations = "Öğretmen İşlemleri";
+        public static string StudentOperations = "Öğrenci İşlemleri";
+        public static string HomeworkOperations = "Ödev İşlemleri";
+        public static string Exit = "Çıkış";
+
         public static List<string> ClassroomNavigation = new List<string>()
         {
             "Sınıfları Getir",
             "Sınıf Ekle",
             "Sınıf Çıkar",
-            "Sınıf Bilgilerini Güncelle"
+            "Sınıf Bilgilerini Güncelle",
         };
 
         public static List<string> StudentNavigation = new List<string>()
@@ -29,7 +27,7 @@ namespace ConsoleUI.StaticData
             "Öğrencileri Getir",
             "Öğrenci Ekle",
             "Öğrenci Çıkar",
-            "Öğrenci Bilgilerini Güncelle"
+            "Öğrenci Bilgilerini Güncelle",
         };
 
         public static List<string> TeacherNavigation = new List<string>()
@@ -37,7 +35,7 @@ namespace ConsoleUI.StaticData
             "Öğretmenleri Getir",
             "Öğretmen Ekle",
             "Öğretmen Çıkar",
-            "Öğretmen Bilgilerini Güncelle"
+            "Öğretmen Bilgilerini Güncelle",
         };
 
         public static List<string> HomeworkNavigation = new List<string>()
@@ -45,7 +43,7 @@ namespace ConsoleUI.StaticData
             "Ödevleri Getir",
             "Ödev Ekle",
             "Ödev Çıkar",
-            "Ödev Bilgilerini Güncelle"
+            "Ödev Bilgilerini Güncelle",
         };
     }
 }

@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "7hPOrUDWMiJGVOgbtyHy1Z4i2q8VBdHKIy4Whfq3jg0VRtCR3Nf5NLL6sSyLv0OXnHU8Om5pvS5QHR+bZPUq4g==",
+  "dgSpecHash": "FPmCdHzLgGjVmI88bhlwFrMnKFg/nf5e+5h2MWLak+XkUzRyWSW0yhxQCWCz+BXa948UucA22xQxQ0ouIEcAfg==",
   "success": true,
   "projectFilePath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\GradeMe\\HighSchoolProject\\ConsoleUI\\ConsoleUI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\samet\\.nuget\\packages\\spectre.console\\0.46.0\\spectre.console.0.46.0.nupkg.sha512",
+    "C:\\Users\\samet\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"
+  ],
   "logs": []
 }
