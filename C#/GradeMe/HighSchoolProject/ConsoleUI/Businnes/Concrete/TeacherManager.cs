@@ -13,11 +13,11 @@ namespace ConsoleUI.Businnes.Concrete
 {
     public class TeacherManager : ITeacherService
     {
-        List<Teacher> _teachers;
+        private readonly List<Teacher> _teachers;
 
-        public TeacherManager(List<Teacher> teachers)
+        public TeacherManager()
         {
-            _teachers = teachers;
+            _teachers = TestDataProvider.GetTeachers();
         }
 
         public void Add(Teacher teacher)

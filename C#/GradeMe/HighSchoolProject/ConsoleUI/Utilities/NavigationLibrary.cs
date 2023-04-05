@@ -12,15 +12,16 @@ namespace ConsoleUI.Utilities
     {
         public static string CreateMainMenu()
         {
-            return AnsiConsole.Prompt(
-                new SelectionPrompt<string>()
-                .Title("Bir işlem [green]seçiniz[/]:")
-                .PageSize(20)
-                .AddChoiceGroup(AppConstants.ClassroomOperations, AppConstants.ClassroomNavigation)
-                .AddChoiceGroup(AppConstants.TeacherOperations, AppConstants.TeacherNavigation)
-                .AddChoiceGroup(AppConstants.StudentOperations, AppConstants.StudentNavigation)
-                .AddChoiceGroup(AppConstants.HomeworkOperations, AppConstants.HomeworkNavigation)
-            );
+            var mainMenuPrompt = new SelectionPrompt<string>()
+                .Title("Bir işlem seçiniz:")
+                .PageSize(20);
+
+            mainMenuPrompt.AddChoiceGroup(SchoolOperations.Classrooms, SchoolOperations.ClassroomMenuItems);
+            mainMenuPrompt.AddChoiceGroup(SchoolOperations.Teachers, SchoolOperations.TeacherMenuItems);
+            mainMenuPrompt.AddChoiceGroup(SchoolOperations.Students, SchoolOperations.StudentMenuItems);
+            mainMenuPrompt.AddChoiceGroup(SchoolOperations.Homeworks, SchoolOperations.HomeworkMenuItems);
+
+            return AnsiConsole.Prompt(mainMenuPrompt);
         }
     }
 }
