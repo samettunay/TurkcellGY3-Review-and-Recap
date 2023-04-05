@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleUI.Models
 {
-    public class Student : Person
+    public class Student : Person, IModel
     {
         public int Id { get; set; }
         public int StudentNumber { get; set; }

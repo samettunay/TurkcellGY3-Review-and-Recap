@@ -12,6 +12,7 @@
         public const string EnterStudentName = "Öğrencinin ismini giriniz: ";
         public const string EnterStudentLastName = "Öğrencinin soyismini giriniz: ";
         public const string EnterStudentIdToUpdate = "Güncellenecek öğrencinin id numarısını giriniz: ";
+        public const string EnterStudentId = "Öğrencinin id numarısını giriniz: ";
         public const string EnterStudentIdToDelete = "Silinecek öğrencinin id numarısını giriniz: ";
 
         public const string EnterClassroomName = "Sınıfın ismini giriniz: ";
@@ -28,5 +29,8 @@
         public const string EnterHomeworkDueDate = "Ödev Teslim Tarihini Girin: ";
         public const string EnterHomeworkIsComplete = "Ödevin Tamamlandığını Girin[Evet/Hayır]: ";
         public const string EnterHomeworkGrade = "Ödev Notunu Girin: ";
+        public const string EnterHomeworkIdToAdd = "Eklenecek ödevin id numarısını girin: ";
+
+        public const string EnterStudentIdToAdd = "Sınıfa eklemek için öğrenci numarası giriniz: ";
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace ConsoleUI.Models
 {
-    public class Homework
+    public class Homework : IModel
     {
         public int Id { get; set; }
         public string Title { get; set; }

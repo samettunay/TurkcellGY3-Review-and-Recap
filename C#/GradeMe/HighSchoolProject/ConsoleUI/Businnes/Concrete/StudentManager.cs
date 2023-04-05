@@ -15,7 +15,6 @@ namespace ConsoleUI.Businnes.Concrete
     public class StudentManager : IStudentService
     {
         private readonly List<Student> _students;
-
         public StudentManager()
         {
             _students = TestDataProvider.GetStudents();
@@ -56,6 +55,22 @@ namespace ConsoleUI.Businnes.Concrete
             studentToUpdate.StudentNumber = student.StudentNumber;
         }
 
+        public List<Homework> GetStudentHomeworks(int studentId)
+        {
+            var student = GetById(studentId);
+            if (student == null)
+            {
+                throw new ArgumentException($"Student with Id {studentId} not found");
+            }
+
+            if (student.Homeworks == null)
+            {
+                return new List<Homework>();
+            }
+
+            return student.Homeworks;
+        }
+
         public void ManageStudents(string menu)
         {
             if (menu.Equals(MenuOptions.GetStudents))
@@ -86,6 +101,24 @@ namespace ConsoleUI.Businnes.Concrete
                 int studentNumber = int.Parse(ConsoleHelper.ReadLineWithText(PromptMessages.EnterStudentNumber));
                 Student studentToUpdate = new() { Id = studentId, FirstName = firstName, LastName = lastName, StudentNumber = studentNumber };
                 Update(studentToUpdate);
+            }
+            else if (menu.Equals(MenuOptions.GetStudentHomeworks))
+            {
+                int studentId = int.Parse(ConsoleHelper.ReadLineWithText(PromptMessages.EnterStudentId));
+                List<Homework> homeworks = GetStudentHomeworks(studentId);
+
+                if (homeworks.Count == 0)
+                {
+                    AnsiConsole.WriteLine($"Student with Id {studentId} has no homeworks");
+                }
+                else
+                {
+                    AnsiConsole.WriteLine($"Homeworks of the student with Id {studentId}:");
+                    foreach (var homework in homeworks)
+                    {
+                        AnsiConsole.WriteLine($"- {homework.Title}: {homework.Description}");
+                    }
+                }
             }
         }
     }

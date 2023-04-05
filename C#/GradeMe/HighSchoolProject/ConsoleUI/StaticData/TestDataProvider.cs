@@ -55,7 +55,7 @@ namespace ConsoleUI.StaticData
         {
             return new List<Classroom>
             {
-                new Classroom { Id = 1, ClassNumber = 504, ResponsibleTeacher = new(){ Id = 978, FirstName = "TestTeacher", LastName = "Last", Department = "Computer" } }
+                new Classroom { Id = 1, ClassNumber = 504, ResponsibleTeacher = new(){ Id = 978, FirstName = "TestTeacher", LastName = "Last", Department = "Computer" }, Students = new() }
             };
         }
     }

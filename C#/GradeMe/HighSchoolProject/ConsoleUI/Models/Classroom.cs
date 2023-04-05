@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleUI.Models
 {
-    public class Classroom
+    public class Classroom : IModel
     {
         public int Id { get; set; }
         public int ClassNumber { get; set; }

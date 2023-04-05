@@ -16,10 +16,13 @@ namespace ConsoleUI.StaticData
 
         public static List<string> ClassroomMenuItems = new List<string>()
         {
-            "Sınıfları Listele",
-            "Yeni Sınıf Ekle",
-            "Sınıf Sil",
-            "Sınıf Bilgilerini Güncelle",
+            MenuOptions.GetClassrooms,
+            MenuOptions.AddClassroom,
+            MenuOptions.RemoveClassroom,
+            MenuOptions.UpdateClassroom,
+            MenuOptions.AddHomeworkToAllStudentsInClass,
+            MenuOptions.AddStudentInClassroom,
+            MenuOptions.GetStudentInClassroom,
         };
 
         public static List<string> StudentMenuItems = new List<string>()
@@ -28,6 +31,7 @@ namespace ConsoleUI.StaticData
             "Yeni Öğrenci Ekle",
             "Öğrenci Sil",
             "Öğrenci Bilgilerini Güncelle",
+            MenuOptions.GetStudentHomeworks,
         };
 
         public static List<string> TeacherMenuItems = new List<string>()

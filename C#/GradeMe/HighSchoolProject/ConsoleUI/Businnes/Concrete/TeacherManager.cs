@@ -14,7 +14,6 @@ namespace ConsoleUI.Businnes.Concrete
     public class TeacherManager : ITeacherService
     {
         private readonly List<Teacher> _teachers;
-
         public TeacherManager()
         {
             _teachers = TestDataProvider.GetTeachers();

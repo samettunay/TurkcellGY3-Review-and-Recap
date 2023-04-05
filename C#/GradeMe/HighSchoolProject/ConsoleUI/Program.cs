@@ -4,7 +4,7 @@ using ConsoleUI.Utilities;
 TeacherManager teacherManager = new TeacherManager();
 StudentManager studentManager = new StudentManager();
 HomeworkManager homeworkManager = new HomeworkManager();
-ClassroomManager classroomManager = new ClassroomManager(teacherManager);
+ClassroomManager classroomManager = new ClassroomManager(teacherManager, homeworkManager, studentManager);
 
 while (true)
 {
@@ -19,4 +19,5 @@ while (true)
     Console.Clear();
 }
 
-
+// TODO 3: Manager işlemlerini tam anlamıyla bitir
+// TODO 4: Exception işlemleri

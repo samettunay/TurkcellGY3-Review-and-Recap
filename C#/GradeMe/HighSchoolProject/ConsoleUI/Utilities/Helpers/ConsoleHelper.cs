@@ -13,5 +13,11 @@ namespace ConsoleUI.Utilities.Helpers
             Console.Write(text);
             return Console.ReadLine();
         }
+
+        public static int ReadInt(string text)
+        {
+            Console.Write(text);
+            return int.Parse(Console.ReadLine());
+        }
     }
 }
