@@ -11,5 +11,6 @@ namespace ConsoleUI.Businnes.Abstract
     {
         Classroom GetByClassNumber(int classNumber);
         void AddHomeworkToAllStudentsInClassroom(int classId, int homeworkId);
+        void AddStudentInClassroom(int classId, int studentId);
     }
 }

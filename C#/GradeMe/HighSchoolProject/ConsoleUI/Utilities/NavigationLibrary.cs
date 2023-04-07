@@ -14,7 +14,7 @@ namespace ConsoleUI.Utilities
         {
             var mainMenuPrompt = new SelectionPrompt<string>()
                 .Title("Bir işlem seçiniz:")
-                .PageSize(20);
+                .PageSize(30);
 
             mainMenuPrompt.AddChoiceGroup(SchoolOperations.Classrooms, SchoolOperations.ClassroomMenuItems);
             mainMenuPrompt.AddChoiceGroup(SchoolOperations.Teachers, SchoolOperations.TeacherMenuItems);

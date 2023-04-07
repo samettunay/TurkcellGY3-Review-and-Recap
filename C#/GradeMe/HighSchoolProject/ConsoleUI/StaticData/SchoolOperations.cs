@@ -20,7 +20,7 @@ namespace ConsoleUI.StaticData
             MenuOptions.AddClassroom,
             MenuOptions.RemoveClassroom,
             MenuOptions.UpdateClassroom,
-            MenuOptions.AddHomeworkToAllStudentsInClass,
+            MenuOptions.AddHomeworkToAllStudentsInClassroom,
             MenuOptions.AddStudentInClassroom,
             MenuOptions.GetStudentInClassroom,
         };

@@ -10,5 +10,6 @@ namespace ConsoleUI.Businnes.Abstract
     public interface IStudentService : IService<Student>
     {
         Student GetByStudentNumber(int studentNumber);
+        List<Homework> GetStudentHomeworks(int studentId);
     }
 }
