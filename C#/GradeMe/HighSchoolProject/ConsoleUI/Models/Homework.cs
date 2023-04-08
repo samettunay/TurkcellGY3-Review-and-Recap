@@ -6,7 +6,10 @@
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime? DueDate { get; set; }
-        public bool? IsComplete { get; set; }
-        public int? Grade { get; set; }
+
+        public override string ToString()
+        {
+            return $"[red]Başlık:[/] {Title} [red]Açıklama:[/] {Description} [red]Son Teslim:[/] {DueDate}";
+        }
     }
 }

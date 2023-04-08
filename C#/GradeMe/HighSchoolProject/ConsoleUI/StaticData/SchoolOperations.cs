@@ -8,11 +8,10 @@ namespace ConsoleUI.StaticData
 {
     public static class SchoolOperations
     {
-        public static string Classrooms = "Sınıflar";
-        public static string Teachers = "Öğretmenler";
-        public static string Students = "Öğrenciler";
-        public static string Homeworks = "Ödevler";
-        public static string Exit = "Çıkış";
+        public static string Classrooms = "Sınıf İşlemleri";
+        public static string Teachers = "Öğretmen İşlemleri";
+        public static string Students = "Öğrenci İşlemleri";
+        public static string Homeworks = "Ödev İşlemleri";
 
         public static List<string> ClassroomMenuItems = new List<string>()
         {
@@ -20,9 +19,8 @@ namespace ConsoleUI.StaticData
             MenuOptions.AddClassroom,
             MenuOptions.RemoveClassroom,
             MenuOptions.UpdateClassroom,
-            MenuOptions.AddHomeworkToAllStudentsInClassroom,
             MenuOptions.AddStudentInClassroom,
-            MenuOptions.GetStudentInClassroom,
+            MenuOptions.GetStudentsInClassroom,
         };
 
         public static List<string> StudentMenuItems = new List<string>()
@@ -36,10 +34,13 @@ namespace ConsoleUI.StaticData
 
         public static List<string> TeacherMenuItems = new List<string>()
         {
-            "Öğretmenleri Listele",
-            "Yeni Öğretmen Ekle",
-            "Öğretmen Sil",
-            "Öğretmen Bilgilerini Güncelle",
+            MenuOptions.GetTeachers,
+            MenuOptions.AddTeacher,
+            MenuOptions.RemoveTeacher,
+            MenuOptions.UpdateTeacher,
+            MenuOptions.AddHomeworkToStudent,
+            MenuOptions.GetHomeworksOfStudent,
+            MenuOptions.AddHomeworkToAllStudentsInClassroom,
         };
 
         public static List<string> HomeworkMenuItems = new List<string>()

@@ -1,6 +1,7 @@
 ﻿using ConsoleUI.Businnes.Abstract;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
+using ConsoleUI.Utilities;
 using ConsoleUI.Utilities.Helpers;
 using System;
 using System.Collections.Generic;
@@ -21,11 +22,16 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.StudentOptions
 
         public void Execute()
         {
-            int studentId = int.Parse(ConsoleHelper.ReadLineWithText(PromptMessages.EnterStudentIdToUpdate));
-            string firstName = ConsoleHelper.ReadLineWithText(PromptMessages.EnterStudentName);
-            string lastName = ConsoleHelper.ReadLineWithText(PromptMessages.EnterStudentLastName);
-            int studentNumber = int.Parse(ConsoleHelper.ReadLineWithText(PromptMessages.EnterStudentNumber));
-            Student studentToUpdate = new() { Id = studentId, FirstName = firstName, LastName = lastName, StudentNumber = studentNumber };
+            var students = _studentService.GetAll();
+
+            var student = NavigationLibrary.GetSelectedListItem("Güncellenecek ödevi [green]seçiniz[/]:", 20, students);
+
+            string firstName = SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterStudentName);
+            string lastName = SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterStudentLastName);
+            int studentNumber = int.Parse(SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterStudentNumber));
+
+            Student studentToUpdate = new() { Id = student.Id, FirstName = firstName, LastName = lastName, StudentNumber = studentNumber };
+
             _studentService.Update(studentToUpdate);
         }
     }

@@ -12,6 +12,8 @@ namespace ConsoleUI.StaticData
         public const string AddTeacher = "Yeni Öğretmen Ekle";
         public const string RemoveTeacher = "Öğretmen Sil";
         public const string UpdateTeacher = "Öğretmen Bilgilerini Güncelle";
+        public const string AddHomeworkToStudent = "Öğrenciye Ödev Ekle";
+        public const string GetHomeworksOfStudent = "Öğrencinin Ödevlerini Listele";
 
         public const string GetStudents = "Öğrencileri Listele";
         public const string AddStudent = "Yeni Öğrenci Ekle";
@@ -24,7 +26,7 @@ namespace ConsoleUI.StaticData
         public const string RemoveClassroom = "Sınıf Sil";
         public const string UpdateClassroom = "Sınıf Bilgilerini Güncelle";
         public const string AddStudentInClassroom = "Sınıfa Öğrenci Ekle";
-        public const string GetStudentInClassroom = "Sınıfda ki öğrencileri Listele";
+        public const string GetStudentsInClassroom = "Sınıfda ki öğrencileri Listele";
         public const string AddHomeworkToAllStudentsInClassroom = "Sınıftaki Tüm Öğrencilere Ödev Ekle";
 
         public const string GetHomeworks = "Ödevleri Listele";

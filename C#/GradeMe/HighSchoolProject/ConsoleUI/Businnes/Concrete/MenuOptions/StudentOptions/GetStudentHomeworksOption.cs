@@ -1,7 +1,9 @@
 ﻿using ConsoleUI.Businnes.Abstract;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
+using ConsoleUI.Utilities;
 using ConsoleUI.Utilities.Helpers;
+using Microsoft.VisualBasic;
 using Spectre.Console;
 using System;
 using System.Collections.Generic;
@@ -22,21 +24,17 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.StudentOptions
 
         public void Execute()
         {
-            int studentId = int.Parse(ConsoleHelper.ReadLineWithText(PromptMessages.EnterStudentId));
-            List<Homework> homeworks = _studentService.GetStudentHomeworks(studentId);
+            var students = _studentService.GetAll();
 
-            if (homeworks.Count == 0)
-            {
-                AnsiConsole.WriteLine($"Student with Id {studentId} has no homeworks");
-            }
-            else
-            {
-                AnsiConsole.WriteLine($"Homeworks of the student with Id {studentId}:");
+            var student = NavigationLibrary.GetSelectedListItem("Ödev eklenecek öğrenciyi [green]seçiniz[/]:", 20, students);
+
+            List<Homework> homeworks = student.Homeworks;
+
+            if (homeworks != null)
                 foreach (var homework in homeworks)
                 {
-                    AnsiConsole.WriteLine($"- {homework.Title}: {homework.Description}");
+                    AnsiConsole.MarkupLine($"[red]Öğrenci No:[/] {student.StudentNumber} [red]Başlık:[/] {homework.Title} [red]Açıklama:[/] {homework.Description} [red]Son Teslim:[/] {homework.DueDate}");
                 }
-            }
         }
     }
 }

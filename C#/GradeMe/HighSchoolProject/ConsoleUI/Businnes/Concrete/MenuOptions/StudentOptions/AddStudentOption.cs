@@ -21,11 +21,11 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.StudentOptions
 
         public void Execute()
         {
-            string firstName = ConsoleHelper.ReadLineWithText(PromptMessages.EnterStudentName);
-            string lastName = ConsoleHelper.ReadLineWithText(PromptMessages.EnterStudentLastName);
-            int studentNumber = int.Parse(ConsoleHelper.ReadLineWithText(PromptMessages.EnterStudentNumber));
+            string firstName = SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterStudentName);
+            string lastName = SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterStudentLastName);
+            int studentNumber = int.Parse(SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterStudentNumber));
 
-            Student student = new() { Id = 1, FirstName = firstName, LastName = lastName, StudentNumber = studentNumber };
+            Student student = new() { FirstName = firstName, LastName = lastName, StudentNumber = studentNumber, Homeworks = new()};
 
             _studentService.Add(student);
         }

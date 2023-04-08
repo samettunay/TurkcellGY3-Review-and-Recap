@@ -20,15 +20,24 @@ namespace ConsoleUI.Businnes.Concrete
             _homeworks = TestDataProvider.GetHomeworks();
         }
 
-        public void Add(Homework student)
+        public void Add(Homework homework)
         {
-            _homeworks.Add(student);
+            if (_homeworks.Any())
+            {
+                homework.Id = _homeworks.Max(h => h.Id) + 1;
+            }
+            else
+            {
+                homework.Id = 1;
+            }
+
+            _homeworks.Add(homework);
         }
 
-        public void Delete(Homework homework)
+        public void Delete(int id)
         {
-            Homework homeworkToDelete = _homeworks.SingleOrDefault(h => h.Id == homework.Id);
-            _homeworks.Remove(homework);
+            Homework homeworkToDelete = _homeworks.SingleOrDefault(h => h.Id == id);
+            _homeworks.Remove(homeworkToDelete);
         }
 
         public List<Homework> GetAll()
@@ -47,7 +56,6 @@ namespace ConsoleUI.Businnes.Concrete
             homeworkToUpdate.DueDate = homework.DueDate;
             homeworkToUpdate.Title = homework.Title;
             homeworkToUpdate.Description = homework.Description;
-            homeworkToUpdate.IsComplete = homework.IsComplete;
         }
     }
 }

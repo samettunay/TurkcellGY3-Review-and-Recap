@@ -1,6 +1,7 @@
 ﻿using ConsoleUI.Businnes.Abstract;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
+using ConsoleUI.Utilities;
 using ConsoleUI.Utilities.Helpers;
 using System;
 using System.Collections.Generic;
@@ -21,9 +22,11 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.StudentOptions
 
         public void Execute()
         {
-            int studentId = int.Parse(ConsoleHelper.ReadLineWithText(PromptMessages.EnterStudentIdToDelete));
-            Student studentToDelete = _studentService.GetById(studentId);
-            _studentService.Delete(studentToDelete);
+            var students = _studentService.GetAll();
+
+            var student = NavigationLibrary.GetSelectedListItem("Silinecek ödevi [green]seçiniz[/]:", 20, students);
+
+            _studentService.Delete(student.Id);
         }
     }
 }

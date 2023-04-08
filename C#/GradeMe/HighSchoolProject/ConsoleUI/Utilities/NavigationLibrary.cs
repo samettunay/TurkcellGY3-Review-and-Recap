@@ -1,4 +1,6 @@
-﻿using ConsoleUI.StaticData;
+﻿using ConsoleUI.Businnes.Abstract;
+using ConsoleUI.Models;
+using ConsoleUI.StaticData;
 using Spectre.Console;
 using System;
 using System.Collections.Generic;
@@ -22,6 +24,17 @@ namespace ConsoleUI.Utilities
             mainMenuPrompt.AddChoiceGroup(SchoolOperations.Homeworks, SchoolOperations.HomeworkMenuItems);
 
             return AnsiConsole.Prompt(mainMenuPrompt);
+        }
+
+        public static T GetSelectedListItem<T>(string title, int pageSize, List<T> modelList)
+        {
+            var item = AnsiConsole.Prompt(
+            new SelectionPrompt<T>()
+                .Title(title)
+                .PageSize(pageSize)
+                .AddChoices(modelList));
+
+            return item;
         }
     }
 }

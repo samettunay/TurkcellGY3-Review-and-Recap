@@ -16,13 +16,11 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.HomeworkOptions
 
         public void Execute()
         {
-            string title = ConsoleHelper.ReadLineWithText(PromptMessages.EnterHomeworkTitle);
-            string description = ConsoleHelper.ReadLineWithText(PromptMessages.EnterHomeworkDescription);
-            DateTime dueDate = ConsoleHelper.ReadDateTimeWithText(PromptMessages.EnterHomeworkDueDate);
-            bool isComplete = ConsoleHelper.ReadBooleanWithText(PromptMessages.EnterHomeworkIsComplete, "Evet");
-            int grade = ConsoleHelper.ReadIntWithText(PromptMessages.EnterHomeworkGrade);
+            string title = SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterHomeworkTitle);
+            string description = SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterHomeworkDescription);
+            DateTime dueDate = SpectreConsoleHelper.ReadDateTimeWithText(PromptMessages.EnterHomeworkDueDate);
 
-            Homework homeworkToAdd = new Homework { Title = title, Description = description, DueDate = dueDate, IsComplete = isComplete, Grade = grade };
+            Homework homeworkToAdd = new Homework { Title = title, Description = description, DueDate = dueDate };
 
             _homeworkService.Add(homeworkToAdd);
         }

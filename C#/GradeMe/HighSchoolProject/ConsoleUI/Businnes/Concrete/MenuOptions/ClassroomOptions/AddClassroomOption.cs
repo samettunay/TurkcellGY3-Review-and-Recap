@@ -1,6 +1,7 @@
 ﻿using ConsoleUI.Businnes.Abstract;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
+using ConsoleUI.Utilities;
 using ConsoleUI.Utilities.Helpers;
 using System;
 using System.Collections.Generic;
@@ -22,10 +23,13 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.ClassroomOptions
 
         public void Execute()
         {
-            int classroomCode = ConsoleHelper.ReadIntWithText(PromptMessages.EnterClassroomCode);
-            int responsibleTeacherId = ConsoleHelper.ReadIntWithText(PromptMessages.EnterClassroomResponsibleTeacherId);
-            Teacher responsibleTeacher = _teacherService.GetById(responsibleTeacherId);
-            Classroom classroom = new() { Id = 1, ClassNumber = classroomCode, ResponsibleTeacher = responsibleTeacher, Students = new() };
+            int classroomNumber = SpectreConsoleHelper.ReadIntWithText(PromptMessages.EnterClassroomNumber);
+
+            var teachers = _teacherService.GetAll();
+
+            var teacher = NavigationLibrary.GetSelectedListItem("Sorumlu öğretmeni [green]seçiniz[/]:", 20, teachers);
+
+            Classroom classroom = new() { ClassNumber = classroomNumber, ResponsibleTeacher = teacher, Students = new() };
             _classroomService.Add(classroom);
         }
     }

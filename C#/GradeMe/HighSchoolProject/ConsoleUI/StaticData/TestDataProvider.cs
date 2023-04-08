@@ -47,7 +47,8 @@ namespace ConsoleUI.StaticData
         {
             return new List<Homework>
             {
-                new Homework { Id = 1, Title = "Lise Projesi", Description = "Açıklama bla bla"}
+                new Homework { Id = 1, Title = "Lise Projesi", Description = "Açıklama bla bla"},
+                new Homework { Id = 2, Title = "Lise Projesi2", Description = "Açıklama bla bla2"}
             };
         }
 
@@ -55,7 +56,7 @@ namespace ConsoleUI.StaticData
         {
             return new List<Classroom>
             {
-                new Classroom { Id = 1, ClassNumber = 504, ResponsibleTeacher = new(){ Id = 978, FirstName = "TestTeacher", LastName = "Last", Department = "Computer" }, Students = new() }
+                new Classroom { Id = 1, ClassNumber = 504, ResponsibleTeacher = new(){ Id = 978, FirstName = "TestTeacher", LastName = "Last", Department = "Computer" }, Students = new() },
             };
         }
     }

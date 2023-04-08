@@ -22,13 +22,21 @@ namespace ConsoleUI.Businnes.Concrete
 
         public void Add(Student student)
         {
+            if (_students.Any())
+            {
+                student.Id = _students.Max(s => s.Id) + 1;
+            }
+            else
+            {
+                student.Id = 1;
+            }
             _students.Add(student);
         }
 
-        public void Delete(Student student)
+        public void Delete(int id)
         {
-            Student studentToDelete = _students.SingleOrDefault(s => s.Id == student.Id);
-            _students.Remove(student);
+            Student studentToDelete = _students.SingleOrDefault(s => s.Id == id);
+            _students.Remove(studentToDelete);
         }
 
         public List<Student> GetAll()
@@ -54,7 +62,6 @@ namespace ConsoleUI.Businnes.Concrete
             studentToUpdate.Homeworks = student.Homeworks;
             studentToUpdate.StudentNumber = student.StudentNumber;
         }
-
         public List<Homework> GetStudentHomeworks(int studentId)
         {
             var student = GetById(studentId);

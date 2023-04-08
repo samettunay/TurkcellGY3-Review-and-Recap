@@ -1,5 +1,6 @@
 ﻿using ConsoleUI.Businnes.Abstract;
 using ConsoleUI.StaticData;
+using ConsoleUI.Utilities;
 using ConsoleUI.Utilities.Helpers;
 using System;
 using System.Collections.Generic;
@@ -12,17 +13,22 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.ClassroomOptions
     public class AddStudentInClassroomOption : IMenuOption
     {
         IClassroomService _classroomService;
-
-        public AddStudentInClassroomOption(IClassroomService classroomService)
+        IStudentService _studentService;
+        public AddStudentInClassroomOption(IClassroomService classroomService, IStudentService studentService)
         {
             _classroomService = classroomService;
+            _studentService = studentService;
         }
 
         public void Execute()
         {
-            int classroomCode = ConsoleHelper.ReadIntWithText(PromptMessages.EnterClassroomCode);
-            int studentId = ConsoleHelper.ReadIntWithText(PromptMessages.EnterStudentIdToAdd);
-            _classroomService.AddStudentInClassroom(classroomCode, studentId);
+            var classrooms = _classroomService.GetAll();
+            var students = _studentService.GetAll();
+
+            var classroom = NavigationLibrary.GetSelectedListItem("Bir sınıf [green]seçiniz[/]:", 20, classrooms);
+            var student = NavigationLibrary.GetSelectedListItem("Bir öğrenci [green]seçiniz[/]:", 20, students);
+
+            _classroomService.AddStudentInClassroom(classroom.Id, student.Id);
         }
     }
 }

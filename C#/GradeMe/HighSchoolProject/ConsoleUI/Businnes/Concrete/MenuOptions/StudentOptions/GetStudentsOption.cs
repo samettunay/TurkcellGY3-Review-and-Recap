@@ -1,4 +1,5 @@
 ﻿using ConsoleUI.Businnes.Abstract;
+using Spectre.Console;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.StudentOptions
 
         public void Execute()
         {
-            _studentService.GetAll().ForEach(s => Console.WriteLine($"{s.Id}, {s.StudentNumber}, {s.FirstName}, {s.LastName}"));
+            _studentService.GetAll().ForEach(s => AnsiConsole.MarkupLine($"[red]Numara:[/] {s.StudentNumber} [red]Ad Soyad:[/] {s.FirstName} {s.LastName}"));
         }
     }
 }

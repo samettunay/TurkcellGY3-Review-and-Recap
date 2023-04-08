@@ -1,6 +1,7 @@
 ﻿using ConsoleUI.Businnes.Abstract;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
+using ConsoleUI.Utilities;
 using ConsoleUI.Utilities.Helpers;
 
 namespace ConsoleUI.Businnes.Concrete.MenuOptions.HomeworkOptions
@@ -15,9 +16,11 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.HomeworkOptions
         }
         public void Execute()
         {
-            int homeworkId = ConsoleHelper.ReadIntWithText(PromptMessages.EnterHomeworkIdToDelete);
-            Homework homeworkToRemove = _homeworkService.GetById(homeworkId);
-            _homeworkService.Delete(homeworkToRemove);
+            var homeworks = _homeworkService.GetAll();
+
+            var homework = NavigationLibrary.GetSelectedListItem("Silinecek ödevi [green]seçiniz[/]:", 20, homeworks);
+
+            _homeworkService.Delete(homework.Id);
         }
     }
 }

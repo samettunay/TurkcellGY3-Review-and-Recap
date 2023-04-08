@@ -1,5 +1,6 @@
 ﻿using ConsoleUI.Businnes.Abstract;
 using ConsoleUI.StaticData;
+using ConsoleUI.Utilities;
 using ConsoleUI.Utilities.Helpers;
 using Spectre.Console;
 using System;
@@ -21,11 +22,13 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.ClassroomOptions
 
         public void Execute()
         {
-            int classroomId = ConsoleHelper.ReadIntWithText(PromptMessages.EnterClassroomCode);
-            var classroom = _classroomService.GetById(classroomId);
+            var classrooms = _classroomService.GetAll();
+
+            var classroom = NavigationLibrary.GetSelectedListItem("Bir sınıf [green]seçiniz[/]:", 20, classrooms);
+
             foreach (var student in classroom.Students)
             {
-                AnsiConsole.WriteLine($"{classroom.ClassNumber}, {student.FirstName}, {student.LastName}, {student.StudentNumber}");
+                AnsiConsole.MarkupLine($"[red]Sınıf No:[/] {classroom.ClassNumber} [red] Öğrenci:[/] {student.FirstName} {student.LastName}, {student.StudentNumber}");
             }
         }
     }

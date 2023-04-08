@@ -14,23 +14,30 @@ namespace ConsoleUI.Businnes.Concrete
     public class ClassroomManager : IClassroomService
     {
         private readonly List<Classroom> _classrooms;
-        IHomeworkService _homeworkService;
         IStudentService _studentService;
-        public ClassroomManager(IHomeworkService homeworkService, IStudentService studentService)
+        public ClassroomManager(IStudentService studentService)
         {
             _classrooms = TestDataProvider.GetClassrooms();
-            _homeworkService = homeworkService;
             _studentService = studentService;
         }
 
         public void Add(Classroom classroom)
         {
+            if (_classrooms.Any())
+            {
+                classroom.Id = _classrooms.Max(c => c.Id) + 1;
+            }
+            else
+            {
+                classroom.Id = 1;
+            }
+
             _classrooms.Add(classroom);
         }
 
-        public void Delete(Classroom classroom)
+        public void Delete(int id)
         {
-            Classroom classroomToDelete = _classrooms.SingleOrDefault(c => c.Id == classroom.Id);
+            Classroom classroomToDelete = _classrooms.SingleOrDefault(c => c.Id == id);
             _classrooms.Remove(classroomToDelete);
         }
 
@@ -62,22 +69,6 @@ namespace ConsoleUI.Businnes.Concrete
             var classroom = GetById(classId);
             var student = _studentService.GetById(studentId);
             classroom.Students.Add(student);
-        }
-
-        public void AddHomeworkToAllStudentsInClassroom(int classId, int homeworkId)
-        {
-            var classroom = GetById(classId);
-            var homework = _homeworkService.GetById(homeworkId);
-
-            foreach (var student in classroom.Students)
-            {
-                if (student.Homeworks == null)
-                {
-                    student.Homeworks = new List<Homework>();
-                }
-
-                student.Homeworks.Add(homework);
-            }
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using ConsoleUI.Businnes.Abstract;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
+using ConsoleUI.Utilities;
 using ConsoleUI.Utilities.Helpers;
 using System;
 using System.Collections.Generic;
@@ -21,9 +22,11 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.TeacherOptions
 
         public void Execute()
         {
-            int teacherId = int.Parse(ConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherIdToDelete));
-            Teacher teacherToDelete = _teacherService.GetById(teacherId);
-            _teacherService.Delete(teacherToDelete);
+            var teachers = _teacherService.GetAll();
+
+            var teacher = NavigationLibrary.GetSelectedListItem("Silinecek öğretmeni [green]seçiniz[/]:", 20, teachers);
+
+            _teacherService.Delete(teacher.Id);
         }
     }
 }

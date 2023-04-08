@@ -11,10 +11,10 @@ using ConsoleUI.Utilities.Helpers;
 using Spectre.Console;
 using System.Windows.Input;
 
-TeacherManager teacherManager = new TeacherManager();
 StudentManager studentManager = new StudentManager();
 HomeworkManager homeworkManager = new HomeworkManager();
-ClassroomManager classroomManager = new ClassroomManager(homeworkManager, studentManager);
+ClassroomManager classroomManager = new ClassroomManager(studentManager);
+TeacherManager teacherManager = new TeacherManager(studentManager, homeworkManager, classroomManager);
 
 Dictionary<string, IMenuOption> menuOptions = new Dictionary<string, IMenuOption>
 {
@@ -29,15 +29,17 @@ Dictionary<string, IMenuOption> menuOptions = new Dictionary<string, IMenuOption
     { MenuOptions.AddClassroom, new AddClassroomOption(classroomManager, teacherManager)},
     { MenuOptions.RemoveClassroom, new RemoveClassroomOption(classroomManager) },
     { MenuOptions.UpdateClassroom, new UpdateClassroomOption(classroomManager, teacherManager) },
-    { MenuOptions.AddStudentInClassroom, new AddStudentInClassroomOption(classroomManager) },
-    { MenuOptions.AddHomeworkToAllStudentsInClassroom, new AddHomeworkToAllStudentsInClassroomOption(classroomManager) },
-    { MenuOptions.GetStudentInClassroom, new GetStudentsInClassroomOption(classroomManager) },
+    { MenuOptions.AddStudentInClassroom, new AddStudentInClassroomOption(classroomManager, studentManager) },
+    { MenuOptions.GetStudentsInClassroom, new GetStudentsInClassroomOption(classroomManager) },
     
     //Teacher Options
     { MenuOptions.GetTeachers, new GetTeachersOption(teacherManager) },
     { MenuOptions.AddTeacher, new AddTeacherOption(teacherManager) },
     { MenuOptions.RemoveTeacher, new RemoveTeacherOption(teacherManager) },
     { MenuOptions.UpdateTeacher, new UpdateTeacherOption(teacherManager) },
+    { MenuOptions.GetHomeworksOfStudent, new GetHomeworksOfStudentOption(teacherManager, studentManager) },
+    { MenuOptions.AddHomeworkToAllStudentsInClassroom, new AddHomeworkToAllStudentsInClassroomOption(teacherManager, classroomManager, homeworkManager) },
+    { MenuOptions.AddHomeworkToStudent, new AddHomeworkToStudentOption(teacherManager, studentManager, homeworkManager) },
     
     //Student Options
     { MenuOptions.GetStudents, new GetStudentsOption(studentManager) },
@@ -58,12 +60,13 @@ while (true)
     }
     else
     {
-        ConsoleHelper.WriteLineWithColor("Invalid option!", "red");
+        SpectreConsoleHelper.WriteLineWithColor("Geçersiz işlem!", "red");
     }
 
+    Console.Write("\nMenüye dönmek için bir tuşa basınız...");
     Console.ReadKey();
     Console.Clear();
 }
 
-// TODO 3: Manager işlemlerini tam anlamıyla bitir
-// TODO 4: Exception işlemleri
+// TODO 4: Stringleri düzenle
+// TODO 5: Exception işlemleri

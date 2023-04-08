@@ -1,4 +1,6 @@
 ﻿using ConsoleUI.Businnes.Abstract;
+using Microsoft.VisualBasic;
+using Spectre.Console;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +24,7 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.HomeworkOptions
 
             foreach (var homework in allHomeworks)
             {
-                Console.WriteLine($"{homework.Id}, {homework.Title}, {homework.Description}, {homework.DueDate}, {homework.IsComplete}, {homework.Grade}");
+                AnsiConsole.MarkupLine($"[red]Başlık:[/] {homework.Title} [red]Açıklama:[/] {homework.Description} [red]Son Teslim:[/] {homework.DueDate}");
             }
         }
     }

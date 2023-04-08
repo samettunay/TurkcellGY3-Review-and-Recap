@@ -16,7 +16,7 @@
         public const string EnterStudentIdToDelete = "Silinecek öğrencinin id numarısını giriniz: ";
 
         public const string EnterClassroomName = "Sınıfın ismini giriniz: ";
-        public const string EnterClassroomCode = "Sınıfın kodunu giriniz: ";
+        public const string EnterClassroomNumber = "Sınıfın numarasını giriniz: ";
         public const string EnterClassroomResponsibleTeacherId = "Sınıftan Sorumlu Öğretmen Id Girin: ";
         public const string EnterClassroomIdToUpdate = "Güncellenecek sınıfın id numarısını giriniz: ";
         public const string EnterClassroomIdToDelete = "Silinecek sınıfın id numarısını giriniz: ";
@@ -32,5 +32,7 @@
         public const string EnterHomeworkIdToAdd = "Eklenecek ödevin id numarısını girin: ";
 
         public const string EnterStudentIdToAdd = "Sınıfa eklemek için öğrenci numarası giriniz: ";
+
+        public const string EnterHomeworkId = "Ödevin id numarasını giriniz: ";
     }
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\Homeworks\\Week3\\CovariantAndContravariant\\CovariantAndContravariant\\CovariantAndContravariant.csproj",
+      "projectUniqueName": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\ResearchWorks\\Week3\\CovariantAndContravariant\\CovariantAndContravariant\\CovariantAndContravariant.csproj",
       "projectName": "CovariantAndContravariant",
-      "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\Homeworks\\Week3\\CovariantAndContravariant\\CovariantAndContravariant\\CovariantAndContravariant.csproj",
+      "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\ResearchWorks\\Week3\\CovariantAndContravariant\\CovariantAndContravariant\\CovariantAndContravariant.csproj",
       "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\Homeworks\\Week3\\CovariantAndContravariant\\CovariantAndContravariant\\obj\\",
+      "outputPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\C#\\ResearchWorks\\Week3\\CovariantAndContravariant\\CovariantAndContravariant\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",

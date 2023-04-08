@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 
 namespace ConsoleUI.Utilities.Helpers
 {
-    public static class ConsoleHelper
+    public static class SpectreConsoleHelper
     {
         public static string ReadLineWithText(string text)
         {
-            Console.Write(text);
+            AnsiConsole.Write(text);
             return Console.ReadLine();
         }
 
         public static int ReadIntWithText(string text)
         {
-            Console.Write(text);
+            AnsiConsole.Write(text);
             return int.Parse(Console.ReadLine());
         }
 
@@ -28,7 +28,7 @@ namespace ConsoleUI.Utilities.Helpers
 
         public static DateTime ReadDateTimeWithText(string text)
         {
-            Console.Write(text);
+            AnsiConsole.Write(text);
             return Convert.ToDateTime(Console.ReadLine());
         }
 

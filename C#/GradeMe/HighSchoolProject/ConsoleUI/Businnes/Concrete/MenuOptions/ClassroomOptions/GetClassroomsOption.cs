@@ -1,4 +1,5 @@
 ﻿using ConsoleUI.Businnes.Abstract;
+using ConsoleUI.Models;
 using Spectre.Console;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.ClassroomOptions
   
         public void Execute()
         {
-            _classroomService.GetAll().ForEach(c => AnsiConsole.WriteLine($"{c.Id}, {c.ClassNumber}, sorumlu öğretmen: {c.ResponsibleTeacher?.FirstName}"));
+            _classroomService.GetAll().ForEach(c => AnsiConsole.MarkupLine($"[red]Sınıfın numarası:[/] {c.ClassNumber} [red]Sorumlu Öğretmen:[/] {c.ResponsibleTeacher.FirstName} {c.ResponsibleTeacher.LastName} [red]Sınıfdaki öğrenci sayısı:[/] {c.Students.Count}"));
         }
     }
 }

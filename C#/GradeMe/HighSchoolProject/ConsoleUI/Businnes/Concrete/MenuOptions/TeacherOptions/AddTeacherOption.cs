@@ -21,11 +21,11 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.TeacherOptions
 
         public void Execute()
         {
-            string firstName = ConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherName);
-            string lastName = ConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherLastName);
-            string department = ConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherDepartment);
+            string firstName = SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherName);
+            string lastName = SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherLastName);
+            string department = SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherDepartment);
 
-            Teacher teacher = new() { Id = 1, FirstName = firstName, LastName = lastName, Department = department };
+            Teacher teacher = new() { FirstName = firstName, LastName = lastName, Department = department };
 
             _teacherService.Add(teacher);
         }

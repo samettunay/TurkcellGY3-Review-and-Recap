@@ -13,21 +13,37 @@ namespace ConsoleUI.Businnes.Concrete
 {
     public class TeacherManager : ITeacherService
     {
+        IStudentService _studentService;
+        IHomeworkService _homeworkService;
+        IClassroomService _classroomService;
+
         private readonly List<Teacher> _teachers;
-        public TeacherManager()
+        public TeacherManager(IStudentService studentService, IHomeworkService homeworkService, IClassroomService classroomService)
         {
             _teachers = TestDataProvider.GetTeachers();
+            _studentService = studentService;
+            _homeworkService = homeworkService;
+            _classroomService = classroomService;
         }
 
         public void Add(Teacher teacher)
         {
+            if (_teachers.Any())
+            {
+                teacher.Id = _teachers.Max(t => t.Id) + 1;
+            }
+            else
+            {
+                teacher.Id = 1;
+            }
             _teachers.Add(teacher);
         }
 
-        public void Delete(Teacher teacher)
+
+        public void Delete(int id)
         {
-            Teacher teacherToDelete = _teachers.SingleOrDefault(t => t.Id == teacher.Id);
-            _teachers.Remove(teacher);
+            Teacher teacherToDelete = _teachers.SingleOrDefault(t => t.Id == id);
+            _teachers.Remove(teacherToDelete);
         }
 
         public List<Teacher> GetAll()
@@ -46,6 +62,39 @@ namespace ConsoleUI.Businnes.Concrete
             teacherToUpdate.FirstName = teacher.FirstName;
             teacherToUpdate.LastName = teacher.LastName;
             teacherToUpdate.Department = teacher.Department;
+        }
+        public void AddHomeworkToStudent(int studentId, int homeworkId)
+        {
+            var student = _studentService.GetById(studentId);
+            var homework = _homeworkService.GetById(homeworkId);
+
+            if (student.Homeworks == null)
+            {
+                student.Homeworks = new List<Homework>();
+            }
+
+            student.Homeworks.Add(homework);
+        }
+        public void AddHomeworkToAllStudentsInClassroom(int classId, int homeworkId)
+        {
+            var classroom = _classroomService.GetById(classId);
+            var homework = _homeworkService.GetById(homeworkId);
+
+            foreach (var student in classroom.Students)
+            {
+                if (student.Homeworks == null)
+                {
+                    student.Homeworks = new List<Homework>();
+                }
+
+                student.Homeworks.Add(homework);
+            }
+        }
+        public List<Homework> GetHomeworksSelectedStudent(Student student)
+        {
+            var selectedStudent = _studentService.GetById(student.Id);
+
+            return selectedStudent.Homeworks;
         }
     }
 }

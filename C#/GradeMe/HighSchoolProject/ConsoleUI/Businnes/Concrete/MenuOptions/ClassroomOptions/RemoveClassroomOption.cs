@@ -1,6 +1,7 @@
 ﻿using ConsoleUI.Businnes.Abstract;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
+using ConsoleUI.Utilities;
 using ConsoleUI.Utilities.Helpers;
 using System;
 using System.Collections.Generic;
@@ -21,9 +22,11 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.ClassroomOptions
 
         public void Execute()
         {
-            int classroomId = ConsoleHelper.ReadIntWithText(PromptMessages.EnterClassroomIdToDelete);
-            Classroom classroomToDelete = _classroomService.GetById(classroomId);
-            _classroomService.Delete(classroomToDelete);
+            var classrooms = _classroomService.GetAll();
+
+            var classroom = NavigationLibrary.GetSelectedListItem("Silmek için sınıf [green]seçiniz[/]:", 20, classrooms);
+
+            _classroomService.Delete(classroom.Id);
         }
     }
 }
