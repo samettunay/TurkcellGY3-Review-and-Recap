@@ -6,15 +6,16 @@ using ConsoleUI.Businnes.Concrete.MenuOptions.StudentOptions;
 using ConsoleUI.Businnes.Concrete.MenuOptions.TeacherOptions;
 using ConsoleUI.Businnes.Utilities;
 using ConsoleUI.Businnes.Utilities.Helpers;
-using ConsoleUI.Models;
+using ConsoleUI.Businnes.ValidationRules;
 using ConsoleUI.StaticData;
-using Spectre.Console;
-using System.Windows.Input;
 
-StudentManager studentManager = new StudentManager();
-HomeworkManager homeworkManager = new HomeworkManager();
-ClassroomManager classroomManager = new ClassroomManager();
-TeacherManager teacherManager = new TeacherManager(studentManager, homeworkManager, classroomManager);
+
+StudentManager studentManager = new StudentManager(new StudentValidator());
+HomeworkManager homeworkManager = new HomeworkManager(new HomeworkValidator());
+ClassroomManager classroomManager = new ClassroomManager(new ClassroomValidator());
+TeacherManager teacherManager = new TeacherManager(studentManager, homeworkManager, classroomManager, new TeacherValidator());
+
+
 
 Dictionary<string, IMenuOption> menuOptions = new Dictionary<string, IMenuOption>
 {
@@ -46,7 +47,6 @@ Dictionary<string, IMenuOption> menuOptions = new Dictionary<string, IMenuOption
     { MenuOptions.AddStudent, new AddStudentOption(studentManager) },
     { MenuOptions.RemoveStudent, new RemoveStudentOption(studentManager) },
     { MenuOptions.UpdateStudent, new UpdateStudentOption(studentManager) },
-    { MenuOptions.GetStudentHomeworks, new GetStudentHomeworksOption(studentManager) },
 
 };
 

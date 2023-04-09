@@ -23,9 +23,8 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.StudentOptions
         {
             string firstName = SpectreConsoleHelper.ReadLineWithText("Öğrencinin ismini giriniz: ");
             string lastName = SpectreConsoleHelper.ReadLineWithText("Öğrencinin soyismini giriniz: ");
-            int studentNumber = int.Parse(SpectreConsoleHelper.ReadLineWithText("Öğrencinin numarasını giriniz: "));
 
-            Student student = new() { Id = Guid.NewGuid(), FirstName = firstName, LastName = lastName, StudentNumber = studentNumber, Homeworks = new()};
+            Student student = new() { Id = Guid.NewGuid(), FirstName = firstName, LastName = lastName, Homeworks = new()};
 
             _studentService.Add(student);
         }

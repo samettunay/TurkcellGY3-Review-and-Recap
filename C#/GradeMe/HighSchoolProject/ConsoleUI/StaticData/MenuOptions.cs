@@ -24,7 +24,6 @@ namespace ConsoleUI.StaticData
         public const string AddStudent = "Yeni Öğrenci Ekle";
         public const string RemoveStudent = "Öğrenci Sil";
         public const string UpdateStudent = "Öğrenci Bilgilerini Güncelle";
-        public const string GetStudentHomeworks = "Öğrencinin ödevlerini listele";
 
         public const string GetClassrooms = "Sınıfları Listele";
         public const string AddClassroom = "Yeni Sınıf Ekle";
@@ -55,7 +54,6 @@ namespace ConsoleUI.StaticData
             AddStudent,
             RemoveStudent,
             UpdateStudent,
-            GetStudentHomeworks,
         };
 
         public static List<string> TeacherMenuOptions = new List<string>()

@@ -3,6 +3,7 @@ using ConsoleUI.Businnes.Utilities.Helpers;
 using ConsoleUI.Businnes.ValidationRules;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
+using FluentValidation;
 using Spectre.Console;
 using System;
 using System.Collections.Generic;
@@ -16,15 +17,19 @@ namespace ConsoleUI.Businnes.Concrete
     public class StudentManager : IStudentService
     {
         private readonly List<Student> _students;
-        public StudentManager()
+        IValidator<Student> _validator;
+
+        public StudentManager(IValidator<Student> validator)
         {
             _students = TestDataProvider.GetStudents();
+            _validator = validator;
         }
 
         public void Add(Student student)
         {
-            var validator = new StudentValidator(_students);
-            var validationResult = validator.Validate(student);
+            student = SetStudentNumber(student);
+
+            var validationResult = _validator.Validate(student);
             if (validationResult.IsValid)
             {
                 _students.Add(student);
@@ -64,8 +69,7 @@ namespace ConsoleUI.Businnes.Concrete
 
         public void Update(Student student)
         {
-            var validator = new StudentValidator(_students);
-            var validationResult = validator.Validate(student);
+            var validationResult = _validator.Validate(student);
             if (validationResult.IsValid)
             {
                 var studentToUpdate = _students.SingleOrDefault(s => s.Id == student.Id);
@@ -83,20 +87,17 @@ namespace ConsoleUI.Businnes.Concrete
                 }
             }
         }
-        public List<Homework> GetStudentHomeworks(Guid studentId)
+        private Student SetStudentNumber(Student student)
         {
-            var student = GetById(studentId);
-            if (student == null)
+            if (_students.Any())
             {
-                throw new ArgumentException($"Student with Id {studentId} not found");
+                student.StudentNumber = _students.Max(s => s.StudentNumber) + 1;
             }
-
-            if (student.Homeworks == null)
+            else
             {
-                return new List<Homework>();
+                student.StudentNumber = 100;
             }
-
-            return student.Homeworks;
+            return student;
         }
     }
 }

@@ -16,16 +16,19 @@ namespace ConsoleUI.Businnes.Concrete
     public class ClassroomManager : IClassroomService
     {
         private readonly List<Classroom> _classrooms;
-        public ClassroomManager()
+        IValidator<Classroom> _validator;
+        public ClassroomManager(IValidator<Classroom> validator)
         {
             _classrooms = TestDataProvider.GetClassrooms();
+            _validator = validator;
         }
 
         public void Add(Classroom classroom)
         {
-            var validator = new ClassroomValidator(_classrooms);
-            var validationResult = validator.Validate(classroom);
 
+            classroom = SetClassroomNumber(classroom);
+
+            var validationResult = _validator.Validate(classroom);
 
             if (validationResult.IsValid)
             {
@@ -66,8 +69,7 @@ namespace ConsoleUI.Businnes.Concrete
 
         public void Update(Classroom classroom)
         {
-            var validator = new ClassroomValidator(_classrooms);
-            var validationResult = validator.Validate(classroom);
+            var validationResult = _validator.Validate(classroom);
             if (validationResult.IsValid)
             {
                 var classroomToUpdate = _classrooms.SingleOrDefault(c => c.Id == classroom.Id);
@@ -102,6 +104,19 @@ namespace ConsoleUI.Businnes.Concrete
         private bool CheckIfSameStudentInClassroom(Classroom classroom, Student student)
         {
             return classroom.Students.Any(s => s == student);
+        }
+
+        private Classroom SetClassroomNumber(Classroom classroom)
+        {
+            if (_classrooms.Any())
+            {
+                classroom.ClassNumber = _classrooms.Max(c => c.ClassNumber) + 1;
+            }
+            else
+            {
+                classroom.ClassNumber = 100;
+            }
+            return classroom;
         }
     }
 }

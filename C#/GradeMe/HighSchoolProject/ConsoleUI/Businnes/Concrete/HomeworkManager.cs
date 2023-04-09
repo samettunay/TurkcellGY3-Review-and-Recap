@@ -3,6 +3,7 @@ using ConsoleUI.Businnes.Utilities.Helpers;
 using ConsoleUI.Businnes.ValidationRules;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
+using FluentValidation;
 using Spectre.Console;
 using System;
 using System.Collections.Generic;
@@ -14,17 +15,17 @@ namespace ConsoleUI.Businnes.Concrete
 {
     public class HomeworkManager : IHomeworkService
     {
-        List<Homework> _homeworks;
-
-        public HomeworkManager()
+        private readonly List<Homework> _homeworks;
+        IValidator<Homework> _validator;
+        public HomeworkManager(IValidator<Homework> validator)
         {
             _homeworks = TestDataProvider.GetHomeworks();
+            _validator = validator;
         }
 
         public void Add(Homework homework)
         {
-            var validator = new HomeworkValidator();
-            var validationResult = validator.Validate(homework);
+            var validationResult = _validator.Validate(homework);
             if (validationResult.IsValid)
             {
                 _homeworks.Add(homework);
@@ -59,8 +60,7 @@ namespace ConsoleUI.Businnes.Concrete
 
         public void Update(Homework homework)
         {
-            var validator = new HomeworkValidator();
-            var validationResult = validator.Validate(homework);
+            var validationResult = _validator.Validate(homework);
             if (validationResult.IsValid)
             {
                 var homeworkToUpdate = _homeworks.SingleOrDefault(h => h.Id == homework.Id);

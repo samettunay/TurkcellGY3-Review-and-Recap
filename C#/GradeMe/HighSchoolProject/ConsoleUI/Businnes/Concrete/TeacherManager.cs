@@ -3,6 +3,7 @@ using ConsoleUI.Businnes.Utilities.Helpers;
 using ConsoleUI.Businnes.ValidationRules;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
+using FluentValidation;
 using Spectre.Console;
 using System;
 using System.Collections.Generic;
@@ -17,20 +18,21 @@ namespace ConsoleUI.Businnes.Concrete
         IStudentService _studentService;
         IHomeworkService _homeworkService;
         IClassroomService _classroomService;
+        IValidator<Teacher> _validator;
 
         private readonly List<Teacher> _teachers;
-        public TeacherManager(IStudentService studentService, IHomeworkService homeworkService, IClassroomService classroomService)
+        public TeacherManager(IStudentService studentService, IHomeworkService homeworkService, IClassroomService classroomService, IValidator<Teacher> validator)
         {
             _teachers = TestDataProvider.GetTeachers();
             _studentService = studentService;
             _homeworkService = homeworkService;
             _classroomService = classroomService;
+            _validator = validator;
         }
 
         public void Add(Teacher teacher)
         {
-            var validator = new TeacherValidator();
-            var validationResult = validator.Validate(teacher);
+            var validationResult = _validator.Validate(teacher);
             if (validationResult.IsValid)
             {
                 _teachers.Add(teacher);
@@ -66,8 +68,7 @@ namespace ConsoleUI.Businnes.Concrete
 
         public void Update(Teacher teacher)
         {
-            var validator = new TeacherValidator();
-            var validationResult = validator.Validate(teacher);
+            var validationResult = _validator.Validate(teacher);
             if (validationResult.IsValid)
             {
                 var teacherToUpdate = _teachers.SingleOrDefault(t => t.Id == teacher.Id);

@@ -23,13 +23,11 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.ClassroomOptions
 
         public void Execute()
         {
-            int classroomNumber = SpectreConsoleHelper.ReadIntWithText("Sınıfın numarasını giriniz: ");
-
             var teachers = _teacherService.GetAll();
 
             var teacher = NavigationLibrary.GetSelectedListItem("Sorumlu öğretmeni [green]seçiniz[/]:", 20, teachers);
 
-            Classroom classroom = new() { Id = Guid.NewGuid(), ClassNumber = classroomNumber, ResponsibleTeacher = teacher, Students = new() };
+            Classroom classroom = new() { Id = Guid.NewGuid(), ResponsibleTeacher = teacher, Students = new() };
             _classroomService.Add(classroom);
         }
     }
