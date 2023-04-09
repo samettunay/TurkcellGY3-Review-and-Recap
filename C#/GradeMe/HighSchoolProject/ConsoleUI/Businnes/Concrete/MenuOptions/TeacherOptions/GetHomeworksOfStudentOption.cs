@@ -1,5 +1,5 @@
 ﻿using ConsoleUI.Businnes.Abstract;
-using ConsoleUI.Utilities;
+using ConsoleUI.Businnes.Utilities;
 using Microsoft.VisualBasic;
 using Spectre.Console;
 using System;
@@ -27,7 +27,8 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.TeacherOptions
 
             var homeworksOfStudent = _teacherService.GetHomeworksSelectedStudent(student);
 
-            homeworksOfStudent.ForEach(h => AnsiConsole.MarkupLine($"[red]Öğrenci:[/] {student.FirstName} {student.LastName} [red]Başlık:[/] {h.Title} [red]Açıklama:[/] {h.Description} [red]Son Teslim:[/] {h.DueDate}"));
+            if (homeworksOfStudent != null)
+                homeworksOfStudent.ForEach(h => AnsiConsole.MarkupLine($"[red]Öğrenci:[/] {student.FirstName} {student.LastName} [red]Başlık:[/] {h.Title} [red]Açıklama:[/] {h.Description} [red]Son Teslim:[/] {h.DueDate}"));
         }
     }
 }

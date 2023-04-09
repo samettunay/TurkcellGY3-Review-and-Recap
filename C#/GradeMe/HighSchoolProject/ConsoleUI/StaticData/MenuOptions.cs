@@ -8,6 +8,11 @@ namespace ConsoleUI.StaticData
 {
     public static class MenuOptions
     {
+        public static string Classrooms = "Sınıf İşlemleri";
+        public static string Teachers = "Öğretmen İşlemleri";
+        public static string Students = "Öğrenci İşlemleri";
+        public static string Homeworks = "Ödev İşlemleri";
+
         public const string GetTeachers = "Öğretmenleri Listele";
         public const string AddTeacher = "Yeni Öğretmen Ekle";
         public const string RemoveTeacher = "Öğretmen Sil";
@@ -33,5 +38,43 @@ namespace ConsoleUI.StaticData
         public const string AddHomework = "Yeni Ödev Ekle";
         public const string RemoveHomework = "Ödev Sil";
         public const string UpdateHomework = "Ödev Bilgilerini Güncelle";
+
+        public static List<string> ClassroomMenuOptions = new List<string>()
+        {
+            GetClassrooms,
+            AddClassroom,
+            RemoveClassroom,
+            UpdateClassroom,
+            AddStudentInClassroom,
+            GetStudentsInClassroom,
+        };
+
+        public static List<string> StudentMenuOptions = new List<string>()
+        {
+            GetStudents,
+            AddStudent,
+            RemoveStudent,
+            UpdateStudent,
+            GetStudentHomeworks,
+        };
+
+        public static List<string> TeacherMenuOptions = new List<string>()
+        {
+            GetTeachers,
+            AddTeacher,
+            RemoveTeacher,
+            UpdateTeacher,
+            AddHomeworkToStudent,
+            GetHomeworksOfStudent,
+            AddHomeworkToAllStudentsInClassroom,
+        };
+
+        public static List<string> HomeworkMenuOptions = new List<string>()
+        {
+            GetHomeworks,
+            AddHomework,
+            RemoveHomework,
+            UpdateHomework,
+        };
     }
 }

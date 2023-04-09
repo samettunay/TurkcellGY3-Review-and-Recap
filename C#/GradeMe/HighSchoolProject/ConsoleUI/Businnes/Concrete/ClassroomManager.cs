@@ -1,7 +1,9 @@
 ﻿using ConsoleUI.Businnes.Abstract;
+using ConsoleUI.Businnes.Utilities.Helpers;
+using ConsoleUI.Businnes.ValidationRules;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
-using ConsoleUI.Utilities.Helpers;
+using FluentValidation;
 using Spectre.Console;
 using System;
 using System.Collections.Generic;
@@ -14,31 +16,37 @@ namespace ConsoleUI.Businnes.Concrete
     public class ClassroomManager : IClassroomService
     {
         private readonly List<Classroom> _classrooms;
-        IStudentService _studentService;
-        public ClassroomManager(IStudentService studentService)
+        public ClassroomManager()
         {
             _classrooms = TestDataProvider.GetClassrooms();
-            _studentService = studentService;
         }
 
         public void Add(Classroom classroom)
         {
-            if (_classrooms.Any())
+            var validator = new ClassroomValidator(_classrooms);
+            var validationResult = validator.Validate(classroom);
+
+
+            if (validationResult.IsValid)
             {
-                classroom.Id = _classrooms.Max(c => c.Id) + 1;
+                _classrooms.Add(classroom);
+                SpectreConsoleHelper.WriteLineWithColor("Başarıyla eklendi.", "green");
             }
             else
             {
-                classroom.Id = 1;
+                foreach (var error in validationResult.Errors)
+                {
+                    SpectreConsoleHelper.WriteLineWithColor($"{error.PropertyName}: {error.ErrorMessage}", "red");
+                }
             }
-
-            _classrooms.Add(classroom);
         }
 
-        public void Delete(int id)
+        public void Delete(Guid id)
         {
+            // Menüden listeden seçildiği için null olamaz
             Classroom classroomToDelete = _classrooms.SingleOrDefault(c => c.Id == id);
             _classrooms.Remove(classroomToDelete);
+            SpectreConsoleHelper.WriteLineWithColor("Başarıyla silindi.", "green");
         }
 
         public List<Classroom> GetAll()
@@ -51,24 +59,49 @@ namespace ConsoleUI.Businnes.Concrete
             return _classrooms.FirstOrDefault(c => c.ClassNumber == classNumber);
         }
 
-        public Classroom GetById(int id)
+        public Classroom GetById(Guid id)
         {
             return _classrooms.FirstOrDefault(c => c.Id == id);
         }
 
         public void Update(Classroom classroom)
         {
-            var classroomToUpdate = _classrooms.SingleOrDefault(c => c.Id == classroom.Id);
-            classroomToUpdate.ResponsibleTeacher = classroom.ResponsibleTeacher;
-            classroomToUpdate.Students = classroom.Students;
-            classroomToUpdate.ClassNumber = classroom.ClassNumber;
+            var validator = new ClassroomValidator(_classrooms);
+            var validationResult = validator.Validate(classroom);
+            if (validationResult.IsValid)
+            {
+                var classroomToUpdate = _classrooms.SingleOrDefault(c => c.Id == classroom.Id);
+                classroomToUpdate.ResponsibleTeacher = classroom.ResponsibleTeacher;
+                classroomToUpdate.Students = classroom.Students;
+                classroomToUpdate.ClassNumber = classroom.ClassNumber;
+                SpectreConsoleHelper.WriteLineWithColor("Başarıyla güncellendi.", "green");
+            }
+            else
+            {
+                foreach (var error in validationResult.Errors)
+                {
+                    SpectreConsoleHelper.WriteLineWithColor($"{error.PropertyName}: {error.ErrorMessage}", "red");
+                }
+            }
         }
 
-        public void AddStudentInClassroom(int classId, int studentId)
+        public void AddStudentInClassroom(Classroom classroom, Student student)
         {
-            var classroom = GetById(classId);
-            var student = _studentService.GetById(studentId);
-            classroom.Students.Add(student);
+            var result = CheckIfSameStudentInClassroom(classroom, student);
+            if (result)
+            {
+                SpectreConsoleHelper.WriteLineWithColor("Öğrenci zaten sınıfta mevcut!", "red");
+            }
+            else
+            {
+                classroom.Students.Add(student);
+                SpectreConsoleHelper.WriteLineWithColor("Öğrenci Başarıyla Eklendi.", "green");
+            }
+        }
+
+        private bool CheckIfSameStudentInClassroom(Classroom classroom, Student student)
+        {
+            return classroom.Students.Any(s => s == student);
         }
     }
 }

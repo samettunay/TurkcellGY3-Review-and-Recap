@@ -9,9 +9,9 @@ namespace ConsoleUI.Businnes.Abstract
     public interface IService<T>
     {
         List<T> GetAll();
-        T GetById(int id);
+        T GetById(Guid id);
         void Add(T model);
         void Update(T model);
-        void Delete(int id);
+        void Delete(Guid id);
     }
 }

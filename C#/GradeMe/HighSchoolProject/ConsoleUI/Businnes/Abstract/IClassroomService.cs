@@ -10,6 +10,6 @@ namespace ConsoleUI.Businnes.Abstract
     public interface IClassroomService : IService<Classroom>
     {
         Classroom GetByClassNumber(int classNumber);
-        void AddStudentInClassroom(int classId, int studentId);
+        void AddStudentInClassroom(Classroom classroom, Student student);
     }
 }

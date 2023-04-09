@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleUI.Models
 {
-    public class Person
+    public class Person // Kişileri ayrıştırmak için.
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

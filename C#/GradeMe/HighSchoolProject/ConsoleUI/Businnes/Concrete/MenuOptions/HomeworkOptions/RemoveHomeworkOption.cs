@@ -1,8 +1,7 @@
 ﻿using ConsoleUI.Businnes.Abstract;
+using ConsoleUI.Businnes.Utilities;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
-using ConsoleUI.Utilities;
-using ConsoleUI.Utilities.Helpers;
 
 namespace ConsoleUI.Businnes.Concrete.MenuOptions.HomeworkOptions
 {

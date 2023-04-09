@@ -4,8 +4,8 @@ namespace ConsoleUI.Businnes.Abstract
 {
     public interface ITeacherService : IService<Teacher>
     {
-        void AddHomeworkToStudent(int studentId, int homeworkId);
-        void AddHomeworkToAllStudentsInClassroom(int classId, int homeworkId);
+        void AddHomeworkToStudent(Guid studentId, Guid homeworkId);
+        void AddHomeworkToAllStudentsInClassroom(Guid classId, Guid homeworkId);
         List<Homework> GetHomeworksSelectedStudent(Student student);
     }
 }

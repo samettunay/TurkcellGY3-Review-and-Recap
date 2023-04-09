@@ -1,8 +1,7 @@
 ﻿using ConsoleUI.Businnes.Abstract;
+using ConsoleUI.Businnes.Utilities;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
-using ConsoleUI.Utilities;
-using ConsoleUI.Utilities.Helpers;
 using Spectre.Console;
 using System;
 using System.Collections.Generic;

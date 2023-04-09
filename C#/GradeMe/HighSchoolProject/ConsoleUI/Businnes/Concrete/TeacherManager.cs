@@ -1,7 +1,8 @@
 ﻿using ConsoleUI.Businnes.Abstract;
+using ConsoleUI.Businnes.Utilities.Helpers;
+using ConsoleUI.Businnes.ValidationRules;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
-using ConsoleUI.Utilities.Helpers;
 using Spectre.Console;
 using System;
 using System.Collections.Generic;
@@ -28,22 +29,29 @@ namespace ConsoleUI.Businnes.Concrete
 
         public void Add(Teacher teacher)
         {
-            if (_teachers.Any())
+            var validator = new TeacherValidator();
+            var validationResult = validator.Validate(teacher);
+            if (validationResult.IsValid)
             {
-                teacher.Id = _teachers.Max(t => t.Id) + 1;
+                _teachers.Add(teacher);
+                SpectreConsoleHelper.WriteLineWithColor("Başarıyla eklendi.", "green");
             }
             else
             {
-                teacher.Id = 1;
+                foreach (var error in validationResult.Errors)
+                {
+                    SpectreConsoleHelper.WriteLineWithColor($"{error.PropertyName}: {error.ErrorMessage}", "red");
+                }
             }
-            _teachers.Add(teacher);
         }
 
 
-        public void Delete(int id)
+        public void Delete(Guid id)
         {
+            // Menüden listeden seçildiği için null olamaz
             Teacher teacherToDelete = _teachers.SingleOrDefault(t => t.Id == id);
             _teachers.Remove(teacherToDelete);
+            SpectreConsoleHelper.WriteLineWithColor("Başarıyla silindi.", "green");
         }
 
         public List<Teacher> GetAll()
@@ -51,19 +59,32 @@ namespace ConsoleUI.Businnes.Concrete
             return _teachers;
         }
 
-        public Teacher GetById(int id)
+        public Teacher GetById(Guid id)
         {
             return _teachers.FirstOrDefault(t => t.Id == id);
         }
 
         public void Update(Teacher teacher)
         {
-            var teacherToUpdate = _teachers.SingleOrDefault(t => t.Id == teacher.Id);
-            teacherToUpdate.FirstName = teacher.FirstName;
-            teacherToUpdate.LastName = teacher.LastName;
-            teacherToUpdate.Department = teacher.Department;
+            var validator = new TeacherValidator();
+            var validationResult = validator.Validate(teacher);
+            if (validationResult.IsValid)
+            {
+                var teacherToUpdate = _teachers.SingleOrDefault(t => t.Id == teacher.Id);
+                teacherToUpdate.FirstName = teacher.FirstName;
+                teacherToUpdate.LastName = teacher.LastName;
+                teacherToUpdate.Department = teacher.Department;
+                SpectreConsoleHelper.WriteLineWithColor("Başarıyla Güncellendi.", "green");
+            }
+            else
+            {
+                foreach (var error in validationResult.Errors)
+                {
+                    SpectreConsoleHelper.WriteLineWithColor($"{error.PropertyName}: {error.ErrorMessage}", "red");
+                }
+            }
         }
-        public void AddHomeworkToStudent(int studentId, int homeworkId)
+        public void AddHomeworkToStudent(Guid studentId, Guid homeworkId)
         {
             var student = _studentService.GetById(studentId);
             var homework = _homeworkService.GetById(homeworkId);
@@ -74,27 +95,57 @@ namespace ConsoleUI.Businnes.Concrete
             }
 
             student.Homeworks.Add(homework);
+            SpectreConsoleHelper.WriteLineWithColor("Ödev başarıyla eklendi.", "green");
         }
-        public void AddHomeworkToAllStudentsInClassroom(int classId, int homeworkId)
+        public void AddHomeworkToAllStudentsInClassroom(Guid classId, Guid homeworkId)
         {
             var classroom = _classroomService.GetById(classId);
             var homework = _homeworkService.GetById(homeworkId);
 
-            foreach (var student in classroom.Students)
-            {
-                if (student.Homeworks == null)
-                {
-                    student.Homeworks = new List<Homework>();
-                }
+            var rule = CheckIfHaveStudentInClassroom(classroom);
 
-                student.Homeworks.Add(homework);
+            if (rule)
+            {
+                foreach (var student in classroom.Students)
+                {
+                    if (student.Homeworks == null)
+                    {
+                        student.Homeworks = new List<Homework>();
+                    }
+
+                    student.Homeworks.Add(homework);
+                }
+                SpectreConsoleHelper.WriteLineWithColor($"{classroom.ClassNumber} Numaralı sınıfa ödev başarıyla eklendi.", "green");
             }
+            else
+            {
+                SpectreConsoleHelper.WriteLineWithColor($"Sınıfta öğrenci bunulmuyor.", "red");
+            }
+
         }
         public List<Homework> GetHomeworksSelectedStudent(Student student)
         {
             var selectedStudent = _studentService.GetById(student.Id);
+            var rule = CheckIfHaveHomeworkOfStudent(selectedStudent);
+            if (rule)
+            {
+                return selectedStudent.Homeworks;
+            }
+            else
+            {
+                SpectreConsoleHelper.WriteLineWithColor($"Öğrencinin ödevi bunulmuyor.", "red");
+                return null;
+            }
+        }
 
-            return selectedStudent.Homeworks;
+        private bool CheckIfHaveHomeworkOfStudent(Student student)
+        {
+            return student.Homeworks != null;
+        }
+
+        private bool CheckIfHaveStudentInClassroom(Classroom classroom)
+        {
+            return classroom.Students.Count != 0;
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using ConsoleUI.Businnes.Abstract;
+using ConsoleUI.Businnes.Utilities;
 using ConsoleUI.StaticData;
-using ConsoleUI.Utilities;
-using ConsoleUI.Utilities.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +27,7 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.ClassroomOptions
             var classroom = NavigationLibrary.GetSelectedListItem("Bir sınıf [green]seçiniz[/]:", 20, classrooms);
             var student = NavigationLibrary.GetSelectedListItem("Bir öğrenci [green]seçiniz[/]:", 20, students);
 
-            _classroomService.AddStudentInClassroom(classroom.Id, student.Id);
+            _classroomService.AddStudentInClassroom(classroom, student);
         }
     }
 }

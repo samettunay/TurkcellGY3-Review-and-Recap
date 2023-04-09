@@ -1,8 +1,8 @@
 ﻿using ConsoleUI.Businnes.Abstract;
+using ConsoleUI.Businnes.Utilities;
+using ConsoleUI.Businnes.Utilities.Helpers;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
-using ConsoleUI.Utilities;
-using ConsoleUI.Utilities.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,9 +26,10 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.TeacherOptions
 
             var teacher = NavigationLibrary.GetSelectedListItem("Güncellenecek öğretmeni [green]seçiniz[/]:", 20, teachers);
 
-            string firstName = SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherName);
-            string lastName = SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherLastName);
-            string department = SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherDepartment);
+            string firstName = SpectreConsoleHelper.ReadLineWithText("Öğretmenin ismini giriniz: ");
+            string lastName = SpectreConsoleHelper.ReadLineWithText("Öğretmenin soyismini giriniz: ");
+            string department = SpectreConsoleHelper.ReadLineWithText("Öğretmenin bölümünü giriniz: ");
+
             Teacher teacherToUpdate = new() { Id = teacher.Id, FirstName = firstName, LastName = lastName, Department = department };
             _teacherService.Update(teacherToUpdate);
         }

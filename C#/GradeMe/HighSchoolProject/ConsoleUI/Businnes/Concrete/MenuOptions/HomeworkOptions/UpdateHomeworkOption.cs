@@ -1,8 +1,8 @@
 ﻿using ConsoleUI.Businnes.Abstract;
+using ConsoleUI.Businnes.Utilities;
+using ConsoleUI.Businnes.Utilities.Helpers;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
-using ConsoleUI.Utilities;
-using ConsoleUI.Utilities.Helpers;
 
 namespace ConsoleUI.Businnes.Concrete.MenuOptions.HomeworkOptions
 {
@@ -22,9 +22,9 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.HomeworkOptions
             var homework = NavigationLibrary.GetSelectedListItem("Güncellenecek ödevi [green]seçiniz[/]:", 20, homeworks);
 
 
-            string title = SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterHomeworkTitle);
-            string description = SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterHomeworkDescription);
-            DateTime dueDate = SpectreConsoleHelper.ReadDateTimeWithText(PromptMessages.EnterHomeworkDueDate);
+            string title = SpectreConsoleHelper.ReadLineWithText("Ödevin başlığını giriniz: ");
+            string description = SpectreConsoleHelper.ReadLineWithText("Ödevin açıklamasını giriniz: ");
+            DateTime dueDate = SpectreConsoleHelper.ReadDateTimeWithText("Ödevin son teslim tarihini giriniz: ");
 
             Homework homeworkToUpdate = new Homework();
             homeworkToUpdate.Id = homework.Id;

@@ -4,16 +4,16 @@ using ConsoleUI.Businnes.Concrete.MenuOptions.ClassroomOptions;
 using ConsoleUI.Businnes.Concrete.MenuOptions.HomeworkOptions;
 using ConsoleUI.Businnes.Concrete.MenuOptions.StudentOptions;
 using ConsoleUI.Businnes.Concrete.MenuOptions.TeacherOptions;
+using ConsoleUI.Businnes.Utilities;
+using ConsoleUI.Businnes.Utilities.Helpers;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
-using ConsoleUI.Utilities;
-using ConsoleUI.Utilities.Helpers;
 using Spectre.Console;
 using System.Windows.Input;
 
 StudentManager studentManager = new StudentManager();
 HomeworkManager homeworkManager = new HomeworkManager();
-ClassroomManager classroomManager = new ClassroomManager(studentManager);
+ClassroomManager classroomManager = new ClassroomManager();
 TeacherManager teacherManager = new TeacherManager(studentManager, homeworkManager, classroomManager);
 
 Dictionary<string, IMenuOption> menuOptions = new Dictionary<string, IMenuOption>
@@ -63,10 +63,7 @@ while (true)
         SpectreConsoleHelper.WriteLineWithColor("Geçersiz işlem!", "red");
     }
 
-    Console.Write("\nMenüye dönmek için bir tuşa basınız...");
+    SpectreConsoleHelper.WriteLineWithColor("\nMenüye dönmek için bir tuşa basınız...", "yellow");
     Console.ReadKey();
     Console.Clear();
 }
-
-// TODO 4: Stringleri düzenle
-// TODO 5: Exception işlemleri

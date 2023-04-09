@@ -9,7 +9,7 @@ namespace ConsoleUI.Models
 {
     public class Teacher : Person, IModel
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string Department { get; set; }
         public override string ToString()
         {

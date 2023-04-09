@@ -1,7 +1,8 @@
 ﻿using ConsoleUI.Businnes.Abstract;
+using ConsoleUI.Businnes.Utilities.Helpers;
+using ConsoleUI.Businnes.ValidationRules;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
-using ConsoleUI.Utilities.Helpers;
 using Spectre.Console;
 using System;
 using System.Collections.Generic;
@@ -22,22 +23,28 @@ namespace ConsoleUI.Businnes.Concrete
 
         public void Add(Homework homework)
         {
-            if (_homeworks.Any())
+            var validator = new HomeworkValidator();
+            var validationResult = validator.Validate(homework);
+            if (validationResult.IsValid)
             {
-                homework.Id = _homeworks.Max(h => h.Id) + 1;
+                _homeworks.Add(homework);
+                SpectreConsoleHelper.WriteLineWithColor("Başarıyla eklendi.", "green");
             }
             else
             {
-                homework.Id = 1;
-            }
-
-            _homeworks.Add(homework);
+                foreach (var error in validationResult.Errors)
+                {
+                    SpectreConsoleHelper.WriteLineWithColor($"{error.PropertyName}: {error.ErrorMessage}", "red");
+                }
+            }  
         }
 
-        public void Delete(int id)
+        public void Delete(Guid id)
         {
+            // Menüden listeden seçildiği için null olamaz
             Homework homeworkToDelete = _homeworks.SingleOrDefault(h => h.Id == id);
             _homeworks.Remove(homeworkToDelete);
+            SpectreConsoleHelper.WriteLineWithColor("Başarıyla silindi.", "green");
         }
 
         public List<Homework> GetAll()
@@ -45,17 +52,30 @@ namespace ConsoleUI.Businnes.Concrete
             return _homeworks;
         }
 
-        public Homework GetById(int id)
+        public Homework GetById(Guid id)
         {
             return _homeworks.FirstOrDefault(h => h.Id == id);
         }
 
         public void Update(Homework homework)
         {
-            var homeworkToUpdate = _homeworks.SingleOrDefault(h => h.Id == homework.Id);
-            homeworkToUpdate.DueDate = homework.DueDate;
-            homeworkToUpdate.Title = homework.Title;
-            homeworkToUpdate.Description = homework.Description;
+            var validator = new HomeworkValidator();
+            var validationResult = validator.Validate(homework);
+            if (validationResult.IsValid)
+            {
+                var homeworkToUpdate = _homeworks.SingleOrDefault(h => h.Id == homework.Id);
+                homeworkToUpdate.DueDate = homework.DueDate;
+                homeworkToUpdate.Title = homework.Title;
+                homeworkToUpdate.Description = homework.Description;
+                SpectreConsoleHelper.WriteLineWithColor("Başarıyla güncellendi.", "green");
+            }
+            else
+            {
+                foreach (var error in validationResult.Errors)
+                {
+                    SpectreConsoleHelper.WriteLineWithColor($"{error.PropertyName}: {error.ErrorMessage}", "red");
+                }
+            }
         }
     }
 }

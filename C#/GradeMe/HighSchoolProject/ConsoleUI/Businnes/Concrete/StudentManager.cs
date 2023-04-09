@@ -1,7 +1,8 @@
 ﻿using ConsoleUI.Businnes.Abstract;
+using ConsoleUI.Businnes.Utilities.Helpers;
+using ConsoleUI.Businnes.ValidationRules;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
-using ConsoleUI.Utilities.Helpers;
 using Spectre.Console;
 using System;
 using System.Collections.Generic;
@@ -22,21 +23,28 @@ namespace ConsoleUI.Businnes.Concrete
 
         public void Add(Student student)
         {
-            if (_students.Any())
+            var validator = new StudentValidator(_students);
+            var validationResult = validator.Validate(student);
+            if (validationResult.IsValid)
             {
-                student.Id = _students.Max(s => s.Id) + 1;
+                _students.Add(student);
+                SpectreConsoleHelper.WriteLineWithColor("Başarıyla eklendi.", "green");
             }
             else
             {
-                student.Id = 1;
+                foreach (var error in validationResult.Errors)
+                {
+                    SpectreConsoleHelper.WriteLineWithColor($"{error.PropertyName}: {error.ErrorMessage}", "red");
+                }
             }
-            _students.Add(student);
         }
 
-        public void Delete(int id)
+        public void Delete(Guid id)
         {
+            // Menüden listeden seçildiği için null olamaz
             Student studentToDelete = _students.SingleOrDefault(s => s.Id == id);
             _students.Remove(studentToDelete);
+            SpectreConsoleHelper.WriteLineWithColor("Başarıyla silindi.", "green");
         }
 
         public List<Student> GetAll()
@@ -44,7 +52,7 @@ namespace ConsoleUI.Businnes.Concrete
             return _students;
         }
 
-        public Student GetById(int id)
+        public Student GetById(Guid id)
         {
             return _students.FirstOrDefault(s => s.Id == id);
         }
@@ -56,13 +64,26 @@ namespace ConsoleUI.Businnes.Concrete
 
         public void Update(Student student)
         {
-            var studentToUpdate = _students.SingleOrDefault(s => s.Id == student.Id);
-            studentToUpdate.FirstName = student.FirstName;
-            studentToUpdate.LastName = student.LastName;
-            studentToUpdate.Homeworks = student.Homeworks;
-            studentToUpdate.StudentNumber = student.StudentNumber;
+            var validator = new StudentValidator(_students);
+            var validationResult = validator.Validate(student);
+            if (validationResult.IsValid)
+            {
+                var studentToUpdate = _students.SingleOrDefault(s => s.Id == student.Id);
+                studentToUpdate.FirstName = student.FirstName;
+                studentToUpdate.LastName = student.LastName;
+                studentToUpdate.Homeworks = student.Homeworks;
+                studentToUpdate.StudentNumber = student.StudentNumber;
+                SpectreConsoleHelper.WriteLineWithColor("Başarıyla Güncellendi.", "green");
+            }
+            else
+            {
+                foreach (var error in validationResult.Errors)
+                {
+                    SpectreConsoleHelper.WriteLineWithColor($"{error.PropertyName}: {error.ErrorMessage}", "red");
+                }
+            }
         }
-        public List<Homework> GetStudentHomeworks(int studentId)
+        public List<Homework> GetStudentHomeworks(Guid studentId)
         {
             var student = GetById(studentId);
             if (student == null)

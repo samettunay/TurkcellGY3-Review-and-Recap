@@ -9,7 +9,7 @@ namespace ConsoleUI.Models
 {
     public class Classroom : IModel
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public int ClassNumber { get; set; }
         public Teacher? ResponsibleTeacher { get; set; }
         public List<Student>? Students { get; set; }

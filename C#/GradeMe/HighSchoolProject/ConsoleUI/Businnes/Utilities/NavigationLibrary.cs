@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleUI.Utilities
+namespace ConsoleUI.Businnes.Utilities
 {
     public static class NavigationLibrary
     {
@@ -18,10 +18,10 @@ namespace ConsoleUI.Utilities
                 .Title("Bir işlem seçiniz:")
                 .PageSize(30);
 
-            mainMenuPrompt.AddChoiceGroup(SchoolOperations.Classrooms, SchoolOperations.ClassroomMenuItems);
-            mainMenuPrompt.AddChoiceGroup(SchoolOperations.Teachers, SchoolOperations.TeacherMenuItems);
-            mainMenuPrompt.AddChoiceGroup(SchoolOperations.Students, SchoolOperations.StudentMenuItems);
-            mainMenuPrompt.AddChoiceGroup(SchoolOperations.Homeworks, SchoolOperations.HomeworkMenuItems);
+            mainMenuPrompt.AddChoiceGroup(MenuOptions.Classrooms, MenuOptions.ClassroomMenuOptions);
+            mainMenuPrompt.AddChoiceGroup(MenuOptions.Teachers, MenuOptions.TeacherMenuOptions);
+            mainMenuPrompt.AddChoiceGroup(MenuOptions.Students, MenuOptions.StudentMenuOptions);
+            mainMenuPrompt.AddChoiceGroup(MenuOptions.Homeworks, MenuOptions.HomeworkMenuOptions);
 
             return AnsiConsole.Prompt(mainMenuPrompt);
         }

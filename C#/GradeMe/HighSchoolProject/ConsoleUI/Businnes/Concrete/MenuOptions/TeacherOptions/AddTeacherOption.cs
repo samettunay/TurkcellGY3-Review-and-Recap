@@ -1,7 +1,7 @@
 ﻿using ConsoleUI.Businnes.Abstract;
+using ConsoleUI.Businnes.Utilities.Helpers;
 using ConsoleUI.Models;
 using ConsoleUI.StaticData;
-using ConsoleUI.Utilities.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,11 +21,11 @@ namespace ConsoleUI.Businnes.Concrete.MenuOptions.TeacherOptions
 
         public void Execute()
         {
-            string firstName = SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherName);
-            string lastName = SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherLastName);
-            string department = SpectreConsoleHelper.ReadLineWithText(PromptMessages.EnterTeacherDepartment);
+            string firstName = SpectreConsoleHelper.ReadLineWithText("Öğretmenin ismini giriniz: ");
+            string lastName = SpectreConsoleHelper.ReadLineWithText("Öğretmenin soyismini giriniz: ");
+            string department = SpectreConsoleHelper.ReadLineWithText("Öğretmenin bölümünü giriniz: ");
 
-            Teacher teacher = new() { FirstName = firstName, LastName = lastName, Department = department };
+            Teacher teacher = new() { Id = Guid.NewGuid(), FirstName = firstName, LastName = lastName, Department = department };
 
             _teacherService.Add(teacher);
         }
