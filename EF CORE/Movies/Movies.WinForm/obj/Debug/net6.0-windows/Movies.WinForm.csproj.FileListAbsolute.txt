@@ -1,0 +1,84 @@
+C:\Users\samet\source\repos\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.WinForm.exe
+C:\Users\samet\source\repos\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.WinForm.deps.json
+C:\Users\samet\source\repos\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.WinForm.runtimeconfig.json
+C:\Users\samet\source\repos\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.WinForm.dll
+C:\Users\samet\source\repos\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.WinForm.pdb
+C:\Users\samet\source\repos\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.Application.dll
+C:\Users\samet\source\repos\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.Data.dll
+C:\Users\samet\source\repos\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.Entities.dll
+C:\Users\samet\source\repos\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.Application.pdb
+C:\Users\samet\source\repos\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.Data.pdb
+C:\Users\samet\source\repos\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.Entities.pdb
+C:\Users\samet\source\repos\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.csproj.AssemblyReference.cache
+C:\Users\samet\source\repos\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.Form1.resources
+C:\Users\samet\source\repos\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.csproj.GenerateResource.cache
+C:\Users\samet\source\repos\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\source\repos\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.AssemblyInfoInputs.cache
+C:\Users\samet\source\repos\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.AssemblyInfo.cs
+C:\Users\samet\source\repos\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.csproj.CoreCompileInputs.cache
+C:\Users\samet\source\repos\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.csproj.CopyComplete
+C:\Users\samet\source\repos\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.dll
+C:\Users\samet\source\repos\Movies\Movies.WinForm\obj\Debug\net6.0-windows\refint\Movies.WinForm.dll
+C:\Users\samet\source\repos\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.pdb
+C:\Users\samet\source\repos\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.genruntimeconfig.cache
+C:\Users\samet\source\repos\Movies\Movies.WinForm\obj\Debug\net6.0-windows\ref\Movies.WinForm.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.WinForm.exe
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.WinForm.deps.json
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.WinForm.runtimeconfig.json
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.WinForm.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.WinForm.pdb
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Azure.Identity.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\System.Memory.Data.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.Application.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.Data.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.Entities.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.Application.pdb
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.Data.pdb
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\bin\Debug\net6.0-windows\Movies.Entities.pdb
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.csproj.AssemblyReference.cache
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.Form1.resources
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.csproj.GenerateResource.cache
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.AssemblyInfoInputs.cache
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.AssemblyInfo.cs
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.csproj.CoreCompileInputs.cache
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.csproj.CopyComplete
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net6.0-windows\refint\Movies.WinForm.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.pdb
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.genruntimeconfig.cache
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net6.0-windows\ref\Movies.WinForm.dll

@@ -1,0 +1,24 @@
+C:\Users\samet\source\repos\Movies\Movies.Entities\bin\Debug\net6.0\Movies.Entities.deps.json
+C:\Users\samet\source\repos\Movies\Movies.Entities\bin\Debug\net6.0\Movies.Entities.dll
+C:\Users\samet\source\repos\Movies\Movies.Entities\bin\Debug\net6.0\Movies.Entities.pdb
+C:\Users\samet\source\repos\Movies\Movies.Entities\obj\Debug\net6.0\Movies.Entities.csproj.AssemblyReference.cache
+C:\Users\samet\source\repos\Movies\Movies.Entities\obj\Debug\net6.0\Movies.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\source\repos\Movies\Movies.Entities\obj\Debug\net6.0\Movies.Entities.AssemblyInfoInputs.cache
+C:\Users\samet\source\repos\Movies\Movies.Entities\obj\Debug\net6.0\Movies.Entities.AssemblyInfo.cs
+C:\Users\samet\source\repos\Movies\Movies.Entities\obj\Debug\net6.0\Movies.Entities.csproj.CoreCompileInputs.cache
+C:\Users\samet\source\repos\Movies\Movies.Entities\obj\Debug\net6.0\Movies.Entities.dll
+C:\Users\samet\source\repos\Movies\Movies.Entities\obj\Debug\net6.0\refint\Movies.Entities.dll
+C:\Users\samet\source\repos\Movies\Movies.Entities\obj\Debug\net6.0\Movies.Entities.pdb
+C:\Users\samet\source\repos\Movies\Movies.Entities\obj\Debug\net6.0\ref\Movies.Entities.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.Entities\bin\Debug\net6.0\Movies.Entities.deps.json
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.Entities\bin\Debug\net6.0\Movies.Entities.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.Entities\bin\Debug\net6.0\Movies.Entities.pdb
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.Entities\obj\Debug\net6.0\Movies.Entities.csproj.AssemblyReference.cache
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.Entities\obj\Debug\net6.0\Movies.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.Entities\obj\Debug\net6.0\Movies.Entities.AssemblyInfoInputs.cache
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.Entities\obj\Debug\net6.0\Movies.Entities.AssemblyInfo.cs
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.Entities\obj\Debug\net6.0\Movies.Entities.csproj.CoreCompileInputs.cache
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.Entities\obj\Debug\net6.0\Movies.Entities.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.Entities\obj\Debug\net6.0\refint\Movies.Entities.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.Entities\obj\Debug\net6.0\Movies.Entities.pdb
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.Entities\obj\Debug\net6.0\ref\Movies.Entities.dll
