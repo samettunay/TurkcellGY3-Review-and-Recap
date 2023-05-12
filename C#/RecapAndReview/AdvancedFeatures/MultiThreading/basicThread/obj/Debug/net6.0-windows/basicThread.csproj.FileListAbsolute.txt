@@ -1,0 +1,17 @@
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\MultiThreading\basicThread\bin\Debug\net6.0-windows\basicThread.exe
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\MultiThreading\basicThread\bin\Debug\net6.0-windows\basicThread.deps.json
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\MultiThreading\basicThread\bin\Debug\net6.0-windows\basicThread.runtimeconfig.json
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\MultiThreading\basicThread\bin\Debug\net6.0-windows\basicThread.dll
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\MultiThreading\basicThread\bin\Debug\net6.0-windows\basicThread.pdb
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\MultiThreading\basicThread\obj\Debug\net6.0-windows\basicThread.csproj.AssemblyReference.cache
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\MultiThreading\basicThread\obj\Debug\net6.0-windows\basicThread.Form1.resources
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\MultiThreading\basicThread\obj\Debug\net6.0-windows\basicThread.csproj.GenerateResource.cache
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\MultiThreading\basicThread\obj\Debug\net6.0-windows\basicThread.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\MultiThreading\basicThread\obj\Debug\net6.0-windows\basicThread.AssemblyInfoInputs.cache
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\MultiThreading\basicThread\obj\Debug\net6.0-windows\basicThread.AssemblyInfo.cs
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\MultiThreading\basicThread\obj\Debug\net6.0-windows\basicThread.csproj.CoreCompileInputs.cache
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\MultiThreading\basicThread\obj\Debug\net6.0-windows\basicThread.dll
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\MultiThreading\basicThread\obj\Debug\net6.0-windows\refint\basicThread.dll
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\MultiThreading\basicThread\obj\Debug\net6.0-windows\basicThread.pdb
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\MultiThreading\basicThread\obj\Debug\net6.0-windows\basicThread.genruntimeconfig.cache
+C:\Users\samet\source\repos\Turkcell\C#\RecapAndReview\AdvancedFeatures\MultiThreading\basicThread\obj\Debug\net6.0-windows\ref\basicThread.dll
