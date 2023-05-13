@@ -82,3 +82,4 @@ C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net
 C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.pdb
 C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.genruntimeconfig.cache
 C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net6.0-windows\ref\Movies.WinForm.dll
+C:\Users\samet\source\repos\Turkcell\EF CORE\Movies\Movies.WinForm\obj\Debug\net6.0-windows\Movies.WinForm.FormDirectors.resources

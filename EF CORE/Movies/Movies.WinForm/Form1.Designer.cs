@@ -28,43 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBoxMovies = new ListBox();
-            buttonGetMovies = new Button();
+            splitContainer1 = new SplitContainer();
+            dataGridView1 = new DataGridView();
+            buttonDirector = new Button();
+            buttonPlayers = new Button();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
+            splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // listBoxMovies
+            // splitContainer1
             // 
-            listBoxMovies.FormattingEnabled = true;
-            listBoxMovies.ItemHeight = 15;
-            listBoxMovies.Location = new Point(161, 220);
-            listBoxMovies.Name = "listBoxMovies";
-            listBoxMovies.Size = new Size(392, 199);
-            listBoxMovies.TabIndex = 1;
+            splitContainer1.BorderStyle = BorderStyle.Fixed3D;
+            splitContainer1.Dock = DockStyle.Fill;
+            splitContainer1.Location = new Point(0, 0);
+            splitContainer1.Name = "splitContainer1";
+            splitContainer1.Orientation = Orientation.Horizontal;
             // 
-            // buttonGetMovies
+            // splitContainer1.Panel1
             // 
-            buttonGetMovies.Location = new Point(324, 99);
-            buttonGetMovies.Name = "buttonGetMovies";
-            buttonGetMovies.Size = new Size(75, 23);
-            buttonGetMovies.TabIndex = 2;
-            buttonGetMovies.Text = "Getir";
-            buttonGetMovies.UseVisualStyleBackColor = true;
-            buttonGetMovies.Click += buttonGetMovies_Click;
+            splitContainer1.Panel1.Controls.Add(dataGridView1);
+            // 
+            // splitContainer1.Panel2
+            // 
+            splitContainer1.Panel2.Controls.Add(buttonPlayers);
+            splitContainer1.Panel2.Controls.Add(buttonDirector);
+            splitContainer1.Size = new Size(800, 450);
+            splitContainer1.SplitterDistance = 266;
+            splitContainer1.TabIndex = 0;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(0, 0);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(796, 262);
+            dataGridView1.TabIndex = 0;
+            // 
+            // buttonDirector
+            // 
+            buttonDirector.Location = new Point(113, 25);
+            buttonDirector.Name = "buttonDirector";
+            buttonDirector.Size = new Size(129, 43);
+            buttonDirector.TabIndex = 0;
+            buttonDirector.Text = "Yönetmen İşlemleri";
+            buttonDirector.UseVisualStyleBackColor = true;
+            buttonDirector.Click += buttonDirector_Click;
+            // 
+            // buttonPlayers
+            // 
+            buttonPlayers.Location = new Point(113, 74);
+            buttonPlayers.Name = "buttonPlayers";
+            buttonPlayers.Size = new Size(129, 44);
+            buttonPlayers.TabIndex = 1;
+            buttonPlayers.Text = "Oyuncu İşlemleri";
+            buttonPlayers.UseVisualStyleBackColor = true;
+            buttonPlayers.Click += buttonPlayers_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(buttonGetMovies);
-            Controls.Add(listBoxMovies);
+            Controls.Add(splitContainer1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
+            splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-        private ListBox listBoxMovies;
-        private Button buttonGetMovies;
+
+        private SplitContainer splitContainer1;
+        private DataGridView dataGridView1;
+        private Button buttonPlayers;
+        private Button buttonDirector;
     }
 }

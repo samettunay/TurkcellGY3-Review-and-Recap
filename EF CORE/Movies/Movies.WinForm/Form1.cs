@@ -8,22 +8,28 @@ namespace Movies.WinForm
     {
         public Form1()
         {
-            CheckForIllegalCrossThreadCalls = false;
             InitializeComponent();
         }
 
-        private async void buttonGetMovies_Click(object sender, EventArgs e)
+        private async void Form1_Load(object sender, EventArgs e)
         {
-            MoviesDbContext moviesDbContext = new MoviesDbContext();
-            EFMovieRepository EFMovieRepository = new EFMovieRepository(moviesDbContext);
-            MovieService movieService = new MovieService(EFMovieRepository);
+            var db = new MoviesDbContext();
+            var repository = new EFMovieRepository(db);
+            var movieService = new MovieService(repository);
 
-            var responses = await movieService.GetAllMovies();
+            var list = await movieService.GetAllMovies();
 
-            foreach (var item in responses)
-            {
-                listBoxMovies.Items.Add($"{item.Name} {item?.Duration} dakika");
-            }
+            dataGridView1.DataSource = list.ToList();
+        }
+
+        private void buttonDirector_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPlayers_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
