@@ -7,6 +7,9 @@
     <Compile Update="FormDirectors.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormMovies.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormPlayers.cs">
       <SubType>Form</SubType>
     </Compile>

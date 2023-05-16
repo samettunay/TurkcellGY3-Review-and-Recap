@@ -15,5 +15,6 @@ namespace Movies.Application
         Task UpdateMovie(UpdateMovieRequest updateMovie);
         Task<IEnumerable<MovieListResponse>> GetAllMovies();
 
+        Task AddPlayerToMovie(int movieId, List<int> players);
     }
 }

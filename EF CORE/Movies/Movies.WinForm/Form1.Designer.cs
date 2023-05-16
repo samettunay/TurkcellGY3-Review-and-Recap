@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             splitContainer1 = new SplitContainer();
-            dataGridView1 = new DataGridView();
-            buttonDirector = new Button();
+            dataGridViewMovies = new DataGridView();
             buttonPlayers = new Button();
+            buttonDirector = new Button();
+            buttonNewMovie = new Button();
+            buttonGetAllMovies = new Button();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewMovies).BeginInit();
             SuspendLayout();
             // 
             // splitContainer1
@@ -49,25 +51,37 @@
             // 
             // splitContainer1.Panel1
             // 
-            splitContainer1.Panel1.Controls.Add(dataGridView1);
+            splitContainer1.Panel1.Controls.Add(dataGridViewMovies);
             // 
             // splitContainer1.Panel2
             // 
+            splitContainer1.Panel2.Controls.Add(buttonGetAllMovies);
+            splitContainer1.Panel2.Controls.Add(buttonNewMovie);
             splitContainer1.Panel2.Controls.Add(buttonPlayers);
             splitContainer1.Panel2.Controls.Add(buttonDirector);
             splitContainer1.Size = new Size(800, 450);
             splitContainer1.SplitterDistance = 266;
             splitContainer1.TabIndex = 0;
             // 
-            // dataGridView1
+            // dataGridViewMovies
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(796, 262);
-            dataGridView1.TabIndex = 0;
+            dataGridViewMovies.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewMovies.Dock = DockStyle.Fill;
+            dataGridViewMovies.Location = new Point(0, 0);
+            dataGridViewMovies.Name = "dataGridViewMovies";
+            dataGridViewMovies.RowTemplate.Height = 25;
+            dataGridViewMovies.Size = new Size(796, 262);
+            dataGridViewMovies.TabIndex = 0;
+            // 
+            // buttonPlayers
+            // 
+            buttonPlayers.Location = new Point(113, 74);
+            buttonPlayers.Name = "buttonPlayers";
+            buttonPlayers.Size = new Size(129, 44);
+            buttonPlayers.TabIndex = 1;
+            buttonPlayers.Text = "Oyuncu İşlemleri";
+            buttonPlayers.UseVisualStyleBackColor = true;
+            buttonPlayers.Click += buttonPlayers_Click;
             // 
             // buttonDirector
             // 
@@ -79,15 +93,25 @@
             buttonDirector.UseVisualStyleBackColor = true;
             buttonDirector.Click += buttonDirector_Click;
             // 
-            // buttonPlayers
+            // buttonNewMovie
             // 
-            buttonPlayers.Location = new Point(113, 74);
-            buttonPlayers.Name = "buttonPlayers";
-            buttonPlayers.Size = new Size(129, 44);
-            buttonPlayers.TabIndex = 1;
-            buttonPlayers.Text = "Oyuncu İşlemleri";
-            buttonPlayers.UseVisualStyleBackColor = true;
-            buttonPlayers.Click += buttonPlayers_Click;
+            buttonNewMovie.Location = new Point(332, 25);
+            buttonNewMovie.Name = "buttonNewMovie";
+            buttonNewMovie.Size = new Size(129, 44);
+            buttonNewMovie.TabIndex = 2;
+            buttonNewMovie.Text = "Film işlemleri";
+            buttonNewMovie.UseVisualStyleBackColor = true;
+            buttonNewMovie.Click += buttonNewMovie_Click;
+            // 
+            // buttonGetAllMovies
+            // 
+            buttonGetAllMovies.Location = new Point(332, 75);
+            buttonGetAllMovies.Name = "buttonGetAllMovies";
+            buttonGetAllMovies.Size = new Size(129, 44);
+            buttonGetAllMovies.TabIndex = 3;
+            buttonGetAllMovies.Text = "Film işlemleri";
+            buttonGetAllMovies.UseVisualStyleBackColor = true;
+            buttonGetAllMovies.Click += buttonGetAllMovies_Click;
             // 
             // Form1
             // 
@@ -102,15 +126,17 @@
             splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewMovies).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private SplitContainer splitContainer1;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridViewMovies;
         private Button buttonPlayers;
         private Button buttonDirector;
+        private Button buttonNewMovie;
+        private Button buttonGetAllMovies;
     }
 }

@@ -62,5 +62,20 @@ namespace Movies.Data.Repositories
             moviesDbContext.Movies.Update(entity);
             await moviesDbContext.SaveChangesAsync();
         }
+
+        public async Task AddPlayerToMovie(int movieId, List<int> selectedPlayers)
+        {
+            var movie = await moviesDbContext.Movies.FindAsync(movieId);
+            selectedPlayers.ForEach(pl =>
+            {
+                movie.Players.Add(new MoviesPlayer
+                {
+                    MovieId = movie.Id,
+                    PlayerId = pl
+                });
+            });
+
+            await moviesDbContext.SaveChangesAsync();
+        }
     }
 }
