@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "GHqqNhNx7YEyTXs796e+3REz0KgTSG24IKv8og2fgxc=",
+  "Source": "FirstMVCApp",
+  "BasePath": "_content/FirstMVCApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FirstMVCApp\\wwwroot",
+      "Source": "FirstMVCApp",
+      "ContentRoot": "C:\\Users\\samet\\source\\repos\\Turkcell\\ASP.NET\\FirstMVCApp\\FirstMVCApp\\wwwroot\\",
+      "BasePath": "_content/FirstMVCApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\samet\\source\\repos\\Turkcell\\ASP.NET\\FirstMVCApp\\FirstMVCApp\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
+      "SourceId": "FirstMVCApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\samet\\source\\repos\\Turkcell\\ASP.NET\\FirstMVCApp\\FirstMVCApp\\wwwroot\\",
+      "BasePath": "_content/FirstMVCApp",
+      "RelativePath": "lib/bootstrap/css/bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\samet\\source\\repos\\Turkcell\\ASP.NET\\FirstMVCApp\\FirstMVCApp\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "SourceId": "FirstMVCApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\samet\\source\\repos\\Turkcell\\ASP.NET\\FirstMVCApp\\FirstMVCApp\\wwwroot\\",
+      "BasePath": "_content/FirstMVCApp",
+      "RelativePath": "lib/bootstrap/js/bootstrap.bundle.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js"
+    }
+  ]
+}
