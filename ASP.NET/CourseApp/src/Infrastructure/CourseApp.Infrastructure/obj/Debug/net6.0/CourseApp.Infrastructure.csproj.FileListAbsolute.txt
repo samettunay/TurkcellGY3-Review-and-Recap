@@ -1,0 +1,15 @@
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\bin\Debug\net6.0\CourseApp.Infrastructure.deps.json
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\bin\Debug\net6.0\CourseApp.Infrastructure.dll
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\bin\Debug\net6.0\CourseApp.Infrastructure.pdb
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\bin\Debug\net6.0\CourseApp.Entities.dll
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\bin\Debug\net6.0\CourseApp.Entities.pdb
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\obj\Debug\net6.0\CourseApp.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\obj\Debug\net6.0\CourseApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\obj\Debug\net6.0\CourseApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\obj\Debug\net6.0\CourseApp.Infrastructure.AssemblyInfo.cs
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\obj\Debug\net6.0\CourseApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\obj\Debug\net6.0\CourseApp.Infrastructure.csproj.CopyComplete
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\obj\Debug\net6.0\CourseApp.Infrastructure.dll
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\obj\Debug\net6.0\refint\CourseApp.Infrastructure.dll
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\obj\Debug\net6.0\CourseApp.Infrastructure.pdb
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\obj\Debug\net6.0\ref\CourseApp.Infrastructure.dll

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Adi64ZfoLZ6CQ+t9dJeSUgnII65NIJ2FHlfWB7vegNgVLOjOUAx5ZHhRfCmW0AwsekC65tLNSneG9WFilaoSbQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\samet\\source\\repos\\Turkcell\\ASP.NET\\CourseApp\\src\\Application\\CourseApp.Services\\CourseApp.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\samet\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\samet\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

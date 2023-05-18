@@ -1,0 +1,12 @@
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Domains\CourseApp.Entities\bin\Debug\net6.0\CourseApp.Entities.deps.json
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Domains\CourseApp.Entities\bin\Debug\net6.0\CourseApp.Entities.dll
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Domains\CourseApp.Entities\bin\Debug\net6.0\CourseApp.Entities.pdb
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Domains\CourseApp.Entities\obj\Debug\net6.0\CourseApp.Entities.csproj.AssemblyReference.cache
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Domains\CourseApp.Entities\obj\Debug\net6.0\CourseApp.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Domains\CourseApp.Entities\obj\Debug\net6.0\CourseApp.Entities.AssemblyInfoInputs.cache
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Domains\CourseApp.Entities\obj\Debug\net6.0\CourseApp.Entities.AssemblyInfo.cs
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Domains\CourseApp.Entities\obj\Debug\net6.0\CourseApp.Entities.csproj.CoreCompileInputs.cache
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Domains\CourseApp.Entities\obj\Debug\net6.0\CourseApp.Entities.dll
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Domains\CourseApp.Entities\obj\Debug\net6.0\refint\CourseApp.Entities.dll
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Domains\CourseApp.Entities\obj\Debug\net6.0\CourseApp.Entities.pdb
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Domains\CourseApp.Entities\obj\Debug\net6.0\ref\CourseApp.Entities.dll
