@@ -20,6 +20,21 @@ namespace CourseApp.Infrastructure.Repositories
                 new() { Id = 2, Name="Course Y", Description = "Description X", Price = 1, Rating = 4, TotalHours = 20},
                 new() { Id = 3, Name="Course Z", Description = "Description X", Price = 1, Rating = 4, TotalHours = 20},
                 new() { Id = 4, Name="Course Q", Description = "Description X", Price = 1, Rating = 4, TotalHours = 20},
+
+                new() { Id = 6, Name="Course X2", Description = "Description X", Price = 1, Rating = 4, TotalHours = 20},
+                new() { Id = 7, Name="Course Y2", Description = "Description X", Price = 1, Rating = 4, TotalHours = 20},
+                new() { Id = 8, Name="Course Z2", Description = "Description X", Price = 1, Rating = 4, TotalHours = 20},
+                new() { Id = 9, Name="Course Q2", Description = "Description X", Price = 1, Rating = 4, TotalHours = 20},
+
+                new() { Id = 10, Name="Course X3", Description = "Description X", Price = 1, Rating = 4, TotalHours = 20},
+                new() { Id = 11, Name="Course Y3", Description = "Description X", Price = 1, Rating = 4, TotalHours = 20},
+                new() { Id = 12, Name="Course Z3", Description = "Description X", Price = 1, Rating = 4, TotalHours = 20},
+                new() { Id = 13, Name="Course Q3", Description = "Description X", Price = 1, Rating = 4, TotalHours = 20},
+
+                new() { Id = 14, Name="Course X4", Description = "Description X", Price = 1, Rating = 4, TotalHours = 20},
+                new() { Id = 15, Name="Course Y4", Description = "Description X", Price = 1, Rating = 4, TotalHours = 20},
+                new() { Id = 16, Name="Course Z4", Description = "Description X", Price = 1, Rating = 4, TotalHours = 20},
+                new() { Id = 17, Name="Course Q4", Description = "Description X", Price = 1, Rating = 4, TotalHours = 20},
             };
         }
 
