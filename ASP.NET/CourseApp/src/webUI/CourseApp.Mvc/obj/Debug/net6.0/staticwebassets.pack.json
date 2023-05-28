@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\CourseApp.Mvc.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\samet\\source\\repos\\Turkcell\\ASP.NET\\CourseApp\\src\\webUI\\CourseApp.Mvc\\wwwroot\\AlertifyJS\\alertify.min.js",
+      "PackagePath": "staticwebassets\\AlertifyJS\\alertify.min.js"
+    },
+    {
+      "Id": "C:\\Users\\samet\\source\\repos\\Turkcell\\ASP.NET\\CourseApp\\src\\webUI\\CourseApp.Mvc\\wwwroot\\AlertifyJS\\css\\alertify.min.css",
+      "PackagePath": "staticwebassets\\AlertifyJS\\css\\alertify.min.css"
+    },
+    {
       "Id": "C:\\Users\\samet\\source\\repos\\Turkcell\\ASP.NET\\CourseApp\\src\\webUI\\CourseApp.Mvc\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

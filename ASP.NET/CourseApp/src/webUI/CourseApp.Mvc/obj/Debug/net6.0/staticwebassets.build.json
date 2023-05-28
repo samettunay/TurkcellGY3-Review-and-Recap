@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xW6pDeA2tuN+92xGmzQ7B3t2OvgWAAu80tTFgTgitR4=",
+  "Hash": "RbMQtZU2T/tDEQ3q1ujHZqL5joEa3O62m8bg+IwffRY=",
   "Source": "CourseApp.Mvc",
   "BasePath": "_content/CourseApp.Mvc",
   "Mode": "Default",
@@ -49,6 +49,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\samet\\source\\repos\\Turkcell\\ASP.NET\\CourseApp\\src\\webUI\\CourseApp.Mvc\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CourseApp.Mvc.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\samet\\source\\repos\\Turkcell\\ASP.NET\\CourseApp\\src\\webUI\\CourseApp.Mvc\\wwwroot\\AlertifyJS\\alertify.min.js",
+      "SourceId": "CourseApp.Mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\samet\\source\\repos\\Turkcell\\ASP.NET\\CourseApp\\src\\webUI\\CourseApp.Mvc\\wwwroot\\",
+      "BasePath": "_content/CourseApp.Mvc",
+      "RelativePath": "AlertifyJS/alertify.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AlertifyJS\\alertify.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\samet\\source\\repos\\Turkcell\\ASP.NET\\CourseApp\\src\\webUI\\CourseApp.Mvc\\wwwroot\\AlertifyJS\\css\\alertify.min.css",
+      "SourceId": "CourseApp.Mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\samet\\source\\repos\\Turkcell\\ASP.NET\\CourseApp\\src\\webUI\\CourseApp.Mvc\\wwwroot\\",
+      "BasePath": "_content/CourseApp.Mvc",
+      "RelativePath": "AlertifyJS/css/alertify.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AlertifyJS\\css\\alertify.min.css"
     },
     {
       "Identity": "C:\\Users\\samet\\source\\repos\\Turkcell\\ASP.NET\\CourseApp\\src\\webUI\\CourseApp.Mvc\\wwwroot\\css\\site.css",

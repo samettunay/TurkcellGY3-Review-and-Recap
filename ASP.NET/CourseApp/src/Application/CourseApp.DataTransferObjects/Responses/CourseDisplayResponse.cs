@@ -15,7 +15,5 @@ namespace CourseApp.DataTransferObjects.Responses
         public string? ImageUrl { get; set; } = "https://loremflickr.com/320/240";
         public int ParticipantsCount { get; set; }
         public byte? Rating { get; set; }
-
-
     }
 }

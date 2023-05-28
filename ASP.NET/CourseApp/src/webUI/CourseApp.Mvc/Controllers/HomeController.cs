@@ -16,18 +16,19 @@ namespace CourseApp.Mvc.Controllers
             _courseService = courseService;
         }
 
-        public IActionResult Index(int pageNo=1)
+        public IActionResult Index(int pageNo=1, int? id = null)
         {
-            var courses = _courseService.GetCourseDisplayResponses();
+            var courses = id == null ? _courseService.GetCourseDisplayResponses() : 
+                                    _courseService.GetCoursesByCategory(id.Value);
 
-            var coursePerPage = 8;
+            var coursePerPage = 4;
             var courseCount = courses.Count();
             var totalPage = Math.Ceiling((decimal)courseCount / coursePerPage);
 
             var pagingInfo = new PagingInfo
             {
                 CurrentPage = pageNo,
-                ItemsPerPage = 8,
+                ItemsPerPage = coursePerPage,
                 TotalItems = courseCount
             };
 
