@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "U5yfFNy6s+z4kEDSaCYulo+FpIJmASrbfD/22IIsw/gqlMydyYmBhXfSsvNv/MVLTeMUlxhuYr1r6UjEzUZGog==",
+  "dgSpecHash": "3EOuyzkqjef2mwscMyrlW2Ysx7mkLI5pT6GLtlHA73acy2R50SsJQ73Fca3krNOSi1f/ij1Kt2ns/zSj7zRRLA==",
   "success": true,
   "projectFilePath": "C:\\Users\\samet\\source\\repos\\Turkcell\\ASP.NET\\CourseApp\\src\\webUI\\CourseApp.Mvc\\CourseApp.Mvc.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\samet\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\samet\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\samet\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
+    "C:\\Users\\samet\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\6.0.16\\microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.16.nupkg.sha512",
     "C:\\Users\\samet\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.0\\microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
     "C:\\Users\\samet\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\samet\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",

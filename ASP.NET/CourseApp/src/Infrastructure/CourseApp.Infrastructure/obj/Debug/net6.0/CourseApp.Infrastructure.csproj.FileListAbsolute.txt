@@ -13,3 +13,5 @@ C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\Course
 C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\obj\Debug\net6.0\refint\CourseApp.Infrastructure.dll
 C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\obj\Debug\net6.0\CourseApp.Infrastructure.pdb
 C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\obj\Debug\net6.0\ref\CourseApp.Infrastructure.dll
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\bin\Debug\net6.0\CourseApp.Infrastructure.runtimeconfig.json
+C:\Users\samet\source\repos\Turkcell\ASP.NET\CourseApp\src\Infrastructure\CourseApp.Infrastructure\obj\Debug\net6.0\CourseApp.Infrastructure.genruntimeconfig.cache

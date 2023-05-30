@@ -14,7 +14,7 @@ namespace CourseApp.Entities
         public int? TotalHours { get; set; }
         public string ImageUrl { get; set;} = "https://loremflickr.com/320/240";
         public int? CategoryId { get; set; }
-        public Category? Category { get; set; }
         public byte? Rating { get; set; }
+        public Category? Category { get; set; }
     }
 }
