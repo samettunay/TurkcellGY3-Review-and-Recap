@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -6,8 +7,8 @@
     <title>@ViewData["Title"] - CourseApp.Mvc</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-	<link href="~/alertifyjs/css/alertify.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/CourseApp.Mvc.styles.css" asp-append-version="true" />
+    <link href="~/alertifyjs/css/alertify.min.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -27,6 +28,28 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         @await Component.InvokeAsync("BasketLink")
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Users" asp-action="Logout"> @User.Identity.Name (Çıkış Yap)</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Users" asp-action="Login"> Giriş Yap</a>
+                            </li>
+                        }
+
+                        @if (User.IsInRole("Admin") || User.IsInRole("Editor"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Courses" asp-action="Index"> Kurs İşlemleri</a>
+                            </li>
+                        }
+
+
+
                     </ul>
                 </div>
             </div>
@@ -41,6 +64,8 @@
                 </main>
             </div>
         </div>
+
+
     </div>
 
     <footer class="border-top footer text-muted">
@@ -48,10 +73,10 @@
             &copy; 2023 - CourseApp.Mvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
-	<script src="~/alertifyjs/alertify.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/alertifyjs/alertify.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
