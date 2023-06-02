@@ -1,0 +1,15 @@
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\bin\Debug\net7.0\KidegaApp.Infrastructure.deps.json
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\bin\Debug\net7.0\KidegaApp.Infrastructure.dll
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\bin\Debug\net7.0\KidegaApp.Infrastructure.pdb
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\bin\Debug\net7.0\KidegaApp.Entities.dll
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\bin\Debug\net7.0\KidegaApp.Entities.pdb
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\obj\Debug\net7.0\KidegaApp.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\obj\Debug\net7.0\KidegaApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\obj\Debug\net7.0\KidegaApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\obj\Debug\net7.0\KidegaApp.Infrastructure.AssemblyInfo.cs
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\obj\Debug\net7.0\KidegaApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\obj\Debug\net7.0\KidegaApp.Infrastructure.csproj.CopyComplete
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\obj\Debug\net7.0\KidegaApp.Infrastructure.dll
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\obj\Debug\net7.0\refint\KidegaApp.Infrastructure.dll
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\obj\Debug\net7.0\KidegaApp.Infrastructure.pdb
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\obj\Debug\net7.0\ref\KidegaApp.Infrastructure.dll

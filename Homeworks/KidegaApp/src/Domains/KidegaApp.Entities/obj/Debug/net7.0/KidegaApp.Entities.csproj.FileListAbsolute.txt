@@ -1,0 +1,12 @@
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Domains\KidegaApp.Entities\bin\Debug\net7.0\KidegaApp.Entities.deps.json
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Domains\KidegaApp.Entities\bin\Debug\net7.0\KidegaApp.Entities.dll
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Domains\KidegaApp.Entities\bin\Debug\net7.0\KidegaApp.Entities.pdb
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Domains\KidegaApp.Entities\obj\Debug\net7.0\KidegaApp.Entities.csproj.AssemblyReference.cache
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Domains\KidegaApp.Entities\obj\Debug\net7.0\KidegaApp.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Domains\KidegaApp.Entities\obj\Debug\net7.0\KidegaApp.Entities.AssemblyInfoInputs.cache
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Domains\KidegaApp.Entities\obj\Debug\net7.0\KidegaApp.Entities.AssemblyInfo.cs
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Domains\KidegaApp.Entities\obj\Debug\net7.0\KidegaApp.Entities.csproj.CoreCompileInputs.cache
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Domains\KidegaApp.Entities\obj\Debug\net7.0\KidegaApp.Entities.dll
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Domains\KidegaApp.Entities\obj\Debug\net7.0\refint\KidegaApp.Entities.dll
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Domains\KidegaApp.Entities\obj\Debug\net7.0\KidegaApp.Entities.pdb
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Domains\KidegaApp.Entities\obj\Debug\net7.0\ref\KidegaApp.Entities.dll

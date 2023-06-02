@@ -1,0 +1,353 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\WebUI\\KidegaApp.Mvc\\KidegaApp.Mvc.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Application\\KidegaApp.DataTransferObjects\\KidegaApp.DataTransferObjects.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Application\\KidegaApp.DataTransferObjects\\KidegaApp.DataTransferObjects.csproj",
+        "projectName": "KidegaApp.DataTransferObjects",
+        "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Application\\KidegaApp.DataTransferObjects\\KidegaApp.DataTransferObjects.csproj",
+        "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Application\\KidegaApp.DataTransferObjects\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Application\\KidegaApp.Services\\KidegaApp.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Application\\KidegaApp.Services\\KidegaApp.Services.csproj",
+        "projectName": "KidegaApp.Services",
+        "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Application\\KidegaApp.Services\\KidegaApp.Services.csproj",
+        "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Application\\KidegaApp.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Application\\KidegaApp.DataTransferObjects\\KidegaApp.DataTransferObjects.csproj": {
+                "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Application\\KidegaApp.DataTransferObjects\\KidegaApp.DataTransferObjects.csproj"
+              },
+              "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Infrastructure\\KidegaApp.Infrastructure\\KidegaApp.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Infrastructure\\KidegaApp.Infrastructure\\KidegaApp.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Domains\\KidegaApp.Entities\\KidegaApp.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Domains\\KidegaApp.Entities\\KidegaApp.Entities.csproj",
+        "projectName": "KidegaApp.Entities",
+        "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Domains\\KidegaApp.Entities\\KidegaApp.Entities.csproj",
+        "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Domains\\KidegaApp.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Infrastructure\\KidegaApp.Infrastructure\\KidegaApp.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Infrastructure\\KidegaApp.Infrastructure\\KidegaApp.Infrastructure.csproj",
+        "projectName": "KidegaApp.Infrastructure",
+        "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Infrastructure\\KidegaApp.Infrastructure\\KidegaApp.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Infrastructure\\KidegaApp.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Domains\\KidegaApp.Entities\\KidegaApp.Entities.csproj": {
+                "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Domains\\KidegaApp.Entities\\KidegaApp.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\WebUI\\KidegaApp.Mvc\\KidegaApp.Mvc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\WebUI\\KidegaApp.Mvc\\KidegaApp.Mvc.csproj",
+        "projectName": "KidegaApp.Mvc",
+        "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\WebUI\\KidegaApp.Mvc\\KidegaApp.Mvc.csproj",
+        "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\WebUI\\KidegaApp.Mvc\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Application\\KidegaApp.Services\\KidegaApp.Services.csproj": {
+                "projectPath": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\Application\\KidegaApp.Services\\KidegaApp.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Collection.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

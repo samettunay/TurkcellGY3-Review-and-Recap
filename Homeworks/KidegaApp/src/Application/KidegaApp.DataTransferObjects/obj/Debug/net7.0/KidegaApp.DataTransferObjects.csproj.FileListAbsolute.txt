@@ -1,0 +1,12 @@
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Application\KidegaApp.DataTransferObjects\bin\Debug\net7.0\KidegaApp.DataTransferObjects.deps.json
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Application\KidegaApp.DataTransferObjects\bin\Debug\net7.0\KidegaApp.DataTransferObjects.dll
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Application\KidegaApp.DataTransferObjects\bin\Debug\net7.0\KidegaApp.DataTransferObjects.pdb
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Application\KidegaApp.DataTransferObjects\obj\Debug\net7.0\KidegaApp.DataTransferObjects.csproj.AssemblyReference.cache
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Application\KidegaApp.DataTransferObjects\obj\Debug\net7.0\KidegaApp.DataTransferObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Application\KidegaApp.DataTransferObjects\obj\Debug\net7.0\KidegaApp.DataTransferObjects.AssemblyInfoInputs.cache
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Application\KidegaApp.DataTransferObjects\obj\Debug\net7.0\KidegaApp.DataTransferObjects.AssemblyInfo.cs
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Application\KidegaApp.DataTransferObjects\obj\Debug\net7.0\KidegaApp.DataTransferObjects.csproj.CoreCompileInputs.cache
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Application\KidegaApp.DataTransferObjects\obj\Debug\net7.0\KidegaApp.DataTransferObjects.dll
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Application\KidegaApp.DataTransferObjects\obj\Debug\net7.0\refint\KidegaApp.DataTransferObjects.dll
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Application\KidegaApp.DataTransferObjects\obj\Debug\net7.0\KidegaApp.DataTransferObjects.pdb
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Application\KidegaApp.DataTransferObjects\obj\Debug\net7.0\ref\KidegaApp.DataTransferObjects.dll

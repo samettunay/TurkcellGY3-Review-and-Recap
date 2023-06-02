@@ -1,0 +1,10 @@
+﻿@model IEnumerable<ProductDisplayResponse>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@foreach (var item in Model)
+{
+    <div>Ürün: @item.Name  Fiyat: @item.Price</div>
+}
