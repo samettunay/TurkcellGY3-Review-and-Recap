@@ -14,6 +14,8 @@ namespace KidegaApp.Mvc.Extensions
             services.AddScoped<IProductRepository, EFProductRepository>();
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<ICategoryRepository, EFCategoryRepository>();
+            services.AddScoped<ICampaignService, CampaignService>();
+            services.AddScoped<ICampaignRepository, EFCampaignRepository>();
 
             services.AddDbContext<KidegaDbContext>(opt => opt.UseSqlServer(connectionString));
 

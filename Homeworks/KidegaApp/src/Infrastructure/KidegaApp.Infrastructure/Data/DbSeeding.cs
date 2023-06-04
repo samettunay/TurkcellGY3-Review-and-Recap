@@ -13,6 +13,23 @@ namespace KidegaApp.Infrastructure.Data
         {
             seedCategoryIfNotExists(dbContext);
             seedProductIfNotExists(dbContext);
+            seedCampaignIfNotExists(dbContext);
+        }
+
+        private static void seedCampaignIfNotExists(KidegaDbContext dbContext)
+        {
+            if (!dbContext.Campaigns.Any())
+            {
+                var campaigns = new List<Campaign>()
+                {
+                    new(){Name="Gece Temalı Kitaplar", Description="%50'ye varan indirim!", ImageUrl = "https://img1-kidega.mncdn.com/UPLOAD/2023-mayis-kampanyalari/750x417kanonkitap.png", DiscountRate=50},
+                    new(){Name="Korku ve Gerilim Seçkisi", Description="%30'a varan indirim!", ImageUrl="https://img1-kidega.mncdn.com/UPLOAD/2023-mayis-kampanyalari/750x417asiyahkugu.png", DiscountRate = 30},
+                    new(){Name="Kidega Dedektiflerinin Seçtikleri", Description="%40'a varan indirim!", ImageUrl="https://img1-kidega.mncdn.com/UPLOAD/2023-mayis-kampanyalari/750x417canyayinlariikinci50.png", DiscountRate = 40},
+                };
+
+                dbContext.Campaigns.AddRange(campaigns);
+                dbContext.SaveChanges();
+            }
         }
 
         private static void seedCategoryIfNotExists(KidegaDbContext dbContext)
@@ -39,7 +56,9 @@ namespace KidegaApp.Infrastructure.Data
                 {
                     new(){CategoryId=1, ImageUrl="https://loremflickr.com/320/240", Name="İblis Keser 9. Cilt", Price=10.75M, Rating=5},
                     new(){CategoryId=2, ImageUrl="https://loremflickr.com/320/240", Name="Bullet Points", Price=50M, Rating=5},
+                    new(){CategoryId=2, ImageUrl="https://loremflickr.com/320/240", Name="Joker", Price=50M, Rating=5},
                     new(){CategoryId=3, ImageUrl="https://loremflickr.com/320/240", Name="All-Star Superman", Price=30.75M, Rating=5},
+                    new(){CategoryId=3, ImageUrl="https://loremflickr.com/320/240", Name="Spiderman", Price=60.75M, Rating=5},
                  };
 
                 dbContext.Products.AddRange(products);

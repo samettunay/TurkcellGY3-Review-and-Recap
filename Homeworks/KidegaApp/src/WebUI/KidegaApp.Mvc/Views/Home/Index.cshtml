@@ -2,9 +2,24 @@
 
 @{
     ViewData["Title"] = "Home Page";
+    var columnCount = 0;
 }
+@await Component.InvokeAsync("Campaign")
+@*<div class="row m-4" >
 
-@foreach (var item in Model)
-{
-    <div>Ürün: @item.Name  Fiyat: @item.Price</div>
-}
+    @foreach (var productDisplay in Model)
+    {
+        @if (columnCount != 0 && columnCount % 4 == 0)
+        {
+            @:</div><div class="row m-4">
+        }
+        
+        <div class="col-3">
+
+            <partial name="_ProductDisplay" model="productDisplay" />
+
+        </div>
+        columnCount++;
+    }
+
+</div>*@
