@@ -25,6 +25,14 @@ namespace KidegaApp.Infrastructure.Data
                     new(){Name="Gece Temalı Kitaplar", Description="%50'ye varan indirim!", ImageUrl = "https://img1-kidega.mncdn.com/UPLOAD/2023-mayis-kampanyalari/750x417kanonkitap.png", DiscountRate=50},
                     new(){Name="Korku ve Gerilim Seçkisi", Description="%30'a varan indirim!", ImageUrl="https://img1-kidega.mncdn.com/UPLOAD/2023-mayis-kampanyalari/750x417asiyahkugu.png", DiscountRate = 30},
                     new(){Name="Kidega Dedektiflerinin Seçtikleri", Description="%40'a varan indirim!", ImageUrl="https://img1-kidega.mncdn.com/UPLOAD/2023-mayis-kampanyalari/750x417canyayinlariikinci50.png", DiscountRate = 40},
+
+                    new(){Name="Gece Temalı Kitaplar", Description="%50'ye varan indirim!", ImageUrl = "https://img1-kidega.mncdn.com/UPLOAD/2023-mayis-kampanyalari/750x417kanonkitap.png", DiscountRate=50},
+                    new(){Name="Korku ve Gerilim Seçkisi", Description="%30'a varan indirim!", ImageUrl="https://img1-kidega.mncdn.com/UPLOAD/2023-mayis-kampanyalari/750x417asiyahkugu.png", DiscountRate = 30},
+                    new(){Name="Kidega Dedektiflerinin Seçtikleri", Description="%40'a varan indirim!", ImageUrl="https://img1-kidega.mncdn.com/UPLOAD/2023-mayis-kampanyalari/750x417canyayinlariikinci50.png", DiscountRate = 40},
+
+                    new(){Name="Gece Temalı Kitaplar", Description="%50'ye varan indirim!", ImageUrl = "https://img1-kidega.mncdn.com/UPLOAD/2023-mayis-kampanyalari/750x417kanonkitap.png", DiscountRate=50},
+                    new(){Name="Korku ve Gerilim Seçkisi", Description="%30'a varan indirim!", ImageUrl="https://img1-kidega.mncdn.com/UPLOAD/2023-mayis-kampanyalari/750x417asiyahkugu.png", DiscountRate = 30},
+                    new(){Name="Kidega Dedektiflerinin Seçtikleri", Description="%40'a varan indirim!", ImageUrl="https://img1-kidega.mncdn.com/UPLOAD/2023-mayis-kampanyalari/750x417canyayinlariikinci50.png", DiscountRate = 40},
                 };
 
                 dbContext.Campaigns.AddRange(campaigns);

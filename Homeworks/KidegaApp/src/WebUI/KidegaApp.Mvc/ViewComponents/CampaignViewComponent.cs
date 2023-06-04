@@ -13,10 +13,10 @@ namespace KidegaApp.Mvc.ViewComponents
             _campaignService = campaignService;
         }
 
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(string? viewName)
         {
             var campaigns = _campaignService.GetCampaignsForList();
-            return View(campaigns);
+            return View(viewName,campaigns);
         }
     }
 }

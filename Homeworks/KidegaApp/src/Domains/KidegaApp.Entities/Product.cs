@@ -12,7 +12,7 @@ namespace KidegaApp.Entities
         public int Id { get; set; }
         public string? Name { get; set; }
         public string? Description { get; set; }
-        public decimal? Price { get; set; }
+        public decimal Price { get; set; }
         public string ImageUrl { get; set; } = "https://mybiros.com/wp-content/themes/qik/assets/images/no-image/No-Image-Found-400x264.png";
         public byte? Rating { get; set; }
         public int? CategoryId { get; set; }

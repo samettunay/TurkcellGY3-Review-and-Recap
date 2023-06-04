@@ -1,0 +1,19 @@
+﻿@model DealOfWeek
+
+<div class="card">
+    <h5 class="card-header bg-warning">@Model.Name</h5>
+    <div class="card-body">
+        <div class="row" >
+            <div class="col-5">
+                <h5 class="card-title">@Model.Product.Name</h5>
+                <p class="card-text">@Model.Product.Description</p>
+                <p class="card-text text-warning">%@Model.DiscountRate İndirim!</p>
+                <p class="card-text">@Model.Product.Price</p>
+                <a href="#" class="btn btn-warning">Fırsatı Yakala</a>
+            </div>
+            <div class="col-7">
+                <img class="img-fluid" src="@Model.Product.ImageUrl" />
+            </div>
+        </div>
+    </div>
+</div>
