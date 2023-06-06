@@ -87,6 +87,16 @@ namespace CourseApp.Infrastructure.Repositories
 			return _courses.Where(c => c.CategoryId == categoryId).AsEnumerable();
 		}
 
+        public Task<IEnumerable<Course>> GetCoursesByCategoryAsync(int categoryId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Course>> GetCoursesByName(string name)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<bool> IsExistsAsync(int id)
         {
             throw new NotImplementedException();

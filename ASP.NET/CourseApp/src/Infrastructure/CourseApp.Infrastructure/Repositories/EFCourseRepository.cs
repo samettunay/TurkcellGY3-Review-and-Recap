@@ -56,15 +56,18 @@ namespace CourseApp.Infrastructure.Repositories
         {
             throw new NotImplementedException();
         }
-
         public IEnumerable<Course> GetCoursesByCategory(int categoryId)
         {
-            return courseDbContext.Courses.AsNoTracking().Where(c => c.CategoryId == categoryId).AsEnumerable();
+            return  courseDbContext.Courses.AsNoTracking().Where(c => c.CategoryId == categoryId).AsEnumerable();
+        }
+        public async Task<IEnumerable<Course>> GetCoursesByCategoryAsync(int categoryId)
+        {
+            return await courseDbContext.Courses.AsNoTracking().Where(c => c.CategoryId == categoryId).ToListAsync();
         }
 
-        public IEnumerable<Course> GetCoursesByName(string name)
+        public async Task<IEnumerable<Course>> GetCoursesByName(string name)
         {
-            return courseDbContext.Courses.AsNoTracking().Where(c => c.Name.Contains(name)).AsEnumerable();
+            return await courseDbContext.Courses.AsNoTracking().Where(c => c.Name.Contains(name)).ToListAsync();
 
         }
 

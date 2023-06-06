@@ -60,5 +60,24 @@ namespace CourseApp.Services
             var course = await repository.GetAsync(id);
             return _mapper.Map<UpdateCourseRequest>(course);
         }
+
+        public async Task<IEnumerable<CourseDisplayResponse>> SearchByName(string name)
+        {
+            var courses = await repository.GetCoursesByName(name);
+            var response = _mapper.Map<IEnumerable<CourseDisplayResponse>>(courses);
+            return response;
+        }
+
+        public async Task<int> CreateCourseAndReturnIdAsync(CreateNewCourseRequest createNewCourseRequest)
+        {
+            var course = _mapper.Map<Course>(createNewCourseRequest);
+            await repository.CreateAsync(course);
+            return course.Id;
+        }
+
+        public async Task DeleteAsync(int id)
+        {
+            await repository.DeleteAsync(id);
+        }
     }
 }
