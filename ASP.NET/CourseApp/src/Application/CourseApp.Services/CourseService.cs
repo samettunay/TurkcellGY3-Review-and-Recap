@@ -43,5 +43,22 @@ namespace CourseApp.Services
             var course = _mapper.Map<Course>(createNewCourseRequest);
             await repository.CreateAsync(course);
         }
-	}
+
+        public async Task UpdateCourse(UpdateCourseRequest updateCourseRequest)
+        {
+            var course = _mapper.Map<Course>(updateCourseRequest);
+            await repository.UpdateAsync(course);
+        }
+
+        public async Task<bool> CourseIsExists(int courseId)
+        {
+            return await repository.IsExistsAsync(courseId);
+        }
+
+        public async Task<UpdateCourseRequest> GetCourseForUpdateAsync(int id)
+        {
+            var course = await repository.GetAsync(id);
+            return _mapper.Map<UpdateCourseRequest>(course);
+        }
+    }
 }

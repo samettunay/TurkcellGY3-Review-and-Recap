@@ -57,6 +57,11 @@ namespace CourseApp.Infrastructure.Repositories
             return await courseDbContext.Categories.FirstOrDefaultAsync(c=>c.Id == id);
         }
 
+        public Task<bool> IsExistsAsync(int id)
+        {
+            return courseDbContext.Categories.AnyAsync(c=>c.Id == id);
+        }
+
         public async Task UpdateAsync(Category entity)
         {
             courseDbContext.Categories.Update(entity);

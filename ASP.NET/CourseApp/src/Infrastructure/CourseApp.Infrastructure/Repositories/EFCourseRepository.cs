@@ -68,6 +68,11 @@ namespace CourseApp.Infrastructure.Repositories
 
         }
 
+        public Task<bool> IsExistsAsync(int id)
+        {
+            return courseDbContext.Courses.AnyAsync(c => c.Id == id);
+        }
+
         public async Task UpdateAsync(Course entity)
         {
             courseDbContext.Courses.Update(entity);

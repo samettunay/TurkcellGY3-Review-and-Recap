@@ -21,5 +21,6 @@ namespace CourseApp.Infrastructure.Repositories
         Task CreateAsync(T entity);
         Task DeleteAsync(int id);
         Task UpdateAsync(T entity);
+        Task<bool> IsExistsAsync(int id);
     }
 }
