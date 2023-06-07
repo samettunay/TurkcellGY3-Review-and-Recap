@@ -18,7 +18,7 @@ namespace KidegaApp.Mvc.ViewComponents
             var product = await _productService.GetProductAsync(id);
             var dealOfWeek = new DealOfWeek()
             {
-                Name = "Haftanın Fırsatları",
+                Name = "Haftanın Fırsatı",
                 DiscountRate = 30,
                 Product = product
             };

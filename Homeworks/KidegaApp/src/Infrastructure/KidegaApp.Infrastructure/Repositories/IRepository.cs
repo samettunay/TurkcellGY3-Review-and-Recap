@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,6 +20,7 @@ namespace KidegaApp.Infrastructure.Repositories
 
         Task<IList<T>> GetAllAsync();
         Task<T> GetByIdAsync(int id);
+        Task<T> GetWithPredicateAsync(Expression<Func<T, bool>> predicate);
 
         IList<T> GetAll();
         T GetById(int id);

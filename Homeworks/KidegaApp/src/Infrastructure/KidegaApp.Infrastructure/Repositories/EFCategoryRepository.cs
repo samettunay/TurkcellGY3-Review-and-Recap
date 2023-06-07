@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -62,6 +63,11 @@ namespace KidegaApp.Infrastructure.Repositories
         public async Task<Category> GetByIdAsync(int id)
         {
             return await kidegaDbContext.Categories.AsNoTracking().FirstAsync(c => c.Id == id);
+        }
+
+        public Task<Category> GetWithPredicateAsync(Expression<Func<Category, bool>> predicate)
+        {
+            throw new NotImplementedException();
         }
 
         public void Update(Category entity)

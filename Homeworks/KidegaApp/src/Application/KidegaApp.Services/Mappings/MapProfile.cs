@@ -17,6 +17,10 @@ namespace KidegaApp.Services.Mappings
             CreateMap<Product, ProductDisplayResponse>();
             CreateMap<Category, CategoryDisplayResponse>();
             CreateMap<Campaign, CampaignDisplayResponse>();
+            CreateMap<BasketItem,BasketItemDisplayResponse>();
+
+            CreateMap<CreateNewBasketItemRequest, BasketItem>();
+            CreateMap<UpdateBasketItemRequest, BasketItem>();
             CreateMap<CreateNewProductRequest, Product>();
             CreateMap<CreateNewCategoryRequest, Category>();
             CreateMap<CreateNewCampaignRequest, Campaign>();

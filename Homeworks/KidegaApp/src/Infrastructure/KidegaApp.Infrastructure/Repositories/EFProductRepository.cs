@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -115,6 +116,11 @@ namespace KidegaApp.Infrastructure.Repositories
         IEnumerable<Product> IProductRepository.GetProductsByName(string name)
         {
             return kidegaDbContext.Products.AsNoTracking().Where(c => c.Name.Contains(name)).ToList();
+        }
+
+        public Task<Product> GetWithPredicateAsync(Expression<Func<Product, bool>> predicate)
+        {
+            throw new NotImplementedException();
         }
     }
 }
