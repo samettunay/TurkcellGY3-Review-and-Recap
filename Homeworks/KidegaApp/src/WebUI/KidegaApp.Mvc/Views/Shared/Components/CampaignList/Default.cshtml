@@ -1,0 +1,29 @@
+﻿@model IEnumerable<CampaignDisplayResponse>
+
+@{
+    var columnCount = 0;
+}
+
+<div class="row m-4">
+
+    @foreach (var campaignDisplay in Model)
+    {
+        // İlk üç kampanya slider'da olduğundan sadece görüntü için >= 3
+        @if (columnCount >= 3) 
+        {
+            @if (columnCount != 0 && columnCount % 3 == 0)
+            {
+                @:</div><div class="row m-4">
+            }
+
+            <div class="col-4">
+
+            <partial name="_CampaignDisplay" model="campaignDisplay" />
+
+            </div>
+        }
+        
+        columnCount++;
+    }
+
+</div>

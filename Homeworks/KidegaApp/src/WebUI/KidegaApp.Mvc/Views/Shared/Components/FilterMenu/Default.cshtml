@@ -1,0 +1,23 @@
+﻿@model IEnumerable<ProductDisplayResponse>
+
+@{
+    var minPrice = ViewBag.MinPriceProduct?.Price != null ? (int)Math.Floor(ViewBag.MinPriceProduct.Price) : 0;
+    var maxPrice = ViewBag.MaxPriceProduct?.Price != null ? (int)Math.Ceiling(ViewBag.MaxPriceProduct.Price) : 0;
+    string campaignId = ViewContext.HttpContext.Request.Query["campaignId"];
+    string categoryId = ViewContext.HttpContext.Request.Query["categoryId"];
+}
+
+<div class="list-group m-4">
+    <strong class="list-group-item bg-warning">Fiyat Aralığı</strong>
+    @for (int i = minPrice; i < maxPrice; i+=30)
+    {
+        <a asp-route-categoryId="@categoryId" asp-route-campaignId="@campaignId" asp-route-minPrice="@i" asp-route-maxPrice="@(i + 30)" class="list-group-item list-group-item-action">
+            @i - @(i + 30)
+        </a>
+    }
+    <strong class="list-group-item bg-warning">Markalar</strong>
+    @foreach (var brand in ViewBag.Brands)
+    {
+        <a asp-route-categoryId="@categoryId" asp-route-campaignId="@campaignId" asp-route-brandName="@brand" class="list-group-item list-group-item-action">@brand</a>
+    }
+</div>

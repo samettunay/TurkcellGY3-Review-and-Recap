@@ -4,18 +4,18 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace KidegaApp.Mvc.ViewComponents
 {
-    public class CampaignViewComponent : ViewComponent
+    public class CampaignListViewComponent : ViewComponent
     {
         private readonly ICampaignService _campaignService;
 
-        public CampaignViewComponent(ICampaignService campaignService)
+        public CampaignListViewComponent(ICampaignService campaignService)
         {
             _campaignService = campaignService;
         }
 
-        public IViewComponentResult Invoke(string? viewName)
+        public async Task<IViewComponentResult> InvokeAsync(string? viewName)
         {
-            var campaigns = _campaignService.GetCampaignsForList();
+            var campaigns = await _campaignService.GetCampaignsForListAsync();
             return View(viewName,campaigns);
         }
     }

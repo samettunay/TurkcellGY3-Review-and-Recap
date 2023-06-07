@@ -15,9 +15,9 @@ namespace KidegaApp.Mvc.Controllers
             this.productService = productService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var products = productService.GetProductDisplayResponses();
+            var products = await productService.GetProductDisplayResponsesAsync();
             return View(products);
         }
 

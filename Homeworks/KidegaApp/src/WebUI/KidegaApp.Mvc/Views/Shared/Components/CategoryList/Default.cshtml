@@ -1,0 +1,25 @@
+﻿@model IEnumerable<CategoryDisplayResponse>
+
+@{
+    var columnCount = 0;
+}
+
+
+@foreach(var categories in Model)
+{
+    @if (columnCount != 0 && columnCount % 3 == 0)
+    {
+        @:</div><div class="row m-4">
+    }
+
+    <div class="col-4">
+        <a class="text-white" asp-route-categoryId="@categories.Id" asp-controller="Products">
+            <div class="text-center bg-warning p-2" >
+                    <strong class="card-text">@categories.Name</strong>
+            </div>
+        </a>
+    </div>
+
+    columnCount++;
+}
+

@@ -1,0 +1,19 @@
+﻿@model IEnumerable<ProductDisplayResponse>
+
+@{
+    Layout = "_Layout";
+}
+
+<div class="text-center bg-warning">
+    <h5 class="p-2">@ViewBag.NavigationInfo</h5>
+</div>
+
+<div class="row">
+    <div class="col-4">
+        @await Component.InvokeAsync("FilterMenu", new {model = ViewBag.ProductModelForFilterMenu})
+    </div>
+
+    <div class="col-8">
+        @await Component.InvokeAsync("ProductList", new {model = Model})
+    </div>
+</div>

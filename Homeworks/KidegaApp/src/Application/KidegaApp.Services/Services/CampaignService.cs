@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using KidegaApp.DataTransferObjects.Responses;
+using KidegaApp.Entities;
 using KidegaApp.Infrastructure.Repositories;
 using System;
 using System.Collections.Generic;

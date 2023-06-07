@@ -1,8 +1,8 @@
 ﻿@model CampaignDisplayResponse
 
- <button class="bg-transparent border-0">
+<a asp-route-campaignId="@Model.Id" asp-controller="Products" class="bg-transparent border-0">
 	 <img src="@Model.ImageUrl" class="img-fluid"/>
-</button>
+</a>
 
 
 

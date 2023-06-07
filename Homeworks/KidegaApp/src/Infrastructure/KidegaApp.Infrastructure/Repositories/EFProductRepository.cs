@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace KidegaApp.Infrastructure.Repositories
 {
@@ -64,6 +65,16 @@ namespace KidegaApp.Infrastructure.Repositories
             return await kidegaDbContext.Products.AsNoTracking().FirstAsync(p => p.Id == id);
         }
 
+        public IEnumerable<Product> GetProductsByCampaign(int campaignId)
+        {
+            return kidegaDbContext.Products.AsNoTracking().Where(c => c.CampaignId == campaignId).AsEnumerable();
+        }
+
+        public async Task<IEnumerable<Product>> GetProductsByCampaignAsync(int campaignId)
+        {
+            return await kidegaDbContext.Products.AsNoTracking().Where(c => c.CampaignId == campaignId).ToListAsync();
+        }
+
         public IEnumerable<Product> GetProductsByCategory(int categoryId)
         {
             return kidegaDbContext.Products.AsNoTracking().Where(c => c.CategoryId == categoryId).AsEnumerable();
@@ -84,6 +95,26 @@ namespace KidegaApp.Infrastructure.Repositories
         {
             kidegaDbContext.Products.Update(entity);
             await kidegaDbContext.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<Product>> GetProductsByBrandNameAsync(string brandName)
+        {
+            return await kidegaDbContext.Products.AsNoTracking().Where(c => c.BrandName.Contains(brandName)).ToListAsync();
+        }
+
+        public async Task<IEnumerable<Product>> GetProductsByNameAsync(string name)
+        {
+            return await kidegaDbContext.Products.AsNoTracking().Where(c => c.Name.Contains(name)).ToListAsync();
+        }
+
+        IEnumerable<Product> IProductRepository.GetProductsByBrandName(string brandName)
+        {
+            return kidegaDbContext.Products.AsNoTracking().Where(c => c.BrandName.Contains(brandName)).ToList();
+        }
+
+        IEnumerable<Product> IProductRepository.GetProductsByName(string name)
+        {
+            return kidegaDbContext.Products.AsNoTracking().Where(c => c.Name.Contains(name)).ToList();
         }
     }
 }

@@ -62,6 +62,34 @@ namespace KidegaApp.Services.Services
             return response;
         }
 
+        public IEnumerable<ProductDisplayResponse> GetProductsByBrandName(string brandName)
+        {
+            var products = repository.GetProductsByBrandName(brandName);
+            var response = _mapper.Map<IEnumerable<ProductDisplayResponse>>(products);
+            return response;
+        }
+
+        public async Task<IEnumerable<ProductDisplayResponse>> GetProductsByBrandNameAsync(string brandName)
+        {
+            var products = await repository.GetProductsByBrandNameAsync(brandName);
+            var response = _mapper.Map<IEnumerable<ProductDisplayResponse>>(products);
+            return response;
+        }
+
+        public IEnumerable<ProductDisplayResponse> GetProductsByCampaign(int campoaignId)
+        {
+            var products = repository.GetProductsByCampaign(campoaignId);
+            var response = _mapper.Map<IEnumerable<ProductDisplayResponse>>(products);
+            return response;
+        }
+
+        public async Task<IEnumerable<ProductDisplayResponse>> GetProductsByCampaignAsync(int campaignId)
+        {
+            var products = await repository.GetProductsByCampaignAsync(campaignId);
+            var response = _mapper.Map<IEnumerable<ProductDisplayResponse>>(products);
+            return response;
+        }
+
         public IEnumerable<ProductDisplayResponse> GetProductsByCategory(int categoryId)
         {
             var products = repository.GetProductsByCategory(categoryId);
@@ -72,6 +100,20 @@ namespace KidegaApp.Services.Services
         public async Task<IEnumerable<ProductDisplayResponse>> GetProductsByCategoryAsync(int categoryId)
         {
             var products = await repository.GetProductsByCategoryAsync(categoryId);
+            var response = _mapper.Map<IEnumerable<ProductDisplayResponse>>(products);
+            return response;
+        }
+
+        public IEnumerable<ProductDisplayResponse> GetProductsByName(string name)
+        {
+            var products = repository.GetProductsByName(name);
+            var response = _mapper.Map<IEnumerable<ProductDisplayResponse>>(products);
+            return response;
+        }
+
+        public async Task<IEnumerable<ProductDisplayResponse>> GetProductsByNameAsync(string name)
+        {
+            var products = await repository.GetProductsByNameAsync(name);
             var response = _mapper.Map<IEnumerable<ProductDisplayResponse>>(products);
             return response;
         }

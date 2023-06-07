@@ -13,3 +13,5 @@ C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\Kide
 C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\obj\Debug\net7.0\refint\KidegaApp.Infrastructure.dll
 C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\obj\Debug\net7.0\KidegaApp.Infrastructure.pdb
 C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\obj\Debug\net7.0\ref\KidegaApp.Infrastructure.dll
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\bin\Debug\net7.0\KidegaApp.Infrastructure.runtimeconfig.json
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\Infrastructure\KidegaApp.Infrastructure\obj\Debug\net7.0\KidegaApp.Infrastructure.genruntimeconfig.cache

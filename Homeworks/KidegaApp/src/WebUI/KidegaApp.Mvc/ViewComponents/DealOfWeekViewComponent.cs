@@ -13,9 +13,9 @@ namespace KidegaApp.Mvc.ViewComponents
             _productService = productService;
         }
 
-        public IViewComponentResult Invoke(int id)
+        public async Task<IViewComponentResult> InvokeAsync(int id)
         {
-            var product = _productService.GetProduct(id);
+            var product = await _productService.GetProductAsync(id);
             var dealOfWeek = new DealOfWeek()
             {
                 Name = "Haftanın Fırsatları",

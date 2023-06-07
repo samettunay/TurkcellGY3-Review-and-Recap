@@ -1,0 +1,26 @@
+﻿@model IEnumerable<ProductDisplayResponse>
+
+@{
+    var columnCount = 0;
+}
+
+@if (!Model.Any())
+{
+    <div class="bg-danger p-3 m-4" >Ürün bulunamadı!</div>
+}
+
+<div class="row m-4">
+    @foreach (var productDisplay in Model)
+    {
+        @if (columnCount != 0 && columnCount % 3 == 0)
+        {
+            @:</div><div class="row m-4">
+        }
+
+        <div class="col-4">
+            <partial name="_ProductDisplay" model="productDisplay" />
+        </div>
+            
+        columnCount++;
+    }
+</div>

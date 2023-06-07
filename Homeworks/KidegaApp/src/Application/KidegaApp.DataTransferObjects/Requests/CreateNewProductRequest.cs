@@ -16,6 +16,7 @@ namespace KidegaApp.DataTransferObjects.Requests
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
         public decimal? Price { get; set; }
+        public string? BrandName { get; set; }
         public int? TotalHours { get; set; }
         public string ImageUrl { get; set; } = "https://mybiros.com/wp-content/themes/qik/assets/images/no-image/No-Image-Found-400x264.png";
         public int? CategoryId { get; set; }
