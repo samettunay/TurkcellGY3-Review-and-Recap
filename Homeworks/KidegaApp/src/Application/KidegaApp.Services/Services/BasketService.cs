@@ -28,9 +28,6 @@ namespace KidegaApp.Services.Services
             _contextAccessor = contextAccessor;
         }
 
-        
-
-
         public async Task AddItemToBasketAsync(CreateNewBasketItemRequest createNewBasketItemRequest)
         {
             var basket = getUserBasket();
@@ -78,11 +75,6 @@ namespace KidegaApp.Services.Services
             }
         }
 
-        private string? getUserName()
-        {
-            return _contextAccessor.HttpContext?.User?.Identity?.Name;
-        }
-
         private async Task<Basket> getUserBasket()
         {
             string? userName = getUserName();
@@ -96,6 +88,11 @@ namespace KidegaApp.Services.Services
                 await _basketRepository.CreateAsync(basket);
             }
             return basket;
+        }
+
+        private string? getUserName()
+        {
+            return _contextAccessor.HttpContext?.User?.Identity?.Name;
         }
     }
 }

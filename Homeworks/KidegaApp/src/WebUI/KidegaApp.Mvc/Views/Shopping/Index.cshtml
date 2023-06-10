@@ -4,6 +4,11 @@
     var columnCount = 0;
 }
 
+@if (!Model.Any())
+{
+    <div class="bg-primary p-3 m-4" >Sepetiniz boş!</div>
+}
+
 <div class="row m-4">
     @foreach (var productDisplay in Model)
     {

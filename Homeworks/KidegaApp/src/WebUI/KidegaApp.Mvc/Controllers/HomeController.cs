@@ -1,10 +1,12 @@
 ﻿using KidegaApp.Mvc.Models;
 using KidegaApp.Services.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace KidegaApp.Mvc.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

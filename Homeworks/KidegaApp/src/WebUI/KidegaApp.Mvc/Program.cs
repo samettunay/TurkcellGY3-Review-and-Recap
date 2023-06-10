@@ -13,7 +13,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.AddHttpContextAccessor();
@@ -57,5 +58,15 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
+
+//using (var roleScope = app.Services.CreateScope())
+//{
+//    var userManager = roleScope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+
+//    string email = "samet.tunay12@gmail.com";
+
+//    var user = await userManager.FindByEmailAsync(email);
+//    await userManager.AddToRoleAsync(user, "Admin");
+//}
 
 app.Run();
