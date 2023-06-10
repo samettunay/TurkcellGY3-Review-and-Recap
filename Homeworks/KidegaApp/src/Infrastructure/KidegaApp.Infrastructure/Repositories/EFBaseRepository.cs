@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace KidegaApp.Infrastructure.Repositories
 {
-    // Üşenmek bazen çok işe yarıyor hocam :D
+    // Üşenmek bazen işe yarıyor :D
     public class EFBaseRepository<TContext, TEntity> : IRepository<TEntity>
                                             where TContext : DbContext
                                             where TEntity : class, IEntity, new()
@@ -57,9 +57,9 @@ namespace KidegaApp.Infrastructure.Repositories
             return await _context.Set<TEntity>().AsNoTracking().ToListAsync();
         }
 
-        public async Task<TEntity> GetAllPredicateAsync(Expression<Func<TEntity, bool>> predicate)
+        public async Task<TEntity> GetWithPredicateAsync(Expression<Func<TEntity, bool>> predicate)
         {
-            return await _context.Set<TEntity>().AsNoTracking().FirstOrDefaultAsync(predicate);
+            return await _context.Set<TEntity>().FirstOrDefaultAsync(predicate);
         }
 
         public TEntity GetById(int id)

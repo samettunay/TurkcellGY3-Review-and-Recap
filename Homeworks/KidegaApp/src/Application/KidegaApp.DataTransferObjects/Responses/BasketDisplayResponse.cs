@@ -9,6 +9,6 @@ namespace KidegaApp.DataTransferObjects.Responses
     public class BasketDisplayResponse
     {
         public int Id { get; set; }
-        public int UserId { get; set; }
+        public string UserName { get; set; }
     }
 }

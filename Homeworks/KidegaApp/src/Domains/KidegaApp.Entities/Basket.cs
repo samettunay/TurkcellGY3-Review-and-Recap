@@ -9,8 +9,7 @@ namespace KidegaApp.Entities
     public class Basket : IEntity
     {
         public int Id { get; set; }
-        public int UserId { get; set; }
-        public User User { get; set; }
-        public ICollection<BasketItem> BasketItems { get; set;}
+        public string? UserName { get; set; }
+        public ICollection<BasketItem>? BasketItems { get; set;}
     }
 }

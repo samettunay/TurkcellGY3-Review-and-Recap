@@ -9,6 +9,6 @@ namespace KidegaApp.Infrastructure.Repositories
 {
     public interface IBasketRepository : IRepository<Basket>
     {
-        Task<Basket> GetByUserIdAsync(int userId);
+        Task<Basket> GetBasketByUserNameAsync(string userName);
     }
 }

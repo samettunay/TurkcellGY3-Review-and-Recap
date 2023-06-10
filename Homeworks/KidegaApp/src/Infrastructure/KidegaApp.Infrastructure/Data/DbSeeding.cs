@@ -14,6 +14,35 @@ namespace KidegaApp.Infrastructure.Data
             seedCategoryIfNotExists(dbContext);
             seedCampaignIfNotExists(dbContext);
             seedProductIfNotExists(dbContext);
+            seedBasketIfNotExists(dbContext);
+            seedBasketItemIfNotExists(dbContext);
+        }
+
+        private static void seedBasketItemIfNotExists(KidegaDbContext dbContext)
+        {
+            if (!dbContext.Campaigns.Any())
+            {
+                var basketItems = new List<BasketItem>()
+                {
+                    new(){ BasketId = 1, ProductId = 1, Quantity = 1, Basket = new(), Product = new() }
+                };
+                dbContext.BasketItems.AddRange(basketItems);
+                dbContext.SaveChanges();
+            }
+        }
+
+        private static void seedBasketIfNotExists(KidegaDbContext dbContext)
+        {
+            if (!dbContext.Campaigns.Any())
+            {
+                var baskets = new List<Basket>()
+                {
+                    new(){ UserName = "samet.tunay12@gmail.com" }
+                };
+                dbContext.Baskets.AddRange(baskets);
+                dbContext.SaveChanges();
+            }
+
         }
 
         private static void seedCampaignIfNotExists(KidegaDbContext dbContext)

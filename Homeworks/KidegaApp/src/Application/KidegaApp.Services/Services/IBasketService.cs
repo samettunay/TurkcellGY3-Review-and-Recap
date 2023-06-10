@@ -11,9 +11,8 @@ namespace KidegaApp.Services.Services
 {
     public interface IBasketService
     {
-        Task<IList<BasketItemDisplayResponse>> GetAllByBasketItemIdAsync(int basketItemId);
         Task AddItemToBasketAsync(CreateNewBasketItemRequest createNewBasketItemRequest);
-        Task<Basket> GetBasketByUserIdAsync(int userId);
-        Task RemoveBasketItemAsync(int basketId);
+        Task RemoveBasketItemAsync(int productId);
+        Task<IList<BasketItemDisplayResponse>> GetBasketItemsForUser();
     }
 }

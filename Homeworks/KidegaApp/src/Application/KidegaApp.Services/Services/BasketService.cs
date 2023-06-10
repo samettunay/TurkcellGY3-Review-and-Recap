@@ -17,18 +17,26 @@ namespace KidegaApp.Services.Services
     {
         private readonly IBasketItemRepository _basketItemRepository;
         private readonly IBasketRepository _basketRepository;
+        private readonly IHttpContextAccessor _contextAccessor;
         private readonly IMapper _mapper;
 
-        public BasketService(IBasketItemRepository repository, IMapper mapper, IBasketRepository basketRepository)
+        public BasketService(IBasketItemRepository repository, IMapper mapper, IBasketRepository basketRepository, IHttpContextAccessor contextAccessor)
         {
             _basketItemRepository = repository;
             _mapper = mapper;
             _basketRepository = basketRepository;
+            _contextAccessor = contextAccessor;
         }
+
+        
+
 
         public async Task AddItemToBasketAsync(CreateNewBasketItemRequest createNewBasketItemRequest)
         {
-            var exists = await _basketItemRepository.GetWithPredicateAsync(b => b.BasketId == createNewBasketItemRequest.BasketId && b.ProductId == createNewBasketItemRequest.ProductId);
+            var basket = getUserBasket();
+            
+            var exists = await _basketItemRepository.GetWithPredicateAsync(b => b.BasketId == basket.Result.Id && b.ProductId == createNewBasketItemRequest.ProductId);
+            
             if (exists != null)
             {
                 exists.Quantity += 1;
@@ -36,32 +44,58 @@ namespace KidegaApp.Services.Services
             }
             else
             {
+                createNewBasketItemRequest.BasketId = basket.Result.Id;
                 var basketItem = _mapper.Map<BasketItem>(createNewBasketItemRequest);
                 await _basketItemRepository.CreateAsync(basketItem);
             }
         }
 
-        public async Task<IList<BasketItemDisplayResponse>> GetAllByBasketItemIdAsync(int basketItemId)
+        public async Task<IList<BasketItemDisplayResponse>> GetBasketItemsForUser()
         {
-            var basketItems = await _basketItemRepository.GetAllByBasketIdAsync(basketItemId);
+            var userName = getUserName();
+            var basketItems = await _basketItemRepository.GetBasketItemsByUserNameAsync(userName);
             var response = _mapper.Map<IList<BasketItemDisplayResponse>>(basketItems);
             return response;
         }
 
-        public async Task<Basket> GetBasketByUserIdAsync(int userId)
+        public async Task RemoveBasketItemAsync(int productId)
         {
-            return await _basketRepository.GetWithPredicateAsync(b=>b.UserId == userId);
+            var basket = getUserBasket();
+
+            var exists = await _basketItemRepository.GetWithPredicateAsync(b => b.BasketId == basket.Result.Id && b.ProductId == productId);
+
+            if (exists != null)
+            {
+                if (exists.Quantity > 1)
+                {
+                    exists.Quantity -= 1;
+                    await _basketItemRepository.UpdateAsync(exists);
+                }
+                else
+                {
+                    await _basketItemRepository.DeleteAsync(exists.Id);
+                }
+            }
         }
 
-        public async Task RemoveBasketItemAsync(int basketItemId)
+        private string? getUserName()
         {
-            var exists = await _basketItemRepository.GetWithPredicateAsync(b => b.Id == basketItemId);
-            if (exists != null && exists.Quantity > 1)
+            return _contextAccessor.HttpContext?.User?.Identity?.Name;
+        }
+
+        private async Task<Basket> getUserBasket()
+        {
+            string? userName = getUserName();
+            var basket = await _basketRepository.GetBasketByUserNameAsync(userName);
+            if (basket == null)
             {
-                exists.Quantity -= 1;
-                await _basketItemRepository.UpdateAsync(exists);
+                basket = new()
+                {
+                    UserName = userName,
+                };
+                await _basketRepository.CreateAsync(basket);
             }
-            await _basketItemRepository.DeleteAsync(basketItemId);
+            return basket;
         }
     }
 }

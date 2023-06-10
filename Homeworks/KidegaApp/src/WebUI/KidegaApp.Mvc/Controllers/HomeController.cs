@@ -17,6 +17,7 @@ namespace KidegaApp.Mvc.Controllers
 
         public async Task<IActionResult> Index()
         {
+            ViewBag.UserName = HttpContext?.User?.Identity?.Name;
             var products = await productService.GetProductDisplayResponsesAsync();
             return View(products);
         }

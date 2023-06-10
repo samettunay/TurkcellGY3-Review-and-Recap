@@ -17,9 +17,9 @@ namespace KidegaApp.Infrastructure.Repositories
             _context = context;
         }
 
-        public async Task<Basket> GetByUserIdAsync(int userId)
+        public async Task<Basket> GetBasketByUserNameAsync(string userName)
         {
-            return await _context.Baskets.FirstOrDefaultAsync(b => b.UserId == userId);
+            return await _context.Baskets.FirstOrDefaultAsync(b => b.UserName == userName);
         }
     }
 }

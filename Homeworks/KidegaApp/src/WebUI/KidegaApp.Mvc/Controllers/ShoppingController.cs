@@ -1,4 +1,6 @@
-﻿using KidegaApp.Services.Services;
+﻿using KidegaApp.DataTransferObjects.Requests;
+using KidegaApp.DataTransferObjects.Responses;
+using KidegaApp.Services.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KidegaApp.Mvc.Controllers
@@ -6,20 +8,39 @@ namespace KidegaApp.Mvc.Controllers
     public class ShoppingController : Controller
     {
         private readonly IBasketService _basketService;
-        private readonly IUserService _userService;
-
-        public ShoppingController(IBasketService basketService, IUserService userService)
+        private readonly IProductService _productService;
+        public ShoppingController(IBasketService basketService, IProductService productService)
         {
             _basketService = basketService;
-            _userService = userService;
+            _productService = productService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            //HttpContext.User.Identity.Name
-            //var user = _userService.GetUserByUserNameAsync(userName);
-            // var basket = _basketService.GetBasketByUserIdAsync();
-            return View();
+            var basketItems = await _basketService.GetBasketItemsForUser();
+            
+            return View(basketItems);
+        }
+
+        public async Task<IActionResult> AddProduct(int id)
+        {
+            var selectedProduct = _productService.GetProduct(id);
+
+            CreateNewBasketItemRequest request = new CreateNewBasketItemRequest
+            {
+                ProductId = selectedProduct.Id,
+                Quantity = 1,
+            };
+            await _basketService.AddItemToBasketAsync(request);
+
+            return Json(new { message = $"{selectedProduct.Name} Sepete eklendi" });
+        }
+
+        public async Task<IActionResult> RemoveProduct(int id)
+        {
+            await _basketService.RemoveBasketItemAsync(id);
+
+            return RedirectToAction(nameof(Index));
         }
 
     }

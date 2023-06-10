@@ -15,7 +15,6 @@ namespace KidegaApp.Infrastructure.Data
         public DbSet<Campaign> Campaigns { get; set; }
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<BasketItem> BasketItems { get; set; }
-        public DbSet<User> Users { get; set; }
 
         public KidegaDbContext(DbContextOptions<KidegaDbContext> options) : base(options)
         {

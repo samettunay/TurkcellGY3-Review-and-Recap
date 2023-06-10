@@ -296,3 +296,4 @@ C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\WebUI\KidegaApp.Mvc
 C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\WebUI\KidegaApp.Mvc\bin\Debug\net7.0\KidegaApp.DataTransferObjects.pdb
 C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\WebUI\KidegaApp.Mvc\bin\Debug\net7.0\KidegaApp.Entities.pdb
 C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\WebUI\KidegaApp.Mvc\bin\Debug\net7.0\KidegaApp.Infrastructure.pdb
+C:\Users\samet\source\repos\Turkcell\Homeworks\KidegaApp\src\WebUI\KidegaApp.Mvc\bin\Debug\net7.0\libman.json

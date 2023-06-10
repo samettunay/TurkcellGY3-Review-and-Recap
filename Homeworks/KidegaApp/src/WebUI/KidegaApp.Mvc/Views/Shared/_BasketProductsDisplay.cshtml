@@ -1,0 +1,12 @@
+﻿@model BasketItemDisplayResponse
+
+<div class="card">
+    <img src="@Model.Product.ImageUrl" class="img-fluid" />
+    <div class="card-body">
+        <h4 class="card-title">@Model.Product.Name</h4>
+        <p class="card-text"> @Model.Product.Description</p>
+        <p class="card-text">Adet: @Model.Quantity</p>
+        <p class="card-text">Tutar: @Model.TotalPrice</p>
+        <a class="btn btn-danger" asp-action="RemoveProduct" asp-controller="Shopping" asp-route-id="@Model.Product.Id">Sepetden çıkar</a>
+    </div>
+</div>
