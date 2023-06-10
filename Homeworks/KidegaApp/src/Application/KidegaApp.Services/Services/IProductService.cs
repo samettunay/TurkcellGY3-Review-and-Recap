@@ -28,5 +28,9 @@ namespace KidegaApp.Services.Services
         Task<IEnumerable<ProductDisplayResponse>> GetProductsByCampaignAsync(int campaignId);
         Task<IEnumerable<ProductDisplayResponse>> GetProductsByBrandNameAsync(string brandName);
         Task<IEnumerable<ProductDisplayResponse>> GetProductsByNameAsync(string name);
+        Task<UpdateProductRequest> GetProductForUpdate(int id);
+        Task<bool> ProductIsExists(int productId);
+        Task UpdateProduct(UpdateProductRequest updateProductRequest);
+        Task RemoveProduct(int id);
     }
 }

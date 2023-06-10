@@ -1,12 +1,14 @@
-﻿using KidegaApp.Mvc.Models;
+﻿using KidegaApp.DataTransferObjects.Requests;
+using KidegaApp.Mvc.Models;
 using KidegaApp.Services.Services;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics;
 
 namespace KidegaApp.Mvc.Controllers
 {
-    [Authorize(Roles = "Admin")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -19,7 +21,6 @@ namespace KidegaApp.Mvc.Controllers
 
         public async Task<IActionResult> Index()
         {
-            ViewBag.UserName = HttpContext?.User?.Identity?.Name;
             var products = await productService.GetProductDisplayResponsesAsync();
             return View(products);
         }

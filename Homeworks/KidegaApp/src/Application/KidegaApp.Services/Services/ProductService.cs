@@ -117,5 +117,27 @@ namespace KidegaApp.Services.Services
             var response = _mapper.Map<IEnumerable<ProductDisplayResponse>>(products);
             return response;
         }
+
+        public async Task<bool> ProductIsExists(int productId)
+        {
+            return await repository.IsExistsAsync(productId);
+        }
+        public async Task UpdateProduct(UpdateProductRequest updateProductRequest)
+        {
+            var product = _mapper.Map<Product>(updateProductRequest);
+            await repository.UpdateAsync(product);
+
+        }
+        public async Task<UpdateProductRequest> GetProductForUpdate(int id)
+        {
+            var course = await repository.GetByIdAsync(id);
+            return _mapper.Map<UpdateProductRequest>(course);
+
+        }
+
+        public async Task RemoveProduct(int id)
+        {
+            await repository.DeleteAsync(id);
+        }
     }
 }

@@ -18,5 +18,6 @@ namespace KidegaApp.Infrastructure.Repositories
         Task<IEnumerable<Product>> GetProductsByCategoryAsync(int categoryId);
         Task<IEnumerable<Product>> GetProductsByBrandNameAsync(string brandName);
         Task<IEnumerable<Product>> GetProductsByNameAsync(string name);
+        Task<bool> IsExistsAsync(int id);
     }
 }

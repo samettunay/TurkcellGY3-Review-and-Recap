@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KidegaApp.Entities
+namespace KidegaApp.DataTransferObjects.Requests
 {
-    // Sadece kitap satılmadığı için Product
-    public class Product : IEntity
+    public class UpdateProductRequest
     {
         public int Id { get; set; }
         public string? Name { get; set; }
@@ -18,8 +17,5 @@ namespace KidegaApp.Entities
         public string? BrandName { get; set; }
         public int? CategoryId { get; set; }
         public int? CampaignId { get; set; }
-        public Category? Category { get; set; }
-        public Campaign? Campaign { get; set; }
-        public ICollection<BasketItem> BasketItems { get; set; }
     }
 }

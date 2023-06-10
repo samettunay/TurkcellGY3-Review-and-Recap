@@ -19,6 +19,10 @@ namespace KidegaApp.Infrastructure.Repositories
         {
             _context = context;
         }
+        public async Task<bool> IsExistsAsync(int id)
+        {
+            return await _context.Products.AnyAsync(c => c.Id == id);
+        }
 
         public IEnumerable<Product> GetProductsByCampaign(int campaignId)
         {
