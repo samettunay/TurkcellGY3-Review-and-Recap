@@ -10,7 +10,7 @@
                 <p class="card-text">@Model.Product.Description</p>
                 <p class="card-text text-warning">%@Model.DiscountRate İndirim!</p>
                 <p class="card-text">@Model.Product.Price.ToString("F2") TL</p>
-                <a href="#" class="btn btn-warning">Fırsatı Yakala</a>
+                <button class="btn btn-warning basket" data-id="@Model.Product.Id">Fırsatı Yakala</button>
             </div>
             <div class="col-7">
                 <img class="img-fluid" src="@Model.Product.ImageUrl" />

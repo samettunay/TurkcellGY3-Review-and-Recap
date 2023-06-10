@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\AlertifyJS\\css\\alertify.min.css"
     },
     {
+      "Id": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\WebUI\\KidegaApp.Mvc\\wwwroot\\ShoppingJS\\AddProduct.js",
+      "PackagePath": "staticwebassets\\ShoppingJS\\AddProduct.js"
+    },
+    {
       "Id": "C:\\Users\\samet\\source\\repos\\Turkcell\\Homeworks\\KidegaApp\\src\\WebUI\\KidegaApp.Mvc\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

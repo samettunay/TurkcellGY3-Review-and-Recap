@@ -26,4 +26,8 @@
     <ProjectReference Include="..\..\Application\KidegaApp.Services\KidegaApp.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\ShoppingJS\" />
+  </ItemGroup>
+
 </Project>
