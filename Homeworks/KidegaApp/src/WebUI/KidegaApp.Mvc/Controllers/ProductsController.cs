@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.IdentityModel.Tokens;
 using System.Data;
 
@@ -16,16 +17,19 @@ namespace KidegaApp.Mvc.Controllers
     {
         private readonly IProductService _productService;
         private readonly ICategoryService categoryService;
-
-        public ProductsController(IProductService productService, ICategoryService categoryService)
+        private readonly IMemoryCache _memoryCache;
+        public ProductsController(IProductService productService, ICategoryService categoryService, IMemoryCache memoryCache)
         {
             _productService = productService;
             this.categoryService = categoryService;
+            _memoryCache = memoryCache;
         }
 
         [AllowAnonymous]
+        [MemoryCache("ProductDataCache", 60)]
         public async Task<IActionResult> Index(ProductFilterModel filterModel)
         {
+
             IEnumerable<ProductDisplayResponse> products;
 
             if (filterModel.CampaignId.HasValue)
@@ -56,6 +60,7 @@ namespace KidegaApp.Mvc.Controllers
                 products = products.Where(p => p.Price >= filterModel.MinPrice && p.Price <= filterModel.MaxPrice);
             }
 
+            ViewBag.ProductData = products;
             return View(products);
         }
 
@@ -125,7 +130,5 @@ namespace KidegaApp.Mvc.Controllers
             var categories = categoryService.GetCategoriesForList().Select(c => new SelectListItem { Text = c.Name, Value = c.Id.ToString() }).ToList();
             return categories;
         }
-
-
     }
 }

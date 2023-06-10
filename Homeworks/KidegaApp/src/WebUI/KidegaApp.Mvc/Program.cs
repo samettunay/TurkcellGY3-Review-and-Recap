@@ -21,6 +21,8 @@ builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddMemoryCache();
+
 builder.Services.AddAutoMapper(typeof(MapProfile));
 
 var connectionStringKidega = builder.Configuration.GetConnectionString("db");
