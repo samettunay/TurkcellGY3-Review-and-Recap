@@ -45,3 +45,5 @@ public static IEnumerable<Client> GetClients() =>
 ## Kaynak
 
 https://www.gencayyildiz.com/blog/identityserver4-yazi-serisi-20-pkceproof-key-for-code-exchange
+
+https://www.youtube.com/watch?v=_zWovo2zv6k
