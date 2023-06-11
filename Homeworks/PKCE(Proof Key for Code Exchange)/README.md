@@ -1,4 +1,4 @@
-##Proof Key for Code Exchange Nedir?
+## Proof Key for Code Exchange Nedir?
 
 
 Single Page Application(SPA) ve Mobil uygulamalara client secret gibi kritik olan değerleri göndermek oldukça tehlike arz edebilmektedir. Misal, SPA’lar özünde JavaScript oldukları için, kendilerine gönderilen çoğu veriyi tarayıcıda tutmakta ve işlemlerini tarayıcılar üzerinde gerçekleştirmektedirler. Biliyorsunuz ki, tarayıcı üzerinde tutulan verilere kullanıcılar az çabayla erişebilmektedirler. Bu durumda client secret gibi önemli bir değeri tarayıcı üzerinde çalışan SPA gibi uygulamalara göndermek, kötü niyetli kişiler tarafından elde edilmesini ve türlü saldırılara yahut sızıntılara mahal verilmesini sağlayabilir. Aynı şekilde bu durum mobil uygulamalar içinde geçerlidir. Mobil uygulamalar, tersine mühendislikle çok rahat deşifre edilebilmekte ve kendilerine gönderilen kritik verileri kötü niyetli kullanıcılara ister istemez kaptırabilmektedirler.
@@ -25,11 +25,11 @@ Client, authorization code talebinde bulunduğunda öncelikle client’a ait cod
 Proof Key for Code Exchange, merkezi üyelik sistemi gerektiren–Authorization Code Grant(Flow) ve Implicit Grant(Flow)– durumlarda kullanılır. Lakin doğrulamanın merkezi olmadığı –Resource Owner Credentials Grant(Flow)– durumlarda ise kullanılmasına gerek yoktur.
 
 
-##PKCE Kullanımı Nasıldır?
+## PKCE Kullanımı Nasıldır?
 
 
 IdentityServer4’te PKCE kullanımı oldukça basittir. Bunun için ‘Config.cs’ dosyasında ilgili client’a dair aşağıdaki gibi ‘RequirePkce’ property’sine ‘true’ değerinin verilmesi yeterlidir.
-
+```
 public static IEnumerable<Client> GetClients() =>
     new List<Client>
     {
@@ -41,3 +41,4 @@ public static IEnumerable<Client> GetClients() =>
             RequirePkce = true
         }
     };
+    ```
