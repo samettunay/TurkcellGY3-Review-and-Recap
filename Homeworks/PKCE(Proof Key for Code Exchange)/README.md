@@ -29,7 +29,7 @@ Proof Key for Code Exchange, merkezi üyelik sistemi gerektiren–Authorization 
 
 
 IdentityServer4’te PKCE kullanımı oldukça basittir. Bunun için ‘Config.cs’ dosyasında ilgili client’a dair aşağıdaki gibi ‘RequirePkce’ property’sine ‘true’ değerinin verilmesi yeterlidir.
-```
+```csharp
 public static IEnumerable<Client> GetClients() =>
     new List<Client>
     {
