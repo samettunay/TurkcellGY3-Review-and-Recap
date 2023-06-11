@@ -42,3 +42,5 @@ public static IEnumerable<Client> GetClients() =>
         }
     };
     ```
+## Kaynak
+    https://www.gencayyildiz.com/blog/identityserver4-yazi-serisi-20-pkceproof-key-for-code-exchange/#:~:text=Proof%20Key%20for%20Code%20Exchange%2C%20merkezi%20%C3%BCyelik%20sistemi%20gerektiren%E2%80%93Authorization,durumlarda%20ise%20kullan%C4%B1lmas%C4%B1na%20gerek%20yoktur.
