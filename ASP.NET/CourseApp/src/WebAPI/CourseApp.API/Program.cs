@@ -1,4 +1,5 @@
 using CourseApp.API.Extensions;
+using CourseApp.API.Security;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,8 +12,18 @@ builder.Services.AddSwaggerGen();
 
 var connectionString = builder.Configuration.GetConnectionString("db");
 
-builder.Services.AddInjections(connectionString);
+builder.Services.AddAuthentication("Basic").AddScheme<BasicOption, BasicHandler>("Basic", null);
 
+builder.Services.AddInjections(connectionString);
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("allow", builder =>
+    {
+        builder.AllowAnyHeader();
+        builder.AllowAnyMethod();
+        builder.AllowAnyOrigin();
+    });
+});
 
 var app = builder.Build();
 
@@ -25,6 +36,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseCors("allow");
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

@@ -15,6 +15,6 @@ namespace CourseApp.Services
         Task UpdateCourse(UpdateCourseRequest updateCourseRequest);
         Task<bool> CourseIsExists(int courseId);
         Task<IEnumerable<CourseDisplayResponse>> SearchByName(string name);
-        Task DeleteAsync(int id)
+        Task DeleteAsync(int id);
     }
 }

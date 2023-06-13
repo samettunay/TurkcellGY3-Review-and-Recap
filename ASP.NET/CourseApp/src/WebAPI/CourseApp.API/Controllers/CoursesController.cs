@@ -1,5 +1,7 @@
-﻿using CourseApp.DataTransferObjects.Requests;
+﻿using CourseApp.API.Filters;
+using CourseApp.DataTransferObjects.Requests;
 using CourseApp.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -18,6 +20,7 @@ namespace CourseApp.API.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public IActionResult GetCourses()
         {
             var courses = _courseService.GetCourseDisplayResponses();
@@ -61,31 +64,30 @@ namespace CourseApp.API.Controllers
         }
 
         [HttpPut("{id}")]
+        [IsExists]
         public async Task<IActionResult> Update(int id, UpdateCourseRequest request)
         {
-            var isExists = await _courseService.CourseIsExists(id);
-            if (isExists)
+            if (ModelState.IsValid)
             {
-                if (ModelState.IsValid)
-                {
-                    await _courseService.UpdateCourse(request);
-                    return Ok();
-                }
-                return BadRequest(ModelState);
+                await _courseService.UpdateCourse(request);
+                return Ok();
             }
-            return NotFound();
+            return BadRequest(ModelState);
         }
 
         [HttpDelete("{id}")]
+        [IsExists]
         public async Task<IActionResult> Delete(int id)
         {
-            var isExists = await _courseService.CourseIsExists(id);
-            if (isExists)
-            {
-                await _courseService.DeleteAsync(id);
-                return Ok();
-            }
-            return NotFound();
+            await _courseService.DeleteAsync(id);
+            return Ok();
+        }
+
+        [HttpGet("[action]")]
+        [NotImplemented]
+        public async Task<IActionResult> Bitmemis(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }
