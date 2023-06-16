@@ -53,6 +53,7 @@ namespace CourseApp.API.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Create(CreateNewCourseRequest request)
         {
             if (ModelState.IsValid)

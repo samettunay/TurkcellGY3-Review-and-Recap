@@ -18,7 +18,7 @@
                     url: 'https://localhost:7207/api/Courses',
                     type: 'GET',
                     headers: {
-                        'Authorization': 'Basic ' + btoa('turko:123')
+                        'Authorization': 'Bearer ' + '[TOKEN]'
                     },
                     success: function (data) {
                         $.each(data, function (index, element) {

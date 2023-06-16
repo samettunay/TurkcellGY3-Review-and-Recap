@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mdYeSSW9v8F75nuzDo/StKlmKqyVYZDVMmWjEi9HH0zium2dmEZtTrV8WjFlbxF6fXG17OBz+JD1J6lrWXWX0A==",
+  "dgSpecHash": "wjggurtQeCYJu7odnYCjG/IrnEt/ExKD1j+z/lQRU9TnfIzM1rOElwbA0SEVxzhvDuUJEV/Q9wJWhh2a9qVvjw==",
   "success": true,
   "projectFilePath": "C:\\Users\\samet\\source\\repos\\Turkcell\\ASP.NET\\CourseApp\\src\\WebAPI\\CourseApp.API\\CourseApp.API.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\samet\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\samet\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\samet\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\samet\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.7\\microsoft.aspnetcore.authentication.jwtbearer.7.0.7.nupkg.sha512",
     "C:\\Users\\samet\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.4\\microsoft.aspnetcore.openapi.7.0.4.nupkg.sha512",
     "C:\\Users\\samet\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\samet\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
